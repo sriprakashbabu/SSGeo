@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeRotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\EarthScene\\GlobeRotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReliefFeatureActivator.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\ReliefFeatureActivator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:26:46.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangeMeshColorURP.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\ChangeMeshColorURP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:06:23.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LandformDetailViewer.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\LandformDetailViewer.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAQwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:37:30.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LandformFeature.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\LandformFeature.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:37:13.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClickableInfo.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\ClickableInfo.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAQwNgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:40:07.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GlobalClickHandler.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\GlobalClickHandler.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAlwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:29:39.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContinentOceanToggleController.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\ContinentOceanToggleController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T16:30:56.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobeInteractiveSwitcher.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\Scripts\\GlobeInteractiveSwitcher.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T16:02:15.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GlobeInfoUIManager.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\GlobeInfoUIManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:02:54.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SpecialLineInfo.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\SpecialLineInfo.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:02:21.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChangeMeshColorURP.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\ChangeMeshColorURP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:43:49.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobeRotator.cs",
+              "DocumentMoniker": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeRotator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\EarthScene\\GlobeRotator.cs",
+              "ToolTip": "D:\\Git\\SimplyScienceGeo\\SimplyScienceGeo\\Assets\\Scenes\\EarthScene\\GlobeRotator.cs",
+              "RelativeToolTip": "Assets\\Scenes\\EarthScene\\GlobeRotator.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T03:48:55.761Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
