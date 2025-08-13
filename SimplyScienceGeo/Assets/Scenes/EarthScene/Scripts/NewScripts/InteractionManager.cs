@@ -44,7 +44,15 @@ public class InteractionManager : MonoBehaviour
             _currentlySelectedFeature.GetComponent<ModelActivator>()?.Activate();
         }
     }
+    public void ResetToDefaultUI()
+    {
+        // First, properly clear and clean up any currently selected feature.
+        // This will correctly call StopHighlight and handle other cleanup.
+        ClearCurrentSelection();
 
+        // After clearing the selection, then display the default text.
+        uiManager?.DisplayDefaultText(uiManager.defaultTitle, uiManager.defaultBody);
+    }
     /// <summary>
     /// Clears the current selection and resets all visuals and active models.
     /// </summary>

@@ -17,7 +17,6 @@ public class ModelActivator : MonoBehaviour
     [SerializeField] private Button backButton;
 
     [Header("Animation Settings")]
-    // --- REVERTED: The Y-Offset is no longer needed ---
     [SerializeField] private float transitionDuration = 0.5f;
     [SerializeField] private LeanTweenType easeType = LeanTweenType.easeOutExpo;
     [SerializeField] private Vector3 customTargetScale = Vector3.zero;
@@ -32,10 +31,16 @@ public class ModelActivator : MonoBehaviour
     [SerializeField] private GameObject[] uiElementsToHide;
     [SerializeField] private Material detailSkybox;
 
+    [Header("Image Display")]
+    [Tooltip("Image component on UI canvas to show model-specific sprite.")]
+    [SerializeField] private Image canvasImageTarget;
+
+    [Tooltip("Sprite to display when this model is activated.")]
+    [SerializeField] private Sprite displaySprite;
+
     private static ModelActivator _currentActiveModel;
     private static List<ModelActivator> _allActivators = new List<ModelActivator>();
 
-    // --- REVERTED: We need original scale, not position ---
     private Vector3 _rootOriginalScale;
     private Vector3 _finalTargetScale;
     private Collider _collider;
@@ -46,10 +51,15 @@ public class ModelActivator : MonoBehaviour
     void Awake()
     {
         _collider = GetComponent<Collider>();
-        if (detailedModel == null || rootModelToScaleDown == null || backButton == null) { enabled = false; return; }
-        if (globalInputManager == null) globalInputManager = FindObjectOfType<GlobalInputManager>();
+        if (detailedModel == null || rootModelToScaleDown == null || backButton == null)
+        {
+            enabled = false;
+            return;
+        }
 
-        // --- REVERTED: Storing the original scale of the root model ---
+        if (globalInputManager == null)
+            globalInputManager = FindObjectOfType<GlobalInputManager>();
+
         _rootOriginalScale = rootModelToScaleDown.transform.localScale;
         _finalTargetScale = (customTargetScale != Vector3.zero) ? customTargetScale : detailedModel.transform.localScale;
 
@@ -59,8 +69,8 @@ public class ModelActivator : MonoBehaviour
         backButton.onClick.AddListener(Deactivate);
     }
 
-    void OnEnable() { if (!_allActivators.Contains(this)) _allActivators.Add(this); }
-    void OnDisable() { _allActivators.Remove(this); }
+    void OnEnable() => _allActivators.Add(this);
+    void OnDisable() => _allActivators.Remove(this);
 
     public void Activate()
     {
@@ -76,15 +86,18 @@ public class ModelActivator : MonoBehaviour
         UpdateSkybox(true);
         backButton.gameObject.SetActive(true);
 
-        // --- REVERTED: Scale the globe down to zero ---
-        LeanTween.scale(rootModelToScaleDown, Vector3.zero, transitionDuration).setEase(easeType);
+        // Show associated image
+        if (canvasImageTarget != null && displaySprite != null)
+        {
+            canvasImageTarget.sprite = displaySprite;
+            canvasImageTarget.gameObject.SetActive(true);  // <- Use this instead of enabled = true
+        }
 
+        LeanTween.scale(rootModelToScaleDown, Vector3.zero, transitionDuration).setEase(easeType);
         detailedModel.SetActive(true);
         LeanTween.scale(detailedModel, _finalTargetScale, transitionDuration)
             .setEase(easeType)
-            .setOnComplete(() => {
-                _state = ModelState.Active;
-            });
+            .setOnComplete(() => { _state = ModelState.Active; });
     }
 
     public void Deactivate()
@@ -95,11 +108,13 @@ public class ModelActivator : MonoBehaviour
         backButton.interactable = false;
         UpdateSkybox(false);
 
+        if (canvasImageTarget != null)
+            canvasImageTarget.gameObject.SetActive(false); // <- Use this instead of enabled = false
+
         LeanTween.scale(detailedModel, Vector3.zero, transitionDuration)
             .setEase(easeType)
             .setOnComplete(() => detailedModel.SetActive(false));
 
-        // --- REVERTED: Scale the globe back to its original size ---
         LeanTween.scale(rootModelToScaleDown, _rootOriginalScale, transitionDuration)
             .setEase(easeType)
             .setOnComplete(OnDeactivationComplete);
@@ -119,9 +134,46 @@ public class ModelActivator : MonoBehaviour
         _state = ModelState.Inactive;
     }
 
-    private static void ToggleAllActivatorColliders(bool enable) { foreach (var activator in _allActivators) { if (activator != _currentActiveModel && activator._collider != null) { activator._collider.enabled = enable; } } }
-    private void ToggleUI(bool show) { foreach (var element in uiElementsToHide) { if (element != null) element.SetActive(show); } }
-    private void ToggleOtherComponents(bool enable) { if (globeRotator != null) globeRotator.enabled = enable; }
-    private void UpdateSkybox(bool isDetailView) { if (!_originalSceneSkybox) { _originalSceneSkybox = RenderSettings.skybox; _originalSkyboxCaptured = true; } RenderSettings.skybox = (isDetailView && detailSkybox != null) ? detailSkybox : _originalSceneSkybox; }
-    void OnDestroy() { LeanTween.cancel(gameObject, true); if (_currentActiveModel == this) { _currentActiveModel = null; _state = ModelState.Inactive; } }
+    private static void ToggleAllActivatorColliders(bool enable)
+    {
+        foreach (var activator in _allActivators)
+        {
+            if (activator != _currentActiveModel && activator._collider != null)
+                activator._collider.enabled = enable;
+        }
+    }
+
+    private void ToggleUI(bool show)
+    {
+        foreach (var element in uiElementsToHide)
+        {
+            if (element != null) element.SetActive(show);
+        }
+    }
+
+    private void ToggleOtherComponents(bool enable)
+    {
+        if (globeRotator != null) globeRotator.enabled = enable;
+    }
+
+    private void UpdateSkybox(bool isDetailView)
+    {
+        if (!_originalSkyboxCaptured)
+        {
+            _originalSceneSkybox = RenderSettings.skybox;
+            _originalSkyboxCaptured = true;
+        }
+
+        RenderSettings.skybox = (isDetailView && detailSkybox != null) ? detailSkybox : _originalSceneSkybox;
+    }
+
+    void OnDestroy()
+    {
+        LeanTween.cancel(gameObject, true);
+        if (_currentActiveModel == this)
+        {
+            _currentActiveModel = null;
+            _state = ModelState.Inactive;
+        }
+    }
 }

@@ -29,7 +29,7 @@ public class LandformRotator : MonoBehaviour
     [SerializeField] private LeanTweenType resetEase = LeanTweenType.easeOutExpo;
 
     private bool isRotating;
-    private Vector2 prevMouse;
+    private Vector2 prevPointerPos;
     private Vector3 initialEuler;
 
     private void EnsureCamera()
@@ -45,16 +45,14 @@ public class LandformRotator : MonoBehaviour
         }
     }
 
-    // --- FIXED: This function was missing its 'return' statement ---
     private static float Normalize(float angle)
     {
         angle %= 360f;
         if (angle > 180f) angle -= 360f;
         if (angle < -180f) angle += 360f;
-        return angle; // The missing return
+        return angle;
     }
 
-    // --- FIXED: This function now correctly calls the fixed Normalize function ---
     private static float Clamp(float angle, float min, float max)
     {
         angle = Normalize(angle);
@@ -72,36 +70,45 @@ public class LandformRotator : MonoBehaviour
 
     private void Update()
     {
-        // This check prevents the script from running during a transition
         if (!ModelActivator.IsFullyActive)
         {
             isRotating = false;
             return;
         }
 
-        if (Mouse.current == null || mainCamera == null) return;
+        var mouse = Mouse.current;
+        var touch = Touchscreen.current;
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        // FIXED: Added .press to access wasPressedThisFrame
+        bool isPressed = (mouse != null && mouse.leftButton.wasPressedThisFrame) || (touch != null && touch.primaryTouch.press.wasPressedThisFrame);
+        // FIXED: Added .press to access wasReleasedThisFrame
+        bool isReleased = (mouse != null && mouse.leftButton.wasReleasedThisFrame) || (touch != null && touch.primaryTouch.press.wasReleasedThisFrame);
+
+        if (mainCamera == null) return;
+
+        if (isPressed)
         {
             LeanTween.cancel(gameObject);
             isRotating = true;
-            prevMouse = Mouse.current.position.ReadValue();
+            prevPointerPos = touch != null && touch.primaryTouch.press.isPressed ? touch.primaryTouch.position.ReadValue() : mouse.position.ReadValue();
         }
 
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        if (isReleased)
+        {
             isRotating = false;
+        }
 
         if (!isRotating) return;
 
-        Vector2 now = Mouse.current.position.ReadValue();
-        Vector2 delta = (now - prevMouse) * rotationSpeed * Time.deltaTime;
-        prevMouse = now;
+        Vector2 now = touch != null && touch.primaryTouch.press.isPressed ? touch.primaryTouch.position.ReadValue() : mouse.position.ReadValue();
+        Vector2 delta = (now - prevPointerPos) * rotationSpeed * Time.deltaTime;
+        prevPointerPos = now;
 
         if (yAxis.enable)
             yAxis.current = Clamp(yAxis.current - delta.x, yAxis.minAngle, yAxis.maxAngle);
         if (xAxis.enable)
             xAxis.current = Clamp(xAxis.current + delta.y, xAxis.minAngle, xAxis.maxAngle);
-        if (zAxis.enable && Keyboard.current.leftAltKey.isPressed)
+        if (zAxis.enable && Keyboard.current != null && Keyboard.current.leftAltKey.isPressed)
             zAxis.current = Clamp(zAxis.current + delta.y, zAxis.minAngle, zAxis.maxAngle);
 
         transform.localEulerAngles = new Vector3(xAxis.current, yAxis.current, zAxis.current);
@@ -110,9 +117,7 @@ public class LandformRotator : MonoBehaviour
     public void ResetRotation()
     {
         if (!ModelActivator.IsFullyActive) return;
-
         isRotating = false;
-
         LeanTween.rotateLocal(gameObject, initialEuler, resetDuration)
                  .setEase(resetEase)
                  .setOnUpdate((Vector3 v) =>

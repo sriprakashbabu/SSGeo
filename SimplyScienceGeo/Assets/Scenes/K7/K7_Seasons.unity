@@ -168,6 +168,11 @@ MonoBehaviour:
   infoPanel: {fileID: 629213748}
   titleText: {fileID: 1108987476}
   bodyText: {fileID: 1028272389}
+  defaultTitle: Welcome!
+  defaultBody: Click on a feature to learn more.
+  textFadeDuration: 0.2
+  textPopScale: 1.05
+  textPopDuration: 0.1
 --- !u!114 &186617692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,14 +1375,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7743170530716268816}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.070663154, y: -0.8159549, z: 0.081259936, w: 0.5679974}
-  m_LocalPosition: {x: -2.82, y: 1.93, z: 13.18}
+  m_LocalRotation: {x: -0.10673025, y: -0.92314225, z: -0.014323711, w: -0.36906895}
+  m_LocalPosition: {x: -2.819515, y: 1.93, z: 13.181613}
   m_LocalScale: {x: 0.995, y: 0.995, z: 0.995}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8805441126519902454}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3, y: -223.267, z: 12}
 --- !u!114 &4592769209374820429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,6 +1399,7 @@ MonoBehaviour:
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4
+  allowedRotationAxis: 2
 --- !u!33 &7386807675117413667
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1442,7 +1448,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 289935ad2ac293e41ab25d216da16e31, type: 2}
+  - {fileID: 2100000, guid: 42c41e6a587365f40b79c94336af8607, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1472,13 +1478,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682974451892473874}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.13052624, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0.00002161072, y: -0.000045357083, z: 0.000086191816}
   m_LocalScale: {x: 0.995, y: 0.995, z: 0.995}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1055671053610092094}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -15, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
