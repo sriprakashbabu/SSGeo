@@ -4,10 +4,12 @@ using System.Collections;
 
 public class GlobeRotator : MonoBehaviour
 {
-    [Header("Rotation Settings")]
+    [Header("Rotation")]
     [SerializeField] private float rotationSpeed = 20f;
+    [Tooltip("Minimum pointer movement (px) before locking an axis.")]
+    [SerializeField] private float axisLockThreshold = 5f;
 
-    [Header("Zoom Settings")]
+    [Header("Zoom")]
     [SerializeField] private float zoomSpeed = 5f;
     [SerializeField] private float minZoomDistance = 5f;
     [SerializeField] private float maxZoomDistance = 50f;
@@ -17,178 +19,151 @@ public class GlobeRotator : MonoBehaviour
     [SerializeField] private float resetDuration = 0.5f;
     [SerializeField] private LeanTweenType resetEaseType = LeanTweenType.easeOutExpo;
 
-    [Tooltip("Minimum mouse movement before locking rotation axis.")]
-    [SerializeField] private float axisLockThreshold = 5f;
-
-    private SSGeo _input;
-    private Vector2 _previousPointerPosition;
-    private bool _isRotating = false;
-
-    private Quaternion _initialRotation;
-    private Vector3 _initialCameraPosition;
-    private bool _isInitialized = false;
+    private SSGeo input;
+    private bool isDragging;
+    private Vector2 prevPointerPos;
+    private Quaternion initialRotation;
+    private Vector3 initialCamPos;
+    private bool inited;
 
     private enum AxisLock { None, Horizontal, Vertical }
     private AxisLock lockedAxis = AxisLock.None;
 
-    // Use Awake() to create and subscribe to the input events just once.
-    void Awake()
+    void OnEnable()
     {
-        _input = new SSGeo();
-        _input.Gameplay.Click.started += OnRotationStarted;
-        _input.Gameplay.Click.canceled += OnRotationEnded;
-        _input.Gameplay.Scroll.performed += OnScroll;
-    }
-
-    // OnEnable() simply enables the input action map.
-    private void OnEnable()
-    {
-        _input.Enable();
-        _isRotating = false;
-    }
-
-    // OnDisable() simply disables the input action map.
-    private void OnDisable()
-    {
-        _input.Disable();
-    }
-
-    private void OnRotationStarted(InputAction.CallbackContext context)
-    {
-        if (Touchscreen.current != null && Touchscreen.current.touches.Count > 1) return;
-        LeanTween.cancel(gameObject);
-        if (mainCamera != null) LeanTween.cancel(mainCamera.gameObject);
-        _isRotating = true;
-        _previousPointerPosition = _input.Gameplay.Point.ReadValue<Vector2>();
+        input = new SSGeo();
+        input.Gameplay.Enable();
+        isDragging = false;
         lockedAxis = AxisLock.None;
     }
 
-    private void OnRotationEnded(InputAction.CallbackContext context)
+    void OnDisable()
     {
-        _isRotating = false;
-        lockedAxis = AxisLock.None;
+        input?.Dispose();
     }
 
-    private void OnScroll(InputAction.CallbackContext context)
+    void Start()
     {
-        float scrollValue = context.ReadValue<Vector2>().y;
-        if (Mathf.Abs(scrollValue) > Mathf.Epsilon)
-        {
-            ApplyZoom(scrollValue * zoomSpeed * Time.deltaTime);
-        }
-    }
-
-    private void EnsureCamera()
-    {
-        if (mainCamera != null) return;
-        mainCamera = Camera.main;
+        if (mainCamera == null) mainCamera = Camera.main;
         if (mainCamera == null)
         {
-            Debug.LogError("GlobeRotator: Main camera not found.");
-            enabled = false;
+            Debug.LogError("GlobeRotator: No camera. Assign one or tag a camera MainCamera.");
+            enabled = false; return;
         }
+        StartCoroutine(InitAfterFrame());
     }
 
-    private void Start()
-    {
-        EnsureCamera();
-        StartCoroutine(InitializePositionsAfterFrameEnd());
-    }
-
-    private IEnumerator InitializePositionsAfterFrameEnd()
+    IEnumerator InitAfterFrame()
     {
         yield return new WaitForEndOfFrame();
-        _initialRotation = transform.rotation;
-        if (mainCamera != null)
-        {
-            _initialCameraPosition = mainCamera.transform.position;
-        }
-        _isInitialized = true;
+        initialRotation = transform.rotation;
+        initialCamPos = mainCamera.transform.position;
+        inited = true;
     }
 
-    private void Update()
+    void Update()
     {
-        if (!_isInitialized || mainCamera == null) return;
-        HandleContinuousRotation();
-        HandleTwoFingerZoom();
+        if (!inited) return;
+
+        // ---- Press / Release (works for mouse + touch via Press [Pointer])
+        if (input.Gameplay.Click.triggered)
+        {
+            // toggle begin-drag on press; end-drag happens when press is released (below)
+            isDragging = true;
+            lockedAxis = AxisLock.None;
+            prevPointerPos = input.Gameplay.Point.ReadValue<Vector2>();
+            LeanTween.cancel(gameObject);
+            LeanTween.cancel(mainCamera.gameObject);
+        }
+
+        // If the button is up, stop dragging. (ReadValue = 0 when not pressed)
+        if (input.Gameplay.Click.ReadValue<float>() <= 0.0f && isDragging)
+        {
+            isDragging = false;
+            lockedAxis = AxisLock.None;
+        }
+
+        // ---- Drag rotate
+        if (isDragging)
+        {
+            var cur = input.Gameplay.Point.ReadValue<Vector2>();
+            var delta = cur - prevPointerPos;
+
+            if (lockedAxis == AxisLock.None && delta.magnitude >= axisLockThreshold)
+                lockedAxis = Mathf.Abs(delta.x) > Mathf.Abs(delta.y) ? AxisLock.Horizontal : AxisLock.Vertical;
+
+            if (lockedAxis == AxisLock.Horizontal)
+                transform.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.World);
+            else if (lockedAxis == AxisLock.Vertical)
+                transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+
+            prevPointerPos = cur;
+        }
+
+        // ---- Mouse wheel zoom (desktop)
+        float scrollY = input.Gameplay.Scroll.ReadValue<Vector2>().y;
+        if (Mathf.Abs(scrollY) > Mathf.Epsilon)
+            ZoomBy(-scrollY * zoomSpeed * Time.deltaTime);
+
+        // ---- Pinch zoom (mobile/touch)
+        var ts = Touchscreen.current;
+        if (ts != null && ts.touches.Count >= 2)
+        {
+            var t0 = ts.touches[0];
+            var t1 = ts.touches[1];
+            if (t0.isInProgress && t1.isInProgress)
+            {
+                Vector2 p0 = t0.position.ReadValue();
+                Vector2 p1 = t1.position.ReadValue();
+                float curDist = Vector2.Distance(p0, p1);
+
+                // store previous distance in prevPointerPos.x (lightweight state)
+                if (!isDragging) { prevPointerPos.x = curDist; isDragging = true; } // reuse flag to init once
+                else
+                {
+                    float delta = curDist - prevPointerPos.x;
+                    ZoomBy(-delta * (zoomSpeed / 200f)); // scale pinch sensitivity
+                    prevPointerPos.x = curDist;
+                }
+            }
+        }
+        else if (isDragging && input.Gameplay.Click.ReadValue<float>() <= 0f)
+        {
+            // clear the pinch init helper if neither drag nor two touches are active
+            isDragging = false;
+        }
     }
 
-    private void HandleContinuousRotation()
-    {
-        if (!_isRotating) return;
-
-        Vector2 currentPointerPosition = _input.Gameplay.Point.ReadValue<Vector2>();
-        Vector2 deltaPointer = currentPointerPosition - _previousPointerPosition;
-
-        if (lockedAxis == AxisLock.None && deltaPointer.magnitude >= axisLockThreshold)
-        {
-            lockedAxis = Mathf.Abs(deltaPointer.x) > Mathf.Abs(deltaPointer.y) ? AxisLock.Horizontal : AxisLock.Vertical;
-        }
-
-        if (lockedAxis == AxisLock.Horizontal)
-        {
-            transform.Rotate(Vector3.up, -deltaPointer.x * rotationSpeed * Time.deltaTime, Space.World);
-        }
-        else if (lockedAxis == AxisLock.Vertical)
-        {
-            transform.Rotate(Vector3.right, deltaPointer.y * rotationSpeed * Time.deltaTime, Space.World);
-        }
-        _previousPointerPosition = currentPointerPosition;
-    }
-
-    private void HandleTwoFingerZoom()
-    {
-        var touch = Touchscreen.current;
-        if (touch != null && touch.touches.Count == 2)
-        {
-            _isRotating = false;
-            var touch0 = touch.touches[0];
-            var touch1 = touch.touches[1];
-
-            Vector2 touch0PrevPos = _input.Gameplay.Touch0Pos.ReadValue<Vector2>() - touch0.delta.ReadValue();
-            Vector2 touch1PrevPos = _input.Gameplay.Touch1Pos.ReadValue<Vector2>() - touch1.delta.ReadValue();
-
-            float prevMagnitude = (touch0PrevPos - touch1PrevPos).magnitude;
-            float currentMagnitude = (touch0.position.ReadValue() - touch1.position.ReadValue()).magnitude;
-
-            float difference = currentMagnitude - prevMagnitude;
-            ApplyZoom(difference * 0.1f);
-        }
-    }
-
-    void ApplyZoom(float amount)
+    void ZoomBy(float amount)
     {
         Vector3 toGlobe = transform.position - mainCamera.transform.position;
-        float currentDistance = toGlobe.magnitude;
-        float targetDistance = Mathf.Clamp(currentDistance - amount, minZoomDistance, maxZoomDistance);
-        mainCamera.transform.position = transform.position - toGlobe.normalized * targetDistance;
+        float dist = toGlobe.magnitude;
+        float target = Mathf.Clamp(dist + amount, minZoomDistance, maxZoomDistance);
+        mainCamera.transform.position = transform.position - toGlobe.normalized * target;
     }
 
     public void ResetRotation()
     {
-        if (!_isInitialized) return;
-        _isRotating = false;
+        if (!inited) return;
+        isDragging = false;
         lockedAxis = AxisLock.None;
-        LeanTween.rotate(gameObject, _initialRotation.eulerAngles, resetDuration).setEase(resetEaseType);
-        LeanTween.move(mainCamera.gameObject, _initialCameraPosition, resetDuration).setEase(resetEaseType);
+        LeanTween.rotate(gameObject, initialRotation.eulerAngles, resetDuration).setEase(resetEaseType);
+        LeanTween.move(mainCamera.gameObject, initialCamPos, resetDuration).setEase(resetEaseType);
     }
 
     public void MoveToTarget(Vector3 eulerRotation, float distance, float duration, LeanTweenType ease)
     {
-        if (!_isInitialized) return;
-
-        _isRotating = false;
-
+        if (!inited) return;
+        isDragging = false;
         LeanTween.cancel(gameObject);
-        if (mainCamera != null) LeanTween.cancel(mainCamera.gameObject);
+        LeanTween.cancel(mainCamera.gameObject);
 
-        LeanTween.rotate(gameObject, eulerRotation, duration).setEase(ease);
+        LeanTween.value(gameObject, transform.rotation.eulerAngles, eulerRotation, duration)
+                 .setEase(ease)
+                 .setOnUpdate((Vector3 val) => transform.rotation = Quaternion.Euler(val));
 
-        if (mainCamera != null)
-        {
-            Vector3 direction = (mainCamera.transform.position - transform.position).normalized;
-            Vector3 targetPos = transform.position + direction * distance;
-            LeanTween.move(mainCamera.gameObject, targetPos, duration).setEase(ease);
-        }
+        Vector3 dir = (mainCamera.transform.position - transform.position).normalized;
+        Vector3 targetPos = transform.position + dir * distance;
+        LeanTween.move(mainCamera.gameObject, targetPos, duration).setEase(ease);
     }
 }

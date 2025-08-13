@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GlobalInputManager : MonoBehaviour
@@ -8,81 +8,94 @@ public class GlobalInputManager : MonoBehaviour
     [Header("Manager Reference")]
     public InteractionManager interactionManager;
 
-    private SSGeo _input; // 🆕 Reference to your new Input Action Asset
-    private Camera mainCamera;
-    private float lastClickTime;
-    private const float DOUBLE_CLICK_THRESHOLD = 0.3f;
+    [Header("Click Settings")]
+    // Fields (add/replace these)
+    [SerializeField] private bool requireDoubleClick = true;   // turn it on
+    [SerializeField] private float doubleClickThreshold = 0.30f;
+    [SerializeField] private float doubleClickMaxMovePx = 20f;
 
-    void Awake()
-    {
-        mainCamera = Camera.main;
-        _input = new SSGeo(); // 🆕 Instantiate the new input class
-    }
+    private float lastClickTime = -999f;   // <-- sentinel, not 0
+    private Vector2 lastClickPos = Vector2.zero;
+
+
+    private SSGeo input;              // ← uses your Input Actions
+    private Camera mainCamera;
+    
+
+    void Awake() => mainCamera = Camera.main;
 
     void OnEnable()
     {
-        _input.Enable();
+        input = new SSGeo();
+        input.Gameplay.Enable();
         SceneManager.sceneLoaded += OnSceneLoaded;
-        // 🆕 Subscribe to the 'Click' action's 'performed' event
-        _input.Gameplay.Click.performed += OnClickPerformed;
     }
 
     void OnDisable()
     {
-        // 🆕 Unsubscribe from the event to prevent memory leaks
-        _input.Gameplay.Click.performed -= OnClickPerformed;
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        _input.Disable();
+        input?.Dispose();
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        mainCamera = Camera.main;
-    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) => mainCamera = Camera.main;
 
-    // 🆕 This method is now called automatically by the Input System when 'Click' is performed
-    private void OnClickPerformed(InputAction.CallbackContext context)
+    void Update()
     {
-        // Guard against multi-touch gestures interfering
-        if (Touchscreen.current != null && Touchscreen.current.touches.Count > 1) return;
-
-        if (Time.time - lastClickTime < DOUBLE_CLICK_THRESHOLD)
+        if (input.Gameplay.Click.triggered)
         {
-            if (!ModelActivator.IsIdle) return;
+            var curPos = input.Gameplay.Point.ReadValue<Vector2>();
 
-            // 🆕 Get pointer position directly from the 'Point' action
-            Vector2 pointerPosition = _input.Gameplay.Point.ReadValue<Vector2>();
-            HandleInteraction(pointerPosition);
-            lastClickTime = 0; // Reset timer after a successful double-click
-        }
-        else
-        {
-            lastClickTime = Time.time;
+            // UI stays single-click; return if a UI element handled it
+            if (TryUIInteraction(curPos)) return;
+
+            if (!requireDoubleClick)
+            {
+                // Single-click path (if you ever want it)
+                TryWorldInteraction(curPos);
+                return;
+            }
+
+            float t = Time.time;
+            bool withinTime = (t - lastClickTime) <= doubleClickThreshold;
+            bool withinMove = (lastClickPos == Vector2.zero) ||
+                              (Vector2.Distance(curPos, lastClickPos) <= doubleClickMaxMovePx);
+
+            if (withinTime && withinMove)
+            {
+                // Double-click/tap detected → select feature
+                TryWorldInteraction(curPos);
+                lastClickTime = -999f;
+                lastClickPos = Vector2.zero;
+            }
+            else
+            {
+                // First click: record and wait for a second click
+                lastClickTime = t;
+                lastClickPos = curPos;
+            }
         }
     }
 
-    // This version now takes the pointer position as a parameter
-    void HandleInteraction(Vector2 pointerPosition)
+    void HandleInteraction(Vector2 screenPos)
     {
-        if (TryUIInteraction(pointerPosition)) return;
-        TryWorldInteraction(pointerPosition);
+        // 1) Try UI first
+        if (TryUIInteraction(screenPos)) return;
+
+        // 2) Then try world
+        TryWorldInteraction(screenPos);
     }
 
-    bool TryUIInteraction(Vector2 pointerPosition)
+    bool TryUIInteraction(Vector2 screenPos)
     {
         if (EventSystem.current == null) return false;
 
-        PointerEventData pointerData = new PointerEventData(EventSystem.current)
-        {
-            position = pointerPosition
-        };
+        var pointerData = new PointerEventData(EventSystem.current) { position = screenPos };
+        var results = new System.Collections.Generic.List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerData, results);
 
-        var raycastResults = new System.Collections.Generic.List<RaycastResult>();
-        EventSystem.current.RaycastAll(pointerData, raycastResults);
-
-        foreach (var result in raycastResults)
+        foreach (var r in results)
         {
-            var feature = result.gameObject.GetComponent<InteractableFeature>();
+            var feature = r.gameObject.GetComponent<InteractableFeature>();
             if (feature != null && interactionManager != null)
             {
                 interactionManager.SelectFeature(feature);
@@ -92,18 +105,14 @@ public class GlobalInputManager : MonoBehaviour
         return false;
     }
 
-    void TryWorldInteraction(Vector2 pointerPosition)
+    void TryWorldInteraction(Vector2 screenPos)
     {
-        if (mainCamera == null)
-        {
-            Debug.LogWarning("GlobalInputManager: No main camera found.");
-            return;
-        }
+        if (mainCamera == null) return;
 
-        Ray ray = mainCamera.ScreenPointToRay(pointerPosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        Ray ray = mainCamera.ScreenPointToRay(screenPos);
+        if (Physics.Raycast(ray, out var hit))
         {
-            InteractableFeature feature = hit.collider.GetComponent<InteractableFeature>();
+            var feature = hit.collider.GetComponent<InteractableFeature>();
             if (feature != null && interactionManager != null)
             {
                 interactionManager.SelectFeature(feature);

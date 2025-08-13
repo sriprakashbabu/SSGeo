@@ -125,7 +125,7 @@ public class LandformRotator : MonoBehaviour
 
     public void ResetRotation()
     {
-        if (!ModelActivator.IsFullyActive) return;
+       // if (!ModelActivator.IsFullyActive) return;
         isRotating = false;
         LeanTween.rotateLocal(gameObject, initialEuler, resetDuration)
                  .setEase(resetEase)
