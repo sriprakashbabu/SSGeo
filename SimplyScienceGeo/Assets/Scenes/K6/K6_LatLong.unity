@@ -2157,7 +2157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &396989365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8684,6 +8684,10 @@ PrefabInstance:
     - target: {fileID: 8346801205795595098, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
       propertyPath: m_Name
       value: TextBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346801205795595098, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -28,9 +28,30 @@ public class LandformRotator : MonoBehaviour
     [SerializeField] private float resetDuration = 0.5f;
     [SerializeField] private LeanTweenType resetEase = LeanTweenType.easeOutExpo;
 
+    private SSGeo _input; // 🆕 Reference to your new Input Action Asset
     private bool isRotating;
     private Vector2 prevPointerPos;
     private Vector3 initialEuler;
+
+    // 🆕 Use Awake() to create and subscribe to the input events just once.
+    void Awake()
+    {
+        _input = new SSGeo();
+        _input.Gameplay.Click.started += OnRotationStarted;
+        _input.Gameplay.Click.canceled += OnRotationEnded;
+    }
+
+    // 🆕 OnEnable() simply enables the input action map.
+    private void OnEnable()
+    {
+        _input.Enable();
+    }
+
+    // 🆕 OnDisable() simply disables the input action map.
+    private void OnDisable()
+    {
+        _input.Disable();
+    }
 
     private void EnsureCamera()
     {
@@ -68,39 +89,27 @@ public class LandformRotator : MonoBehaviour
         zAxis.current = Normalize(initialEuler.z);
     }
 
+    // 🆕 New event handler for when rotation starts
+    private void OnRotationStarted(InputAction.CallbackContext context)
+    {
+        if (!ModelActivator.IsFullyActive) return;
+        LeanTween.cancel(gameObject);
+        isRotating = true;
+        prevPointerPos = _input.Gameplay.Point.ReadValue<Vector2>();
+    }
+
+    // 🆕 New event handler for when rotation ends
+    private void OnRotationEnded(InputAction.CallbackContext context)
+    {
+        isRotating = false;
+    }
+
+    // Update is now only for continuous rotation logic
     private void Update()
     {
-        if (!ModelActivator.IsFullyActive)
-        {
-            isRotating = false;
-            return;
-        }
+        if (!isRotating || !ModelActivator.IsFullyActive) return;
 
-        var mouse = Mouse.current;
-        var touch = Touchscreen.current;
-
-        // FIXED: Added .press to access wasPressedThisFrame
-        bool isPressed = (mouse != null && mouse.leftButton.wasPressedThisFrame) || (touch != null && touch.primaryTouch.press.wasPressedThisFrame);
-        // FIXED: Added .press to access wasReleasedThisFrame
-        bool isReleased = (mouse != null && mouse.leftButton.wasReleasedThisFrame) || (touch != null && touch.primaryTouch.press.wasReleasedThisFrame);
-
-        if (mainCamera == null) return;
-
-        if (isPressed)
-        {
-            LeanTween.cancel(gameObject);
-            isRotating = true;
-            prevPointerPos = touch != null && touch.primaryTouch.press.isPressed ? touch.primaryTouch.position.ReadValue() : mouse.position.ReadValue();
-        }
-
-        if (isReleased)
-        {
-            isRotating = false;
-        }
-
-        if (!isRotating) return;
-
-        Vector2 now = touch != null && touch.primaryTouch.press.isPressed ? touch.primaryTouch.position.ReadValue() : mouse.position.ReadValue();
+        Vector2 now = _input.Gameplay.Point.ReadValue<Vector2>();
         Vector2 delta = (now - prevPointerPos) * rotationSpeed * Time.deltaTime;
         prevPointerPos = now;
 

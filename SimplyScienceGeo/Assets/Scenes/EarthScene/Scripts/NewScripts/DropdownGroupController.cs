@@ -109,6 +109,15 @@ public class DropdownGroupController : MonoBehaviour
                         toggleButton.ForceResetHighlight();
                     }
                 }
+                // --- ADD THIS BLOCK TO FIX THE PROBLEM ---
+                // Force all toggles in the deactivated group to OFF without triggering their events.
+                // This ensures they are ready for the next time the group is activated.
+                var toggles = group.toggleGroupParent.GetComponentsInChildren<Toggle>(true);
+                foreach (var t in toggles)
+                {
+                    t.SetIsOnWithoutNotify(false);
+                }
+                // --- END OF FIX ---
             }
             if (isSelected)
             {
