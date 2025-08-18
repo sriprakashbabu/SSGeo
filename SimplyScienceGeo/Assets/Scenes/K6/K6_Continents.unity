@@ -230,6 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 186617693}
+  requireDoubleClick: 1
+  doubleClickThreshold: 0.3
+  doubleClickMaxMovePx: 20
 --- !u!114 &186617691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3475,13 +3478,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GlobeRotator
   rotationSpeed: 15
+  axisLockThreshold: 5
   zoomSpeed: 25
   minZoomDistance: 18
   maxZoomDistance: 50
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4
-  axisLockThreshold: 5
 --- !u!33 &7386807675117413667
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3506,7 +3509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &8096273632544700916
 MeshRenderer:
   m_ObjectHideFlags: 0

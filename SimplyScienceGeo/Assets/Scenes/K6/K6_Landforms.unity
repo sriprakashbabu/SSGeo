@@ -283,79 +283,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17363433}
   m_CullTransparentMesh: 1
---- !u!1 &30508251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3643950428743668904, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &30508253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30508251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: Indo-Gangetic Plain- Asia
-  informationText: <b>Plain</b> - A large, flat or gently sloping stretch of land
-    with green fields, rivers, and settlements
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0, g: 0.5019608, b: 0, a: 1}
---- !u!64 &30508254
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30508251}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1867655478408291259, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &30508258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30508251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 115739666}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.01866214, y: 0.01866214, z: 0.01866214}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: 6f6b4e47a0696004095d58359ca0ed48, type: 3}
 --- !u!1 &30841820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,79 +1096,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170956737}
   m_Mesh: {fileID: -3142649664740890969, guid: d63a9ed726dbd7c4297e861ffe51c1da, type: 3}
---- !u!1 &181344595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7279364849228342513, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &181344597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181344595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: 'Alps- Europe '
-  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
-    and a pointed or rounded peak.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
---- !u!64 &181344598
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181344595}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8121537942869730774, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &181344601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181344595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 919132148117558830}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: d103ba192a1de984ab3363ac4e558165, type: 3}
 --- !u!1 &181412301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1184,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181412301}
   m_Mesh: {fileID: -5700080643567655694, guid: d63a9ed726dbd7c4297e861ffe51c1da, type: 3}
+--- !u!114 &182193004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 115739666}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.01866214, y: 0.01866214, z: 0.01866214}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: 40587e0e8e642f24eacdb77ebae4db6c, type: 3}
+--- !u!114 &182193005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Ganga, Bramhaputra Plain- India
+  informationText: <b>Plain</b> - A large, flat or gently sloping stretch of land
+    with green fields, rivers, and settlements
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0, g: 0.5019608, b: 0, a: 1}
+--- !u!64 &182193006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273747}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6218077497795542773, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &186617689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1287,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 186617693}
+  requireDoubleClick: 1
+  doubleClickThreshold: 0.3
+  doubleClickMaxMovePx: 20
 --- !u!114 &186617691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,152 +1376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a9ca9a4bbb00943925f15b686a1dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &186663100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -33370170854283257, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &186663102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186663100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Deccan Plateau \u2013 Asia "
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &186663103
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186663100}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2223614673440043229, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &186663105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186663100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 519949184}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.02568688, y: 0.02568688, z: 0.02568688}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
---- !u!1 &250039014 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2570263543850684314, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &250039016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250039014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Brazilian Plateau \u2013 South America "
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &250039017
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250039014}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5537646352880733182, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &250039019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250039014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 519949184}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.02568688, y: 0.02568688, z: 0.02568688}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
 --- !u!1 &258175387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1675,7 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: ac05189b269f7734a94a287333f72518, type: 3}
+  displaySprite: {fileID: 21300000, guid: 9906b8f24b792d5488bd66253d3db16e, type: 3}
 --- !u!1 &285583807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,6 +1911,74 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2040428405}
   m_SourcePrefab: {fileID: 100100000, guid: 433e018614923734fa68796384828af3, type: 3}
+--- !u!114 &322834040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 115739666}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.01866214, y: 0.01866214, z: 0.01866214}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: 501b1addc1a925a46a7394b385a025f9, type: 3}
+--- !u!114 &322834041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Yangtze Plain- China
+  informationText: <b>Plain</b> - A large, flat or gently sloping stretch of land
+    with green fields, rivers, and settlements
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0, g: 0.5019608, b: 0, a: 1}
+--- !u!64 &322834042
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273745}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 735572334874497877, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &349638922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,79 +2482,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483643959}
   m_Mesh: {fileID: -7672157882097804489, guid: d63a9ed726dbd7c4297e861ffe51c1da, type: 3}
---- !u!1 &485784764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7413181246407263010, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &485784766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485784764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Ethiopian Plateau \u2013 Africa "
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &485784767
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485784764}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7834414376634173520, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &485784769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485784764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 519949184}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.02568688, y: 0.02568688, z: 0.02568688}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
 --- !u!1001 &498273743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2716,6 +2490,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1055671053610092094}
     m_Modifications:
+    - target: {fileID: -8748487894501755365, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: -8679921383154817045, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2756,11 +2534,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8231949019022027237, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: -8161766821804770610, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: -7707899763173523553, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -7665122741396276397, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -7397319861026909969, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -6895582565249623413, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
@@ -2776,11 +2570,19 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -3559123944302375804, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: -2656656851337384734, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: -1819404788984302920, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -1123093645646832988, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
@@ -2832,6 +2634,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 4679605652444060020, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: 5026117801799282480, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2844,7 +2650,15 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 6408042206309151685, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
     - target: {fileID: 6456865352374726720, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 8931522153953672075, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
@@ -2869,15 +2683,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1680652568837478782, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1802249833}
-    - targetCorrespondingSourceObject: {fileID: 7279364849228342513, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 181344598}
-    - targetCorrespondingSourceObject: {fileID: 7279364849228342513, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 181344597}
-    - targetCorrespondingSourceObject: {fileID: 7279364849228342513, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 181344601}
     - targetCorrespondingSourceObject: {fileID: 6974205222814178556, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673376835}
@@ -2887,15 +2692,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6974205222814178556, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673376838}
-    - targetCorrespondingSourceObject: {fileID: -5464825679815751425, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 2001229866141040517, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2011354136}
-    - targetCorrespondingSourceObject: {fileID: -5464825679815751425, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1748165384}
+    - targetCorrespondingSourceObject: {fileID: 2001229866141040517, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2011354135}
-    - targetCorrespondingSourceObject: {fileID: -5464825679815751425, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1748165383}
+    - targetCorrespondingSourceObject: {fileID: 2001229866141040517, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2011354139}
+      addedObject: {fileID: 1748165382}
     - targetCorrespondingSourceObject: {fileID: -1535332703847948212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 592009809}
@@ -2905,87 +2710,60 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1535332703847948212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 592009812}
-    - targetCorrespondingSourceObject: {fileID: 1819390495612608631, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -7598174893126331913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1858575168}
-    - targetCorrespondingSourceObject: {fileID: 1819390495612608631, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273760}
+    - targetCorrespondingSourceObject: {fileID: -7598174893126331913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1858575167}
-    - targetCorrespondingSourceObject: {fileID: 1819390495612608631, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273759}
+    - targetCorrespondingSourceObject: {fileID: -7598174893126331913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1858575171}
-    - targetCorrespondingSourceObject: {fileID: -6202371433348587863, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273758}
+    - targetCorrespondingSourceObject: {fileID: 6797203543777751232, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1309739148}
-    - targetCorrespondingSourceObject: {fileID: -6202371433348587863, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 966573963}
+    - targetCorrespondingSourceObject: {fileID: 6797203543777751232, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1309739147}
-    - targetCorrespondingSourceObject: {fileID: -6202371433348587863, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 966573962}
+    - targetCorrespondingSourceObject: {fileID: 6797203543777751232, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1309739151}
-    - targetCorrespondingSourceObject: {fileID: -2570263543850684314, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 966573961}
+    - targetCorrespondingSourceObject: {fileID: 5670077719945139056, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 250039017}
-    - targetCorrespondingSourceObject: {fileID: -2570263543850684314, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1399937506}
+    - targetCorrespondingSourceObject: {fileID: 5670077719945139056, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 250039016}
-    - targetCorrespondingSourceObject: {fileID: -2570263543850684314, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1399937505}
+    - targetCorrespondingSourceObject: {fileID: 5670077719945139056, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 250039019}
-    - targetCorrespondingSourceObject: {fileID: -7630431397747434753, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1399937504}
+    - targetCorrespondingSourceObject: {fileID: -897387202316265584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 881777915}
-    - targetCorrespondingSourceObject: {fileID: -7630431397747434753, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273757}
+    - targetCorrespondingSourceObject: {fileID: -897387202316265584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 881777914}
-    - targetCorrespondingSourceObject: {fileID: -7630431397747434753, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273756}
+    - targetCorrespondingSourceObject: {fileID: -897387202316265584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 881777917}
-    - targetCorrespondingSourceObject: {fileID: -33370170854283257, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 498273755}
+    - targetCorrespondingSourceObject: {fileID: 85446206141347451, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 186663103}
-    - targetCorrespondingSourceObject: {fileID: -33370170854283257, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1232204535}
+    - targetCorrespondingSourceObject: {fileID: 85446206141347451, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 186663102}
-    - targetCorrespondingSourceObject: {fileID: -33370170854283257, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1232204534}
+    - targetCorrespondingSourceObject: {fileID: 85446206141347451, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 186663105}
-    - targetCorrespondingSourceObject: {fileID: -835911970095219382, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1232204533}
+    - targetCorrespondingSourceObject: {fileID: 8619132253101509913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 702727440}
-    - targetCorrespondingSourceObject: {fileID: -835911970095219382, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 719283226}
+    - targetCorrespondingSourceObject: {fileID: 8619132253101509913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 702727439}
-    - targetCorrespondingSourceObject: {fileID: -835911970095219382, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 719283225}
+    - targetCorrespondingSourceObject: {fileID: 8619132253101509913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 702727442}
-    - targetCorrespondingSourceObject: {fileID: 2030757585550441212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1405952975}
-    - targetCorrespondingSourceObject: {fileID: 2030757585550441212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1405952974}
-    - targetCorrespondingSourceObject: {fileID: 2030757585550441212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1405952977}
-    - targetCorrespondingSourceObject: {fileID: 7413181246407263010, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 485784767}
-    - targetCorrespondingSourceObject: {fileID: 7413181246407263010, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 485784766}
-    - targetCorrespondingSourceObject: {fileID: 7413181246407263010, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 485784769}
-    - targetCorrespondingSourceObject: {fileID: -8633683569350649252, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505911552}
-    - targetCorrespondingSourceObject: {fileID: -8633683569350649252, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505911551}
-    - targetCorrespondingSourceObject: {fileID: -8633683569350649252, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505911554}
+      addedObject: {fileID: 719283224}
     - targetCorrespondingSourceObject: {fileID: -8312214210423863395, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 665104054}
@@ -2995,24 +2773,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8312214210423863395, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 665104058}
-    - targetCorrespondingSourceObject: {fileID: -3643950428743668904, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -3864788932527412028, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 30508254}
-    - targetCorrespondingSourceObject: {fileID: -3643950428743668904, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 182193006}
+    - targetCorrespondingSourceObject: {fileID: -3864788932527412028, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 30508253}
-    - targetCorrespondingSourceObject: {fileID: -3643950428743668904, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 182193005}
+    - targetCorrespondingSourceObject: {fileID: -3864788932527412028, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 30508258}
-    - targetCorrespondingSourceObject: {fileID: 3667021932480372519, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 182193004}
+    - targetCorrespondingSourceObject: {fileID: 1702919695364034584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884573977}
-    - targetCorrespondingSourceObject: {fileID: 3667021932480372519, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1864278149}
+    - targetCorrespondingSourceObject: {fileID: 1702919695364034584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884573976}
-    - targetCorrespondingSourceObject: {fileID: 3667021932480372519, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      addedObject: {fileID: 1864278148}
+    - targetCorrespondingSourceObject: {fileID: 1702919695364034584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 884573981}
+      addedObject: {fileID: 1864278147}
     - targetCorrespondingSourceObject: {fileID: -7134670619089593000, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 275485938}
@@ -3031,64 +2809,78 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 879194628076841852, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002395442}
+    - targetCorrespondingSourceObject: {fileID: 7794047462421868504, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322834042}
+    - targetCorrespondingSourceObject: {fileID: 7794047462421868504, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322834041}
+    - targetCorrespondingSourceObject: {fileID: 7794047462421868504, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322834040}
   m_SourcePrefab: {fileID: 100100000, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!4 &498273744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
   m_PrefabInstance: {fileID: 498273743}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &505911549 stripped
+--- !u!1 &498273745 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -8633683569350649252, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7794047462421868504, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
   m_PrefabInstance: {fileID: 498273743}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &505911551
+--- !u!1 &498273746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1702919695364034584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3864788932527412028, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8619132253101509913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 85446206141347451, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -897387202316265584, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5670077719945139056, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6797203543777751232, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7598174893126331913, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &498273754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2001229866141040517, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+  m_PrefabInstance: {fileID: 498273743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &498273755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505911549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Iberian Plateau (Meseta Central) \u2013 Europe "
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &505911552
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505911549}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6327181646998318100, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &505911554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505911549}
+  m_GameObject: {fileID: 498273750}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
@@ -3109,7 +2901,115 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
+  displaySprite: {fileID: 21300000, guid: f659ab5c12d44e7419f88ae48e264cd1, type: 3}
+--- !u!114 &498273756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Mongolian Plateau- Asia
+  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
+    surrounding land.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.50980395, g: 0.41960788, b: 0.078431375, a: 1}
+--- !u!64 &498273757
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273750}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3248391434654559062, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+--- !u!114 &498273758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: 'Himalayas- Asia '
+  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
+    and a pointed or rounded peak.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+--- !u!64 &498273759
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 20872688263286297, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+--- !u!114 &498273760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 919132148117558830}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: 15975984329aa6a4ea3d951cb77d163c, type: 3}
 --- !u!1 &511077012
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,59 +3558,14 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: 1c6961c1ddc58b344bc1f416b0b49eb2, type: 3}
---- !u!1 &702727437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -835911970095219382, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &702727439
+  displaySprite: {fileID: 21300000, guid: 8cd2462cae5a07a4b9b0a9d86a0d039a, type: 3}
+--- !u!114 &719283224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702727437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: African Plateau
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &702727440
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702727437}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5144682774792206231, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &702727442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702727437}
+  m_GameObject: {fileID: 498273748}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
@@ -3731,7 +3586,47 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: d46948ed44f517543bc50bc6272a2107, type: 3}
+  displaySprite: {fileID: 21300000, guid: dbddacc1bff6e7c478fa9fd98f053632, type: 3}
+--- !u!114 &719283225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Tibetian Plateau- Asia
+  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
+    surrounding land.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.50980395, g: 0.41960788, b: 0.078431375, a: 1}
+--- !u!64 &719283226
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273748}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -49572281652103274, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &750602772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,152 +4294,6 @@ Transform:
   - {fileID: 818056829}
   m_Father: {fileID: 543450652588641428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &881777912 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7630431397747434753, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &881777914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881777912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Colorado Plateau \u2013 North America "
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &881777915
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881777912}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1476655743773320618, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &881777917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881777912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 519949184}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.02568688, y: 0.02568688, z: 0.02568688}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
---- !u!1 &884573974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3667021932480372519, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &884573976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884573974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: Hungarian Plain- Europe
-  informationText: <b>Plain</b> - A large, flat or gently sloping stretch of land
-    with green fields, rivers, and settlements
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0, g: 0.5019608, b: 0, a: 1}
---- !u!64 &884573977
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884573974}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4036780239824998354, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &884573981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884573974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 115739666}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.01866214, y: 0.01866214, z: 0.01866214}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
 --- !u!1 &934977577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4624,6 +4373,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934977577}
   m_CullTransparentMesh: 1
+--- !u!114 &966573961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: 'Himalayas- Asia '
+  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
+    and a pointed or rounded peak.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+--- !u!64 &966573962
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273752}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8231356074072368376, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
+--- !u!114 &966573963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 919132148117558830}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: 57a0ff9cd845be74aba473aa4bf7c326, type: 3}
 --- !u!1001 &967694845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5830,6 +5647,74 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1232204533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 519949184}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.02568688, y: 0.02568688, z: 0.02568688}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: d390e9e263f99a94d8dd02a2a9d6e35a, type: 3}
+--- !u!114 &1232204534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: Patagonian Plateau- South America
+  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
+    surrounding land.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.50980395, g: 0.41960788, b: 0.078431375, a: 1}
+--- !u!64 &1232204535
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8650116520082131415, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &1234614476
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,79 +6212,6 @@ Transform:
   - {fileID: 1175665941}
   m_Father: {fileID: 543450652588641428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1309739145 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6202371433348587863, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1309739147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309739145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: 'Mount Kilimanjaro- Africa '
-  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
-    and a pointed or rounded peak.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
---- !u!64 &1309739148
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309739145}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8252107023320954971, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &1309739151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309739145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 919132148117558830}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: d103ba192a1de984ab3363ac4e558165, type: 3}
 --- !u!1 &1348520246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6440,58 +6252,13 @@ Transform:
   - {fileID: 483643960}
   m_Father: {fileID: 2040428395}
   m_LocalEulerAnglesHint: {x: 0, y: 23.147, z: 0}
---- !u!1 &1405952972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2030757585550441212, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1405952974
+--- !u!114 &1399937504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405952972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "Eastern Plateau (Great Dividing Range) \u2013 Australia"
-  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
-    surrounding land.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.5294118, g: 0.4392157, b: 0.08627451, a: 1}
---- !u!64 &1405952975
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405952972}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 871945776696104343, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &1405952977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405952972}
+  m_GameObject: {fileID: 498273751}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
@@ -6512,7 +6279,47 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 0}
+  displaySprite: {fileID: 21300000, guid: a5e74bfec384213438d5bc1c868781dd, type: 3}
+--- !u!114 &1399937505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: East African Plateau- Asia
+  informationText: <b>Plateau</b> - A raised, flat-topped area standing above the
+    surrounding land.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.50980395, g: 0.41960788, b: 0.078431375, a: 1}
+--- !u!64 &1399937506
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273751}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8682328041068720043, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &1495948979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7242,6 +7049,74 @@ Transform:
   - {fileID: 460695087}
   m_Father: {fileID: 2040428395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1748165382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 919132148117558830}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: baa0b4a3b31923e499ff26c5e4caa32b, type: 3}
+--- !u!114 &1748165383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: 'Himalayas- Asia '
+  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
+    and a pointed or rounded peak.
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 1
+  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+--- !u!64 &1748165384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273754}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5865403126679852884, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &1796810473
 GameObject:
   m_ObjectHideFlags: 0
@@ -7404,7 +7279,7 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: 5e20e6d174c1f4145ba1e98472fe8912, type: 3}
+  displaySprite: {fileID: 21300000, guid: 386bf0ac3be63114e8deaf603eb22aaa, type: 3}
 --- !u!1 &1814306818
 GameObject:
   m_ObjectHideFlags: 0
@@ -7527,36 +7402,59 @@ Transform:
   - {fileID: 828072938}
   m_Father: {fileID: 543450652588641428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1858575165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1819390495612608631, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1858575167
+--- !u!114 &1864278147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858575165}
+  m_GameObject: {fileID: 498273746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 115739666}
+  rootModelToScaleDown: {fileID: 7743170530716268816}
+  backButton: {fileID: 285583809}
+  transitionDuration: 0.7
+  easeType: 18
+  customTargetScale: {x: 0.01866214, y: 0.01866214, z: 0.01866214}
+  globalInputManager: {fileID: 186617690}
+  globeRotator: {fileID: 4592769209374820429}
+  uiElementsToHide:
+  - {fileID: 1234614476}
+  - {fileID: 57861387}
+  - {fileID: 1506139303}
+  - {fileID: 1039984678}
+  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  canvasImageTarget: {fileID: 511077014}
+  displaySprite: {fileID: 21300000, guid: f425e55c360245a4cbce33c3be91d4c1, type: 3}
+--- !u!114 &1864278148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498273746}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: 'Karakoram Range- Asia '
-  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
-    and a pointed or rounded peak.
+  featureName: Indus Plain- Pakistan
+  informationText: <b>Plain</b> - A large, flat or gently sloping stretch of land
+    with green fields, rivers, and settlements
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
---- !u!64 &1858575168
+  initialColor: {r: 0, g: 0.5019608, b: 0, a: 1}
+--- !u!64 &1864278149
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858575165}
+  m_GameObject: {fileID: 498273746}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -7571,35 +7469,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -107480078027023779, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &1858575171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858575165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 919132148117558830}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: d103ba192a1de984ab3363ac4e558165, type: 3}
+  m_Mesh: {fileID: -7927117916852581448, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
 --- !u!1 &1956986844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,7 +7618,7 @@ MonoBehaviour:
   - {fileID: 1039984678}
   detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: fbecc396217597847a3c52c7195e037c, type: 3}
+  displaySprite: {fileID: 21300000, guid: 75e1c649652fac743b90b3fd52fa4b82, type: 3}
 --- !u!1 &2007481785
 GameObject:
   m_ObjectHideFlags: 0
@@ -7837,79 +7707,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007481785}
   m_Mesh: {fileID: -3142649664740890969, guid: d63a9ed726dbd7c4297e861ffe51c1da, type: 3}
---- !u!1 &2011354133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5464825679815751425, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
-  m_PrefabInstance: {fileID: 498273743}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2011354135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011354133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: 'Great Dividing Range Eastern- Australia '
-  informationText: <b>Mountain</b> - A tall, elevated landform with steep slopes
-    and a pointed or rounded peak.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
---- !u!64 &2011354136
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011354133}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3350036260658964788, guid: 126d8bb06c843a949b7b658265e765b1, type: 3}
---- !u!114 &2011354139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011354133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detailedModel: {fileID: 919132148117558830}
-  rootModelToScaleDown: {fileID: 7743170530716268816}
-  backButton: {fileID: 285583809}
-  transitionDuration: 0.7
-  easeType: 18
-  customTargetScale: {x: 0.005, y: 0.005, z: 0.005}
-  globalInputManager: {fileID: 186617690}
-  globeRotator: {fileID: 4592769209374820429}
-  uiElementsToHide:
-  - {fileID: 1234614476}
-  - {fileID: 57861387}
-  - {fileID: 1506139303}
-  - {fileID: 1039984678}
-  detailSkybox: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
-  canvasImageTarget: {fileID: 511077014}
-  displaySprite: {fileID: 21300000, guid: d103ba192a1de984ab3363ac4e558165, type: 3}
 --- !u!4 &2040428395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 433e018614923734fa68796384828af3, type: 3}
@@ -8243,13 +8040,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GlobeRotator
   rotationSpeed: 15
+  axisLockThreshold: 5
   zoomSpeed: 25
   minZoomDistance: 18
   maxZoomDistance: 50
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4
-  axisLockThreshold: 5
 --- !u!1001 &5469447093144910506
 PrefabInstance:
   m_ObjectHideFlags: 0

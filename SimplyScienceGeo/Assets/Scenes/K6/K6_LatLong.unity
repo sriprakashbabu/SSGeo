@@ -1296,6 +1296,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 186617693}
+  requireDoubleClick: 1
+  doubleClickThreshold: 0.3
+  doubleClickMaxMovePx: 20
 --- !u!114 &186617691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,7 +1675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0, g: 0, b: 0, a: 1}
+  targetColor: {r: 0.24705882, g: 0.27450982, b: 1, a: 1}
 --- !u!1 &333593864
 GameObject:
   m_ObjectHideFlags: 0
@@ -9872,13 +9875,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GlobeRotator
   rotationSpeed: 15
+  axisLockThreshold: 5
   zoomSpeed: 25
   minZoomDistance: 18
   maxZoomDistance: 50
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4
-  axisLockThreshold: 5
 --- !u!4 &1299700801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 27607c5c388298e4d99cc627442102f5, type: 3}
@@ -10595,7 +10598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0, g: 0, b: 0, a: 1}
+  targetColor: {r: 0.24705882, g: 0.27450982, b: 1, a: 1}
 --- !u!1 &1400844516
 GameObject:
   m_ObjectHideFlags: 0
@@ -12645,7 +12648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globeRotator: {fileID: 1299700800}
-  targetRotation: {x: 0, y: -5, z: 0}
+  targetRotation: {x: 0, y: -175, z: 0}
   targetZoom: 22
   transitionDuration: 1.5
   easeType: 16
@@ -13837,7 +13840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globeRotator: {fileID: 1299700800}
-  targetRotation: {x: 0, y: -175, z: 0}
+  targetRotation: {x: 0, y: 175, z: 0}
   targetZoom: 22
   transitionDuration: 1.5
   easeType: 16

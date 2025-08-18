@@ -19,6 +19,11 @@ public class GlobeRotator : MonoBehaviour
     [SerializeField] private float resetDuration = 0.5f;
     [SerializeField] private LeanTweenType resetEaseType = LeanTweenType.easeOutExpo;
 
+    // --- NEW: Vertical clamp settings
+    [Header("Vertical Limits")]
+    [SerializeField] private float minVerticalAngle = -85f; // Antarctica limit
+    [SerializeField] private float maxVerticalAngle = 85f; // Arctic limit
+
     private SSGeo input;
     private bool isDragging;
     private Vector2 prevPointerPos;
@@ -28,6 +33,9 @@ public class GlobeRotator : MonoBehaviour
 
     private enum AxisLock { None, Horizontal, Vertical }
     private AxisLock lockedAxis = AxisLock.None;
+
+    // --- NEW: Track current vertical tilt (around world X)
+    private float currentVerticalAngle = 0f;
 
     void OnEnable()
     {
@@ -58,6 +66,8 @@ public class GlobeRotator : MonoBehaviour
         yield return new WaitForEndOfFrame();
         initialRotation = transform.rotation;
         initialCamPos = mainCamera.transform.position;
+        // --- NEW: Initialize vertical angle from current rotation
+        currentVerticalAngle = NormalizeAngle(transform.rotation.eulerAngles.x);
         inited = true;
     }
 
@@ -93,9 +103,19 @@ public class GlobeRotator : MonoBehaviour
                 lockedAxis = Mathf.Abs(delta.x) > Mathf.Abs(delta.y) ? AxisLock.Horizontal : AxisLock.Vertical;
 
             if (lockedAxis == AxisLock.Horizontal)
+            {
                 transform.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.World);
+            }
             else if (lockedAxis == AxisLock.Vertical)
-                transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+            {
+                // --- NEW: Clamp vertical rotation
+                float deltaAngle = delta.y * rotationSpeed * Time.deltaTime;
+                float newAngle = Mathf.Clamp(currentVerticalAngle + deltaAngle, minVerticalAngle, maxVerticalAngle);
+                float appliedDelta = newAngle - currentVerticalAngle;
+
+                transform.Rotate(Vector3.right, appliedDelta, Space.World);
+                currentVerticalAngle = newAngle;
+            }
 
             prevPointerPos = cur;
         }
@@ -147,7 +167,14 @@ public class GlobeRotator : MonoBehaviour
         if (!inited) return;
         isDragging = false;
         lockedAxis = AxisLock.None;
-        LeanTween.rotate(gameObject, initialRotation.eulerAngles, resetDuration).setEase(resetEaseType);
+        // --- UPDATED: Keep currentVerticalAngle in sync during tween
+        LeanTween.rotate(gameObject, initialRotation.eulerAngles, resetDuration)
+            .setEase(resetEaseType)
+            .setOnUpdate((Vector3 val) =>
+            {
+                // transform rotation is already handled by LT; we just mirror angle
+                currentVerticalAngle = NormalizeAngle(val.x);
+            });
         LeanTween.move(mainCamera.gameObject, initialCamPos, resetDuration).setEase(resetEaseType);
     }
 
@@ -158,12 +185,26 @@ public class GlobeRotator : MonoBehaviour
         LeanTween.cancel(gameObject);
         LeanTween.cancel(mainCamera.gameObject);
 
+        // --- UPDATED: also update currentVerticalAngle while tweening
         LeanTween.value(gameObject, transform.rotation.eulerAngles, eulerRotation, duration)
                  .setEase(ease)
-                 .setOnUpdate((Vector3 val) => transform.rotation = Quaternion.Euler(val));
+                 .setOnUpdate((Vector3 val) =>
+                 {
+                     transform.rotation = Quaternion.Euler(val);
+                     currentVerticalAngle = NormalizeAngle(val.x);
+                 });
 
         Vector3 dir = (mainCamera.transform.position - transform.position).normalized;
         Vector3 targetPos = transform.position + dir * distance;
         LeanTween.move(mainCamera.gameObject, targetPos, duration).setEase(ease);
+    }
+
+    // --- NEW: angle normalizer to [-180, 180]
+    private float NormalizeAngle(float degrees)
+    {
+        degrees %= 360f;
+        if (degrees > 180f) degrees -= 360f;
+        if (degrees < -180f) degrees += 360f;
+        return degrees;
     }
 }
