@@ -2959,7 +2959,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &498273759
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3236,7 +3236,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &592009809
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4390,7 +4390,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &966573962
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6965,7 +6965,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &1673376835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7094,7 +7094,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &1748165384
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7229,7 +7229,7 @@ MonoBehaviour:
     and a pointed or rounded peak.
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 1
-  initialColor: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  initialColor: {r: 0.8742138, g: 0.38639715, b: 0.063229226, a: 1}
 --- !u!64 &1802249830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7521,7 +7521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.56078434, g: 0.32941177, b: 0.09411765, a: 1}
+  m_Color: {r: 0.8745098, g: 0.3882353, b: 0.06666667, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

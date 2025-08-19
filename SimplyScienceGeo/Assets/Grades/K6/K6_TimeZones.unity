@@ -119,19 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &2615090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
 --- !u!1 &19032870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8747478164652508231, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -176,151 +163,78 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.6117647, g: 0.8, b: 0.39607844, a: 1}
---- !u!114 &34077287
+--- !u!1 &29753111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4306553717554552172, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &29753113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547761}
+  m_GameObject: {fileID: 29753111}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &54842279
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &107025123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2345520555075772853, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &107025125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "0\xB0W \u2013 15\xB0W"
-  informationText: 'Covers UK, Ireland and Portugal area. Examples: <b>London</b>,
-    <b>Dublin</b>, Lisbon.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &54842280
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547773}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2435248023147219894, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &63394491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "150\xB0E \u2013 165\xB0E"
-  informationText: 'Covers Far East Russia and Pacific islands. Examples: <b>Magadan</b>,
-    <b>Honiara</b>.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &63394492
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547776}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7602771729697636033, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &95852688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547753}
+  m_GameObject: {fileID: 107025123}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &124029451
+  targetColor: {r: 0, g: 0.5254774, b: 1, a: 1}
+--- !u!1 &114192152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -385643106154479402, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &114192154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547764}
+  m_GameObject: {fileID: 114192152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "135\xB0W \u2013 150\xB0W"
-  informationText: 'Covers Alaska and Yukon. Examples: <b>Anchorage</b>, <b>Whitehorse</b>.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &124029452
-MeshCollider:
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &118699104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3058804297553065924, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &118699106
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547764}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_GameObject: {fileID: 118699104}
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8183190835182253678, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0, g: 0.5254774, b: 1, a: 1}
 --- !u!1 &156265481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2668544199494236648, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -365,19 +279,6 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.16862746, g: 0.827451, b: 0.50980395, a: 1}
---- !u!114 &159921174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
 --- !u!1 &174909888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8370166937429012066, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -553,7 +454,7 @@ MonoBehaviour:
   countryTimezonesToggle: {fileID: 1474291740}
   longitudeTimezonesToggle: {fileID: 1832913400}
   countryTimezonesObject: {fileID: 442530463}
-  longitudeTimezonesObject: {fileID: 1593547735}
+  longitudeTimezonesObject: {fileID: 575237569}
   countryTimezoneTitle: Countries & Timezones
   countryTimezoneBody: Double Click on a country to see its timezone information.
   longitudeTimezoneTitle: Longitudes & Timezones
@@ -570,67 +471,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a9ca9a4bbb00943925f15b686a1dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &195736741
+--- !u!1 &190651435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6090934632140159850, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190651437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547747}
+  m_GameObject: {fileID: 190651435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "15\xB0W \u2013 0\xB0W"
+  informationText: 'Covers UK, Ireland and Portugal area. Examples: <b>Dublin</b>,
+    <b>Belfast</b>, Lisbon.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &190651438
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190651435}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8477047393125269340, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &224626225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8031288215877494955, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &224626227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224626225}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &196663924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &197932534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d0c1e6b6f868e42b3073107a7ae0a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 15
-  axisLockThreshold: 5
-  zoomSpeed: 25
-  minZoomDistance: 5
-  maxZoomDistance: 35
-  mainCamera: {fileID: 258175389}
-  resetDuration: 0.5
-  resetEaseType: 18
-  minVerticalAngle: -85
-  maxVerticalAngle: 85
---- !u!114 &206923616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &248652709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7757988923405042656, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -857,46 +760,42 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &329601285
+--- !u!1 &264049606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6898134052718269499, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &264049608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547768}
+  m_GameObject: {fileID: 264049606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "75\xB0W \u2013 90\xB0W"
-  informationText: 'Covers Eastern North America and Cuba. Examples: <b>Washington,
-    D.C.</b>, <b>Toronto</b>, Havana.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &329601286
-MeshCollider:
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &288581940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -672012026372153439, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &288581942
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547768}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_GameObject: {fileID: 288581940}
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5755882357447507444, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &377672537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4440620447195840108, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -986,139 +885,24 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.16862746, g: 0.7647059, b: 0.827451, a: 1}
---- !u!114 &397002013
+--- !u!1 &436993351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 91560392690326828, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &436993353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "120\xB0E \u2013 135\xB0E"
-  informationText: 'Covers Eastern China, Taiwan and the Philippines. Examples: <b>Shanghai</b>,
-    <b>Taipei</b>, Manila.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &397002014
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1332840186805488576, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &406878552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "75\xB0E \u2013 90\xB0E"
-  informationText: 'Covers Northern India. Examples: <b>New Delhi</b>, <b>Jaipur</b>,
-    Kolkata.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &406878553
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547781}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8877828264372066947, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &410331863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "180\xB0E \u2013 180\xB0E"
-  informationText: "Covers Around the 180\xB0 meridian (Pacific Ocean). Examples:
-    <b>Dateline region</b>, <b>Outer Pacific islands</b>."
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &410331864
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547774}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6241701189758112591, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &437563140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547736}
+  m_GameObject: {fileID: 436993351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &442530463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -1234,31 +1018,36 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.21176471, g: 0.827451, b: 0.16862746, a: 1}
---- !u!114 &518865166
+--- !u!1 &555002354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4131733328126185878, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &555002356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547771}
+  m_GameObject: {fileID: 555002354}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "30\xB0W \u2013 45\xB0W"
-  informationText: 'Covers North Atlantic and Greenland coast. Examples: <b>East
-    Greenland</b>, <b>North Atlantic Ocean</b>.'
+  featureName: "135\xB0E \u2013 150\xB0E"
+  informationText: 'Covers Japan and far east China. Examples: <b>Tokyo</b>, <b>Osaka</b>,
+    Sapporo.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &518865167
+--- !u!64 &555002357
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547771}
+  m_GameObject: {fileID: 555002354}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1273,7 +1062,34 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -5911045458416700037, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_Mesh: {fileID: -1440394151326938048, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &575237569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &575237572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575237569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d0c1e6b6f868e42b3073107a7ae0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobeRotator
+  rotationSpeed: 15
+  axisLockThreshold: 5
+  zoomSpeed: 25
+  minZoomDistance: 18
+  maxZoomDistance: 50
+  mainCamera: {fileID: 258175389}
+  resetDuration: 1
+  resetEaseType: 4
+  minVerticalAngle: -90
+  maxVerticalAngle: 90
 --- !u!1 &583681256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1349014750785137332, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -1318,6 +1134,51 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.49411765, g: 0.34117648, b: 0.7607843, a: 1}
+--- !u!1 &594226263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6014596573746384860, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &594226265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594226263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "30\xB0W \u2013 15\xB0W"
+  informationText: 'Covers Mid-Atlantic islands. Examples: <b>Ponta Delgada (Azores)</b>,
+    <b>Praia (Cape Verde)</b>.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &594226266
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594226263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3702498515033432449, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &629213748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8346801205795595098, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
@@ -1328,99 +1189,87 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4765110098989859879, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
   m_PrefabInstance: {fileID: 861046634}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &649814159
+--- !u!1 &632386890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8051071813255798277, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &632386892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "135\xB0E \u2013 150\xB0E"
-  informationText: 'Covers Japan and Papua New Guinea. Examples: <b>Tokyo</b>, <b>Osaka</b>,
-    Port Moresby.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &649814160
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547777}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2645720822426078454, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &670631599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "15\xB0W \u2013 30\xB0W"
-  informationText: 'Covers Mid-Atlantic islands. Examples: <b>Ponta Delgada (Azores)</b>,
-    <b>Praia (Cape Verde)</b>.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &670631600
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547772}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2804689224136036844, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &676880866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547759}
+  m_GameObject: {fileID: 632386890}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &646798979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5809465452806147267, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &646798981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646798979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "165\xB0W \u2013 150\xB0W"
+  informationText: 'Covers Samoa and nearby Pacific islands. Examples: <b>Apia</b>,
+    <b>Pago Pago</b>, Niue.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &646798982
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646798979}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1780205118221685696, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &679170478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6627214970823877816, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &679170480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679170478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &690114762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8388724598060511448, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -1465,32 +1314,51 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.7019608, g: 0.6156863, b: 0.85882354, a: 1}
---- !u!114 &694913284
+--- !u!1 &733190315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5602453852050544050, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &733190317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547744}
+  m_GameObject: {fileID: 733190315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &749546796
-MonoBehaviour:
+  featureName: "90\xB0W \u2013 75\xB0W"
+  informationText: 'Covers Central North America and Mexico. Examples: <b>Mexico
+    City</b>, <b>Winnipeg</b>, Guatemala City.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &733190318
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547746}
+  m_GameObject: {fileID: 733190315}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4647658931410293541, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &752816142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,44 +1406,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ToggleGroup
   m_AllowSwitchOff: 0
---- !u!114 &776027168
+--- !u!1 &768506495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9049905329535150576, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &768506497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547743}
+  m_GameObject: {fileID: 768506495}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &808624602
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &787759770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1694774663959380504, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &787759772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547767}
+  m_GameObject: {fileID: 787759770}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "90\xB0W \u2013 105\xB0W"
-  informationText: 'Covers Central North America and Mexico. Examples: <b>Mexico
-    City</b>, <b>Winnipeg</b>, Guatemala City.'
+  featureName: "165\xB0E \u2013 180\xB0E"
+  informationText: 'Covers Fiji and nearby Pacific. Examples: <b>Suva</b>, <b>Tarawa</b>.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &808624603
+--- !u!64 &787759773
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547767}
+  m_GameObject: {fileID: 787759770}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1590,45 +1467,37 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -1545096441558314629, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &856065377
+  m_Mesh: {fileID: -5963020068039527531, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &807943060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3077057773054497059, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &807943062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &859416050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547766}
+  m_GameObject: {fileID: 807943060}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "105\xB0W \u2013 120\xB0W"
-  informationText: 'Covers Western USA and Canada (mountain/desert). Examples: <b>Denver</b>,
-    <b>Phoenix</b>, Calgary.'
+  featureName: "120\xB0W \u2013 105\xB0W"
+  informationText: 'Covers Pacific coast of USA and Canada. Examples: <b>Vancouver</b>,
+    <b>Seattle</b>, San Francisco.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &859416051
+--- !u!64 &807943063
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547766}
+  m_GameObject: {fileID: 807943060}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1643,20 +1512,97 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 3117770283622624415, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &860993179
+  m_Mesh: {fileID: 8293854546198766288, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &833322780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5916549399672667530, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &833322782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547750}
+  m_GameObject: {fileID: 833322780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  featureName: "45\xB0E \u2013 60\xB0E"
+  informationText: 'Covers The Middle East and the Caucasus. Examples: <b>Riyadh</b>,
+    <b>Baghdad</b>, Tehran, Baku.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &833322783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833322780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -88174464424404084, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &840950124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9044974596036092536, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &840950126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840950124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "60\xB0W \u2013 45\xB0W"
+  informationText: 'Covers Caribbean and northern South America. Examples: <b>San
+    Juan</b>, <b>Caracas</b>, Santo Domingo.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &840950127
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840950124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8916396702558057194, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1001 &861046634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2811,6 +2757,51 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 1, g: 0.8352941, b: 0.30980393, a: 1}
+--- !u!1 &933286464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3158128523718444369, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &933286466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933286464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "120\xB0E \u2013 135\xB0E"
+  informationText: 'Covers Eastern China, Taiwan, Philippines. Examples: <b>Shanghai</b>,
+    <b>Taipei</b>, Manila.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &933286467
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933286464}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 724165831808259843, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &942127969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6805503307683843831, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -2974,84 +2965,54 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.827451, g: 0.80784315, b: 0.16862746, a: 1}
---- !u!114 &982355010
+--- !u!1 &953123321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1581847869103407935, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &953123323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "120\xB0W \u2013 135\xB0W"
-  informationText: 'Covers Pacific coast of USA and Canada. Examples: <b>Vancouver</b>,
-    <b>Seattle</b>, San Francisco.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &982355011
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547765}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1684836101343526414, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &1005388755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547754}
+  m_GameObject: {fileID: 953123321}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1005853659
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &994883260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9005553609948590226, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &994883262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547770}
+  m_GameObject: {fileID: 994883260}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "45\xB0W \u2013 60\xB0W"
-  informationText: 'Covers Atlantic near South America/Greenland. Examples: <b>Greenland
-    coast</b>, <b>Atlantic Ocean</b>.'
+  featureName: "105\xB0E \u2013 120\xB0E"
+  informationText: 'Covers Thailand, Vietnam, and south China. Examples: <b>Bangkok</b>,
+    <b>Hanoi</b>, Ho Chi Minh City.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1005853660
+--- !u!64 &994883263
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547770}
+  m_GameObject: {fileID: 994883260}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3066,7 +3027,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 116375405585097376, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_Mesh: {fileID: -918826229971980049, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &1012628218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -737038976638077728, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -3111,46 +3072,6 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.5019608, g: 0.87058824, b: 0.91764706, a: 1}
---- !u!114 &1025938274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "165\xB0W \u2013 180\xB0W"
-  informationText: 'Covers Samoa and nearby Pacific islands. Examples: <b>Apia</b>,
-    <b>Pago Pago</b>, Niue.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1025938275
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547762}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6355251281767796770, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
 --- !u!114 &1028272389 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8286332039091681987, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
@@ -3386,46 +3307,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050023141}
   m_CullTransparentMesh: 1
---- !u!114 &1092142688
+--- !u!1 &1080118829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 184336609582526914, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080118831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547783}
+  m_GameObject: {fileID: 1080118829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "45\xB0E \u2013 60\xB0E"
-  informationText: 'Covers The Middle East and the Caucasus. Examples: <b>Tehran</b>,
-    <b>Dubai</b>, Baku.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1092142689
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547783}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -625845043201097523, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!114 &1108987476 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 860508538899409377, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
@@ -3437,46 +3336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!114 &1167859887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "60\xB0W \u2013 75\xB0W"
-  informationText: 'Covers Caribbean and northern South America. Examples: <b>San
-    Juan</b>, <b>Caracas</b>, Halifax.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1167859888
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547769}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1521811948992691304, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
 --- !u!1 &1173861995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,6 +3412,69 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1202331336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1867589940755679030, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202331338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202331336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "0\xB0E \u2013 15\xB0E"
+  informationText: 'Covers Western Europe and North Africa. Examples: <b>London</b>,
+    <b>Paris</b>, Madrid, Casablanca.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1202331339
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202331336}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1487660275974315147, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1216807005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1254565338583240109, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216807007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216807005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &1234614476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,7 +3582,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 197932534}
+      - m_Target: {fileID: 575237572}
         m_TargetAssemblyTypeName: GlobeRotator, Assembly-CSharp
         m_MethodName: ResetRotation
         m_Mode: 1
@@ -3955,44 +3877,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293764554}
   m_CullTransparentMesh: 1
---- !u!114 &1401390346
+--- !u!1 &1321703154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9196791777262235404, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321703156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1433120777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547785}
+  m_GameObject: {fileID: 1321703154}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: "15\xB0E \u2013 30\xB0E"
-  informationText: 'Covers Central & Eastern Europe. Examples: <b>Athens</b>, <b>Budapest</b>,
-    Warsaw, Prague.'
+  informationText: 'Covers Central & Eastern Europe. Examples: <b>Berlin</b>, <b>Rome</b>,
+    Vienna, Prague.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1433120778
+--- !u!64 &1321703157
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547785}
+  m_GameObject: {fileID: 1321703154}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4007,32 +3921,37 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 7014048213356145527, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &1452978773
+  m_Mesh: {fileID: 2620727622991880219, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1363152704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4478159421998754466, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1363152706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547763}
+  m_GameObject: {fileID: 1363152704}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "150\xB0W \u2013 165\xB0W"
-  informationText: 'Covers Aleutian Islands and open Pacific. Examples: <b>Adak</b>,
-    <b>Aleutian Islands</b>.'
+  featureName: "75\xB0W \u2013 60\xB0W"
+  informationText: 'Covers Eastern North America and Cuba. Examples: <b>New York</b>,
+    <b>Toronto</b>, Havana.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1452978774
+--- !u!64 &1363152707
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547763}
+  m_GameObject: {fileID: 1363152704}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4047,20 +3966,115 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1218695147102456856, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &1470101765
+  m_Mesh: {fileID: -5754440513392478643, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1429180228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1663017568611748779, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1429180230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547755}
+  m_GameObject: {fileID: 1429180228}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1443017373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4685753155167424024, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1443017375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443017373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "150\xB0W \u2013 135\xB0W"
+  informationText: 'Covers Aleutian Islands and open Pacific. Examples: <b>Adak</b>,
+    <b>Aleutian Islands</b>.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1443017376
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443017373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7593558050246388777, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1468540253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1776483937017692630, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1468540255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468540253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "180\xB0W \u2013 165\xB0W"
+  informationText: "Covers Around the 180\xB0 line (Pacific Ocean). Examples: <b>International
+    Date Line</b>, <b>Outer Pacific islands</b>."
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1468540256
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468540253}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4148855414670008170, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &1474291738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,31 +4161,54 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
---- !u!114 &1558774227
+--- !u!1 &1482950227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7222586851560035846, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1482950229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547779}
+  m_GameObject: {fileID: 1482950227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1515216853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6203529800061108751, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1515216855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515216853}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "105\xB0E \u2013 120\xB0E"
-  informationText: 'Covers Vietnam and southern China. Examples: <b>Hanoi</b>, <b>Ho
-    Chi Minh City</b>, Hong Kong, Jakarta.'
+  featureName: "90\xB0E \u2013 105\xB0E"
+  informationText: 'Covers Bangladesh, Myanmar, and west Thailand. Examples: <b>Dhaka</b>,
+    <b>Yangon</b>, Naypyidaw.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1558774228
+--- !u!64 &1515216856
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547779}
+  m_GameObject: {fileID: 1515216853}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4186,7 +4223,52 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2980733587153917629, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_Mesh: {fileID: -2840464564055085128, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1532082338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6537167448913767114, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1532082340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532082338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  featureName: "45\xB0W \u2013 30\xB0W"
+  informationText: 'Covers North Atlantic and Greenland coast. Examples: <b>Nuuk</b>,
+    <b>Tasiilaq</b>.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1532082341
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532082338}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3152363277195196210, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &1569798245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,991 +4373,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1593547734
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8899714425566264112, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8899714425566264112, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -8799816984492884107, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8799816984492884107, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.8187907
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9297643
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 13.178931
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7870306014477431509, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7870306014477431509, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -7558198122704907954, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7558198122704907954, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -6994874892477054653, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6994874892477054653, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -5877610581699534546, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5877610581699534546, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -5862280651883924710, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5862280651883924710, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -5819344394461363227, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5819344394461363227, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -5489420880617096139, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5489420880617096139, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -4246854446803906632, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4246854446803906632, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -4192573416836190677, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4192573416836190677, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -3972897670309009412, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3972897670309009412, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -3881211753197022766, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3881211753197022766, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: -3344518130304149617, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3344518130304149617, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -2620391005831870733, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2620391005831870733, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -1516720406515937676, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1516720406515937676, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -1434770497595020686, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1434770497595020686, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -1420660210900162424, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1420660210900162424, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -1211803096117689703, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1211803096117689703, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -780702617404458483, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -780702617404458483, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -591248814669046924, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -591248814669046924, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -307178936942137424, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -307178936942137424, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: -142296292087073266, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -142296292087073266, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 152717844237090686, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 152717844237090686, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 311237769827118808, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 311237769827118808, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 625495034470630891, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 625495034470630891, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 818814841633610334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 818814841633610334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 919132149155446097, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_Name
-      value: longitudes_latitudes_time_zones_V02
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047052253067294369, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047052253067294369, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 1607044199284254564, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607044199284254564, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 1658070710904617616, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658070710904617616, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 1831404574454659909, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1831404574454659909, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 2072231399254337840, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2072231399254337840, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 2200941440630003715, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2200941440630003715, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 2392243554735693321, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2392243554735693321, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 2416141525665557458, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2416141525665557458, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 2596034832692501133, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2596034832692501133, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 2812684330074039126, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2812684330074039126, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 3204445585042681437, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3204445585042681437, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 3585071708287096698, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3585071708287096698, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 3687391058895591126, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687391058895591126, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 4888756317435936668, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4888756317435936668, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 4984568794987327696, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4984568794987327696, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 5229341780633267815, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229341780633267815, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 5433589754934515704, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5433589754934515704, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 5456906814502560289, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5456906814502560289, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 6896778381293909567, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6896778381293909567, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    - target: {fileID: 7512654352665933117, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7512654352665933117, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 7755052211054680405, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755052211054680405, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 7804304017354314334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7804304017354314334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 7922039463670081181, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7922039463670081181, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
-    - target: {fileID: 8703186225206580019, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703186225206580019, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 197932534}
-    - targetCorrespondingSourceObject: {fileID: -4399840089120262723, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547792}
-    - targetCorrespondingSourceObject: {fileID: -4399840089120262723, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547791}
-    - targetCorrespondingSourceObject: {fileID: -8009067095850993756, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1433120778}
-    - targetCorrespondingSourceObject: {fileID: -8009067095850993756, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1433120777}
-    - targetCorrespondingSourceObject: {fileID: 6436846802269250446, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547790}
-    - targetCorrespondingSourceObject: {fileID: 6436846802269250446, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547789}
-    - targetCorrespondingSourceObject: {fileID: -988886294400434036, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1092142689}
-    - targetCorrespondingSourceObject: {fileID: -988886294400434036, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1092142688}
-    - targetCorrespondingSourceObject: {fileID: 6086010335135179145, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547788}
-    - targetCorrespondingSourceObject: {fileID: 6086010335135179145, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1593547787}
-    - targetCorrespondingSourceObject: {fileID: -4976453031997597768, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 406878553}
-    - targetCorrespondingSourceObject: {fileID: -4976453031997597768, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 406878552}
-    - targetCorrespondingSourceObject: {fileID: -4578679109317015777, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1703068288}
-    - targetCorrespondingSourceObject: {fileID: -4578679109317015777, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1703068287}
-    - targetCorrespondingSourceObject: {fileID: 2607814721337485671, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1558774228}
-    - targetCorrespondingSourceObject: {fileID: 2607814721337485671, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1558774227}
-    - targetCorrespondingSourceObject: {fileID: 8963738197226949365, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 397002014}
-    - targetCorrespondingSourceObject: {fileID: 8963738197226949365, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 397002013}
-    - targetCorrespondingSourceObject: {fileID: -5268748327904826743, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 649814160}
-    - targetCorrespondingSourceObject: {fileID: -5268748327904826743, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 649814159}
-    - targetCorrespondingSourceObject: {fileID: 516591072105844347, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 63394492}
-    - targetCorrespondingSourceObject: {fileID: 516591072105844347, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 63394491}
-    - targetCorrespondingSourceObject: {fileID: 6033524395000665334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1818553831}
-    - targetCorrespondingSourceObject: {fileID: 6033524395000665334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1818553830}
-    - targetCorrespondingSourceObject: {fileID: 3208307089883872595, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 410331864}
-    - targetCorrespondingSourceObject: {fileID: 3208307089883872595, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 410331863}
-    - targetCorrespondingSourceObject: {fileID: -8971608186003391428, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 54842280}
-    - targetCorrespondingSourceObject: {fileID: -8971608186003391428, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 54842279}
-    - targetCorrespondingSourceObject: {fileID: -5927792061786974132, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 670631600}
-    - targetCorrespondingSourceObject: {fileID: -5927792061786974132, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 670631599}
-    - targetCorrespondingSourceObject: {fileID: 2744350921382180165, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 518865167}
-    - targetCorrespondingSourceObject: {fileID: 2744350921382180165, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 518865166}
-    - targetCorrespondingSourceObject: {fileID: 1781114914934621321, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1005853660}
-    - targetCorrespondingSourceObject: {fileID: 1781114914934621321, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1005853659}
-    - targetCorrespondingSourceObject: {fileID: -1502362402732574138, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1167859888}
-    - targetCorrespondingSourceObject: {fileID: -1502362402732574138, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1167859887}
-    - targetCorrespondingSourceObject: {fileID: 2311673896816346152, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 329601286}
-    - targetCorrespondingSourceObject: {fileID: 2311673896816346152, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 329601285}
-    - targetCorrespondingSourceObject: {fileID: 4227509854543441203, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 808624603}
-    - targetCorrespondingSourceObject: {fileID: 4227509854543441203, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 808624602}
-    - targetCorrespondingSourceObject: {fileID: 4628126168641069610, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 859416051}
-    - targetCorrespondingSourceObject: {fileID: 4628126168641069610, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 859416050}
-    - targetCorrespondingSourceObject: {fileID: 7195072488001277438, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 982355011}
-    - targetCorrespondingSourceObject: {fileID: 7195072488001277438, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 982355010}
-    - targetCorrespondingSourceObject: {fileID: 5363842258993043933, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 124029452}
-    - targetCorrespondingSourceObject: {fileID: 5363842258993043933, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 124029451}
-    - targetCorrespondingSourceObject: {fileID: 8884685002376979233, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1452978774}
-    - targetCorrespondingSourceObject: {fileID: 8884685002376979233, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1452978773}
-    - targetCorrespondingSourceObject: {fileID: 13151049176329213, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1025938275}
-    - targetCorrespondingSourceObject: {fileID: 13151049176329213, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1025938274}
-    - targetCorrespondingSourceObject: {fileID: 2387656289114011475, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 34077287}
-    - targetCorrespondingSourceObject: {fileID: -6812646726253147589, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1841794304}
-    - targetCorrespondingSourceObject: {fileID: 4006205955368067843, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 676880866}
-    - targetCorrespondingSourceObject: {fileID: -7553243117339987144, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2615090}
-    - targetCorrespondingSourceObject: {fileID: 3768410740334765737, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1401390346}
-    - targetCorrespondingSourceObject: {fileID: -256654680711007008, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1657070554}
-    - targetCorrespondingSourceObject: {fileID: -4849525850858611932, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1470101765}
-    - targetCorrespondingSourceObject: {fileID: -3003705024034909765, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1005388755}
-    - targetCorrespondingSourceObject: {fileID: 1214944517281648043, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 95852688}
-    - targetCorrespondingSourceObject: {fileID: 3471054382180181213, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1914240706}
-    - targetCorrespondingSourceObject: {fileID: -8822901132836619710, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1837114312}
-    - targetCorrespondingSourceObject: {fileID: -3829119404718201892, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 860993179}
-    - targetCorrespondingSourceObject: {fileID: 862536797529847018, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1993355552}
-    - targetCorrespondingSourceObject: {fileID: -567435573695097051, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2122067837}
-    - targetCorrespondingSourceObject: {fileID: -4909525797792834004, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 195736741}
-    - targetCorrespondingSourceObject: {fileID: 9094556241492491976, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 749546796}
-    - targetCorrespondingSourceObject: {fileID: 5693434317838864650, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1691192615}
-    - targetCorrespondingSourceObject: {fileID: 763933100404666178, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 694913284}
-    - targetCorrespondingSourceObject: {fileID: -1895372494756391588, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 776027168}
-    - targetCorrespondingSourceObject: {fileID: -2759436829407835378, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 159921174}
-    - targetCorrespondingSourceObject: {fileID: -4431748895360052283, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 196663924}
-    - targetCorrespondingSourceObject: {fileID: 5692650466370588272, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 856065377}
-    - targetCorrespondingSourceObject: {fileID: -7988227798510958891, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 206923616}
-    - targetCorrespondingSourceObject: {fileID: 7813962874102925330, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1725734344}
-    - targetCorrespondingSourceObject: {fileID: -6661367519774936022, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1694207914}
-    - targetCorrespondingSourceObject: {fileID: -6359489274119067003, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 437563140}
-  m_SourcePrefab: {fileID: 100100000, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!1 &1593547735 stripped
+--- !u!1 &1578051156 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
+  m_CorrespondingSourceObject: {fileID: 2333943828164498828, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547736 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6359489274119067003, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547737 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6661367519774936022, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547738 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7813962874102925330, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7988227798510958891, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547740 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5692650466370588272, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4431748895360052283, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2759436829407835378, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1895372494756391588, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547744 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 763933100404666178, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547745 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5693434317838864650, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9094556241492491976, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4909525797792834004, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547748 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -567435573695097051, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547749 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 862536797529847018, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3829119404718201892, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547751 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8822901132836619710, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547752 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3471054382180181213, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547753 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1214944517281648043, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3003705024034909765, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4849525850858611932, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -256654680711007008, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547757 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3768410740334765737, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7553243117339987144, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4006205955368067843, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6812646726253147589, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2387656289114011475, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547762 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 13151049176329213, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547763 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8884685002376979233, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5363842258993043933, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7195072488001277438, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4628126168641069610, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547767 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4227509854543441203, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547768 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2311673896816346152, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1502362402732574138, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547770 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1781114914934621321, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547771 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2744350921382180165, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5927792061786974132, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8971608186003391428, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547774 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3208307089883872595, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6033524395000665334, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 516591072105844347, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5268748327904826743, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8963738197226949365, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547779 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2607814721337485671, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4578679109317015777, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4976453031997597768, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547782 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6086010335135179145, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -988886294400434036, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6436846802269250446, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8009067095850993756, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1593547786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4399840089120262723, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
-  m_PrefabInstance: {fileID: 1593547734}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1593547787
+--- !u!114 &1578051158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547782}
+  m_GameObject: {fileID: 1578051156}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "60\xB0E \u2013 75\xB0E"
-  informationText: 'Covers Central Asia (west). Examples: <b>Karachi</b>, <b>Tashkent</b>,
-    Yekaterinburg.'
+  featureName: "75\xB0E \u2013 90\xB0E"
+  informationText: 'Covers Northern India and Himalaya. Examples: <b>New Delhi</b>,
+    <b>Jaipur</b>, Kathmandu.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1593547788
+--- !u!64 &1578051159
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547782}
+  m_GameObject: {fileID: 1578051156}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5290,32 +4417,55 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -1308093661065027580, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &1593547789
+  m_Mesh: {fileID: -2948297567078480128, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1607211314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 335409473870149147, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1607211316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547784}
+  m_GameObject: {fileID: 1607211314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1631787230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7580787854456621521, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631787232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631787230}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "30\xB0E \u2013 45\xB0E"
-  informationText: 'Covers Northeast Africa and the Middle East. Examples: <b>Cairo</b>,
-    <b>Nairobi</b>, Addis Ababa.'
+  featureName: "135\xB0W \u2013 120\xB0W"
+  informationText: 'Covers Alaska and Yukon. Examples: <b>Anchorage</b>, <b>Fairbanks</b>,
+    Whitehorse.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1593547790
+--- !u!64 &1631787233
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547784}
+  m_GameObject: {fileID: 1631787230}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5330,47 +4480,25 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1149344248417809040, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
---- !u!114 &1593547791
+  m_Mesh: {fileID: -3542180076942892319, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1647177063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6738050274061928020, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1647177065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547786}
+  m_GameObject: {fileID: 1647177063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "0\xB0E \u2013 15\xB0E"
-  informationText: 'Covers Western Europe and North Africa. Examples: <b>Paris</b>,
-    <b>Berlin</b>, Rome, Algiers.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1593547792
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547786}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5447606093128884540, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &1650619394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5607677644569063766, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -5494,19 +4622,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651740408}
   m_CullTransparentMesh: 1
---- !u!114 &1657070554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
 --- !u!1 &1664629979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8459970131383293777, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -5552,72 +4667,6 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.16862746, g: 0.827451, b: 0.38039216, a: 1}
---- !u!114 &1691192615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1694207914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1703068287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: "90\xB0E \u2013 105\xB0E"
-  informationText: 'Covers Myanmar and Thailand area. Examples: <b>Yangon</b>, <b>Bangkok</b>,
-    Kunming.'
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1703068288
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547780}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8078862051463684903, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
 --- !u!1 &1724022415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 780080549781906279, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -5662,19 +4711,6 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.16862746, g: 0.63529414, b: 0.827451, a: 1}
---- !u!114 &1725734344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
 --- !u!1 &1765344303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7064645036615036009, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -5720,31 +4756,36 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 1, g: 0.5411765, b: 0.39607844, a: 1}
---- !u!114 &1818553830
+--- !u!1 &1767714827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6046859369678642192, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767714829
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547775}
+  m_GameObject: {fileID: 1767714827}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "165\xB0E \u2013 180\xB0E"
-  informationText: 'Covers New Zealand and Fiji area. Examples: <b>Auckland</b>,
-    <b>Suva</b>, Tarawa.'
+  featureName: "30\xB0E \u2013 45\xB0E"
+  informationText: 'Covers Northeast Africa and the Middle East. Examples: <b>Cairo</b>,
+    <b>Addis Ababa</b>, Khartoum.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 1
+  overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!64 &1818553831
+--- !u!64 &1767714830
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547775}
+  m_GameObject: {fileID: 1767714827}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5759,7 +4800,25 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 3032472824324642959, guid: da0c21765a5c6f84db5cfe37dd44e126, type: 3}
+  m_Mesh: {fileID: 6153423988664723945, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1786676147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3092806090269592530, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1786676149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786676147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &1832913399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,58 +4905,640 @@ RectTransform:
   m_AnchoredPosition: {x: 651.4902, y: 131.54642}
   m_SizeDelta: {x: 500, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1837114312
+--- !u!1 &1834967075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 816111556790029090, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1834967077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547751}
+  m_GameObject: {fileID: 1834967075}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1841794304
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1839307651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1913451333990917205, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1839307653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547760}
+  m_GameObject: {fileID: 1839307651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1914240706
+  featureName: "150\xB0E \u2013 165\xB0E"
+  informationText: 'Covers Pacific Russia and islands. Examples: <b>Vladivostok</b>,
+    <b>Honiara</b>.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1839307654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839307651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4985734123875363193, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1871502599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8445166228369375811, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871502601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547752}
+  m_GameObject: {fileID: 1871502599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
---- !u!114 &1993355552
+  featureName: "60\xB0E \u2013 75\xB0E"
+  informationText: 'Covers Central Asia (west). Examples: <b>Karachi</b>, <b>Tashkent</b>,
+    Ashgabat.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &1871502602
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871502599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6338309849048818987, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+--- !u!1 &1940002080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3522114896587007376, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1940002082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547749}
+  m_GameObject: {fileID: 1940002080}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1961219488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6029164242970169245, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961219490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961219488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1 &1995925263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2140941432060887564, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1995925265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995925263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
+--- !u!1001 &2026902106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8187907
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9297643
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.178931
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.043884028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99903667
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -185.03
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7972164030815937809, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -7658630063634608558, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -7482744985929320781, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -6987598750857376886, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -6932948826825843220, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -6729328428285360603, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -6109773201522785783, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -6027058157781473015, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -4667011644359288774, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -4603116485201030150, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -4316459373343649052, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -4284779138239506119, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -4115383832618808250, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -3725528612539518445, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -3684770350338906763, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -3384150704743342972, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -3371388195458098268, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -3079908186360237526, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -2889008924995313862, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -2630075953988460080, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -2412822219422022800, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -2297161248704965527, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -2062546449836788253, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -1040087109950019424, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: -482549797417257039, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: -279432113988180897, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 801881766230496941, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 919132149155446097, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_Name
+      value: longitudes_time_zone_cuts_V01(1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797470681746842041, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 2752868698709149371, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 3680838776052305672, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 4509371531787705228, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 4876920921752490739, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 4921088162262193199, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 4955487280571056494, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 5349534586713947554, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 5482083277614310280, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 5746647539144557890, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 6205913103706985439, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 6616290404244338102, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 6732920243335649673, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 6866002314066284195, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 6888712780153569087, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 7034727628259472227, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 7143450021650175306, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 7967311978552247788, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 7987890424797180784, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    - target: {fileID: 8171307828139758604, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cd4e6be22cc7d9e46978170d578c4732, type: 2}
+    - target: {fileID: 8619190887319627498, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575237572}
+    - targetCorrespondingSourceObject: {fileID: 3058804297553065924, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 118699106}
+    - targetCorrespondingSourceObject: {fileID: -8031288215877494955, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 224626227}
+    - targetCorrespondingSourceObject: {fileID: 184336609582526914, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1080118831}
+    - targetCorrespondingSourceObject: {fileID: -1581847869103407935, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 953123323}
+    - targetCorrespondingSourceObject: {fileID: -672012026372153439, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 288581942}
+    - targetCorrespondingSourceObject: {fileID: -2140941432060887564, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1995925265}
+    - targetCorrespondingSourceObject: {fileID: 7222586851560035846, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1482950229}
+    - targetCorrespondingSourceObject: {fileID: 1663017568611748779, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1429180230}
+    - targetCorrespondingSourceObject: {fileID: 6898134052718269499, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 264049608}
+    - targetCorrespondingSourceObject: {fileID: 4306553717554552172, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 29753113}
+    - targetCorrespondingSourceObject: {fileID: -6738050274061928020, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1647177065}
+    - targetCorrespondingSourceObject: {fileID: -6029164242970169245, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961219490}
+    - targetCorrespondingSourceObject: {fileID: 2345520555075772853, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 107025125}
+    - targetCorrespondingSourceObject: {fileID: 3522114896587007376, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940002082}
+    - targetCorrespondingSourceObject: {fileID: 816111556790029090, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1834967077}
+    - targetCorrespondingSourceObject: {fileID: 6627214970823877816, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 679170480}
+    - targetCorrespondingSourceObject: {fileID: -385643106154479402, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 114192154}
+    - targetCorrespondingSourceObject: {fileID: -3092806090269592530, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1786676149}
+    - targetCorrespondingSourceObject: {fileID: 91560392690326828, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 436993353}
+    - targetCorrespondingSourceObject: {fileID: -8051071813255798277, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 632386892}
+    - targetCorrespondingSourceObject: {fileID: -6243923997837025417, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2071131611}
+    - targetCorrespondingSourceObject: {fileID: -1254565338583240109, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1216807007}
+    - targetCorrespondingSourceObject: {fileID: 335409473870149147, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1607211316}
+    - targetCorrespondingSourceObject: {fileID: 9049905329535150576, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 768506497}
+    - targetCorrespondingSourceObject: {fileID: -1867589940755679030, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202331339}
+    - targetCorrespondingSourceObject: {fileID: -1867589940755679030, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202331338}
+    - targetCorrespondingSourceObject: {fileID: 9196791777262235404, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321703157}
+    - targetCorrespondingSourceObject: {fileID: 9196791777262235404, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321703156}
+    - targetCorrespondingSourceObject: {fileID: -6046859369678642192, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1767714830}
+    - targetCorrespondingSourceObject: {fileID: -6046859369678642192, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1767714829}
+    - targetCorrespondingSourceObject: {fileID: -5916549399672667530, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 833322783}
+    - targetCorrespondingSourceObject: {fileID: -5916549399672667530, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 833322782}
+    - targetCorrespondingSourceObject: {fileID: 8445166228369375811, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871502602}
+    - targetCorrespondingSourceObject: {fileID: 8445166228369375811, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871502601}
+    - targetCorrespondingSourceObject: {fileID: 2333943828164498828, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578051159}
+    - targetCorrespondingSourceObject: {fileID: 2333943828164498828, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578051158}
+    - targetCorrespondingSourceObject: {fileID: 6203529800061108751, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1515216856}
+    - targetCorrespondingSourceObject: {fileID: 6203529800061108751, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1515216855}
+    - targetCorrespondingSourceObject: {fileID: 9005553609948590226, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994883263}
+    - targetCorrespondingSourceObject: {fileID: 9005553609948590226, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994883262}
+    - targetCorrespondingSourceObject: {fileID: -3158128523718444369, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 933286467}
+    - targetCorrespondingSourceObject: {fileID: -3158128523718444369, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 933286466}
+    - targetCorrespondingSourceObject: {fileID: -4131733328126185878, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555002357}
+    - targetCorrespondingSourceObject: {fileID: -4131733328126185878, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555002356}
+    - targetCorrespondingSourceObject: {fileID: 1913451333990917205, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1839307654}
+    - targetCorrespondingSourceObject: {fileID: 1913451333990917205, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1839307653}
+    - targetCorrespondingSourceObject: {fileID: 1694774663959380504, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787759773}
+    - targetCorrespondingSourceObject: {fileID: 1694774663959380504, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787759772}
+    - targetCorrespondingSourceObject: {fileID: 1776483937017692630, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1468540256}
+    - targetCorrespondingSourceObject: {fileID: 1776483937017692630, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1468540255}
+    - targetCorrespondingSourceObject: {fileID: 5809465452806147267, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 646798982}
+    - targetCorrespondingSourceObject: {fileID: 5809465452806147267, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 646798981}
+    - targetCorrespondingSourceObject: {fileID: -4685753155167424024, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1443017376}
+    - targetCorrespondingSourceObject: {fileID: -4685753155167424024, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1443017375}
+    - targetCorrespondingSourceObject: {fileID: 7580787854456621521, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631787233}
+    - targetCorrespondingSourceObject: {fileID: 7580787854456621521, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631787232}
+    - targetCorrespondingSourceObject: {fileID: 3077057773054497059, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 807943063}
+    - targetCorrespondingSourceObject: {fileID: 3077057773054497059, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 807943062}
+    - targetCorrespondingSourceObject: {fileID: 7158885504084133243, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104603098}
+    - targetCorrespondingSourceObject: {fileID: 7158885504084133243, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104603097}
+    - targetCorrespondingSourceObject: {fileID: -5602453852050544050, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 733190318}
+    - targetCorrespondingSourceObject: {fileID: -5602453852050544050, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 733190317}
+    - targetCorrespondingSourceObject: {fileID: -4478159421998754466, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363152707}
+    - targetCorrespondingSourceObject: {fileID: -4478159421998754466, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363152706}
+    - targetCorrespondingSourceObject: {fileID: 9044974596036092536, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840950127}
+    - targetCorrespondingSourceObject: {fileID: 9044974596036092536, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840950126}
+    - targetCorrespondingSourceObject: {fileID: 6537167448913767114, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1532082341}
+    - targetCorrespondingSourceObject: {fileID: 6537167448913767114, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1532082340}
+    - targetCorrespondingSourceObject: {fileID: 6014596573746384860, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 594226266}
+    - targetCorrespondingSourceObject: {fileID: 6014596573746384860, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 594226265}
+    - targetCorrespondingSourceObject: {fileID: -6090934632140159850, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190651438}
+    - targetCorrespondingSourceObject: {fileID: -6090934632140159850, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190651437}
+  m_SourcePrefab: {fileID: 100100000, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &2047389002
 GameObject:
   m_ObjectHideFlags: 0
@@ -6232,6 +5873,24 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.827451, g: 0.6784314, b: 0.16862746, a: 1}
+--- !u!1 &2071131609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6243923997837025417, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2071131611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071131609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.17610055, g: 0.17610055, b: 0.17610055, a: 1}
 --- !u!1 &2081637122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4250536362022781851, guid: 96e034dc0713abc4b997c94ca11a5ef4, type: 3}
@@ -6276,19 +5935,51 @@ MonoBehaviour:
   highlightColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 1}
   overrideInitialColor: 1
   initialColor: {r: 0.16862746, g: 0.827451, b: 0.63529414, a: 1}
---- !u!114 &2122067837
+--- !u!1 &2104603095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7158885504084133243, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
+  m_PrefabInstance: {fileID: 2026902106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2104603097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593547748}
+  m_GameObject: {fileID: 2104603095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.12578613, g: 0.12578613, b: 0.12578613, a: 1}
+  featureName: "105\xB0W \u2013 90\xB0W"
+  informationText: 'Covers Western USA and Canadian Rockies. Examples: <b>Denver</b>,
+    <b>Calgary</b>, Salt Lake City.'
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overrideInitialColor: 0
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!64 &2104603098
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104603095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8465353711917158926, guid: 07897ae99652ed14d8ce5385359d1ad8, type: 3}
 --- !u!1 &2129434253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6418,5 +6109,5 @@ SceneRoots:
   - {fileID: 1569798249}
   - {fileID: 1278665744}
   - {fileID: 186617694}
-  - {fileID: 1593547734}
   - {fileID: 861941989}
+  - {fileID: 2026902106}
