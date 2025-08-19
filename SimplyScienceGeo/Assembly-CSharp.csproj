@@ -60,77 +60,76 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\GlobeInfoUIManager.cs" />
-    <Compile Include="Assets\Scenes\K6\SceneLoader.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingDescr.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\GlobalInputManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeMeshColorURP.cs" />
+    <Compile Include="Assets\Scripts\DropdownGroupController.cs" />
+    <Compile Include="Assets\Scripts\LandformRotator.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\LandformFeature.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\InteractionManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
+    <Compile Include="Assets\Scripts\GlobalInputManager.cs" />
+    <Compile Include="Assets\Scripts\GlobeRotator.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSceneSwitching.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\ClickInfoHandler.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\ChangeMeshColorURP.cs" />
+    <Compile Include="Assets\SSGeo.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\LeanTween\Testing\FollowingTests.cs" />
+    <Compile Include="Assets\Scripts\OrientationController.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
+    <Compile Include="Assets\Scripts\GlobeGridController.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingIssue2.cs" />
+    <Compile Include="Assets\Scripts\CameraFocusController.cs" />
+    <Compile Include="Assets\Scripts\MapSceneScripts\MapDropdownSelector.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
-    <Compile Include="Assets\Scenes\K6\MapScene\Scripts\MapSelector.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingRotate.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\ContinentOceanToggleController.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing240.cs" />
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\LeanTween\Testing\PerformanceTests.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\LandformRotator.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\SpecialLineInfo.cs" />
+    <Compile Include="Assets\Scripts\InteractableFeature.cs" />
+    <Compile Include="Assets\Scripts\MapSceneScripts\UIAlphaClickFilter.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\DragRotator.cs" />
+    <Compile Include="Assets\Scripts\SelectableToggleButton.cs" />
+    <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+    <Compile Include="Assets\Scripts\MapSceneScripts\UIAlphaHighlighter.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingMaxTweens.cs" />
+    <Compile Include="Assets\Scripts\GlobeInfoUIManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\ClickableInfo.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\GlobeGridController.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\ModelActivator.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\ReliefFeatureActivator.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\GlobeInteractiveSwitcher.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\InteractableFeature.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\GlobeRotator.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
+    <Compile Include="Assets\Scripts\ContinentOceanToggleController.cs" />
+    <Compile Include="Assets\Scripts\ModelActivator.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSequencer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\LandformDetailViewer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\ToggleManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+    <Compile Include="Assets\Scripts\MapSceneScripts\ImageZoomer.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\Billboard.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingIssue.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingOptionalCancel.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\Unused\GlobalClickHandler.cs" />
+    <Compile Include="Assets\Scripts\VisualFeedbackController.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing248.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingColorTweening.cs" />
-    <Compile Include="Assets\Scenes\K6\MapScene\Scripts\ImageZoomer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing243.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\VisualFeedbackController.cs" />
+    <Compile Include="Assets\Scripts\InteractionManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing246.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
-    <Compile Include="Assets\Scenes\EarthScene\Scripts\NewScripts\UIManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,10 +141,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\LeanTween\License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Freelance Work\Earth\Shaders\Earth.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
-    <None Include="Assets\Freelance Work\Earth\Shaders\water.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -1306,6 +1303,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">

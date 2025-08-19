@@ -6,17 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/K6/Bootstapper.unity
+    path: Assets/Grades/K6/Bootstapper.unity
     guid: 9ebd70bd448c1064985ed3895404a7d0
   - enabled: 1
-    path: Assets/Scenes/K6/MapScene/MapScene.unity
+    path: Assets/Grades/K6/MapScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/K6/K6_Continents.unity
+    path: Assets/Grades/K6/K6_Continents.unity
     guid: 8cec82858f0d0614c9c781b11b95259a
-  - enabled: 0
-    path: Assets/Scenes/EarthScene/EarthScene.unity
-    guid: 58aa2b6da35cfc7469ad32c6e8c7ddbc
+  - enabled: 1
+    path: Assets/Grades/K6/K6_Landforms.unity
+    guid: 7e0878ae943c1ef49bab30ea4a8b4a8f
+  - enabled: 1
+    path: Assets/Grades/K6/K6_LatLong.unity
+    guid: 280b460a4d5fe324ca55da99ed2b4e31
+  - enabled: 1
+    path: Assets/Grades/K6/K6_TimeZones.unity
+    guid: e47a443af0983a54f919f74dc14df9f6
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: acb4bdfc87d13b149a53aca0a02f9344, type: 3}
   m_UseUCBPForAssetBundles: 0
