@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "15\xB0W \u2013 0\xB0W"
+  featureName: "15\xB0W \u2013 0\xB0"
   informationText: 'Covers UK, Ireland and Portugal area. Examples: <b>Dublin</b>,
     <b>Belfast</b>, Lisbon.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -3429,7 +3429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureName: "0\xB0E \u2013 15\xB0E"
+  featureName: "0\xB0 \u2013 15\xB0E"
   informationText: 'Covers Western Europe and North Africa. Examples: <b>London</b>,
     <b>Paris</b>, Madrid, Casablanca.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

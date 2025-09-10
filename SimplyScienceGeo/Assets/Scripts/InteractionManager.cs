@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// The central coordinator (the "Brain"). It manages the application's selection state
-/// and tells the other managers (UI, Visuals, and ModelActivators) what to do.
+/// Central coordinator for selection. Ensures only one feature is active at a time,
+/// drives visual highlight + UI, and toggles per-object extras via FeatureExtras.
 /// </summary>
 public class InteractionManager : MonoBehaviour
 {
@@ -13,19 +13,22 @@ public class InteractionManager : MonoBehaviour
     [Tooltip("Assign the UIManager from the scene.")]
     public UIManager uiManager;
 
+    // --- Selection state ---
     private InteractableFeature _currentlySelectedFeature;
     public InteractableFeature CurrentlySelectedFeature => _currentlySelectedFeature;
 
+    // Cache the extras of the currently selected feature so we can disable quickly on clear
+    private FeatureExtras _currentExtras;
+
     /// <summary>
-    /// Selects a new feature, updating the state and instructing other managers.
+    /// Selects a new feature. Clears the previous one first so only one remains active.
     /// </summary>
     public void SelectFeature(InteractableFeature newFeature)
     {
-        // If we click the same feature again, do nothing.
+        // Clicking the same feature again? Do nothing.
         if (_currentlySelectedFeature == newFeature) return;
 
-        // First, deselect the old feature. This will also trigger the deactivation
-        // of any active model view before proceeding.
+        // Turn off highlight, UI bindings (if desired), and extras for the previous selection.
         ClearCurrentSelection();
 
         // Set the new feature as the current selection.
@@ -33,46 +36,58 @@ public class InteractionManager : MonoBehaviour
 
         if (_currentlySelectedFeature != null)
         {
-            // --- Standard Behavior ---
+            // Start highlight visuals for this feature.
             visualController?.StartHighlight(_currentlySelectedFeature);
+
+            // Update the info panel with this feature's data.
             uiManager?.DisplayInformation(
                 _currentlySelectedFeature.informationText,
-                _currentlySelectedFeature.featureName);
+                _currentlySelectedFeature.featureName
+            );
 
-            // --- THIS IS THE CRUCIAL LINE ---
-            // Check if this feature has a ModelActivator and, if so, tell it to activate.
-            _currentlySelectedFeature.GetComponent<ModelActivator>()?.Activate();
+            // Enable extras only for this selected feature.
+            _currentExtras = _currentlySelectedFeature.GetComponent<FeatureExtras>();
+            _currentExtras?.EnableExtras();
         }
     }
-    public void ResetToDefaultUI()
-    {
-        // First, properly clear and clean up any currently selected feature.
-        // This will correctly call StopHighlight and handle other cleanup.
-        ClearCurrentSelection();
 
-        // After clearing the selection, then display the default text.
-        uiManager?.DisplayDefaultText(uiManager.defaultTitle, uiManager.defaultBody);
-    }
     /// <summary>
-    /// Clears the current selection and resets all visuals and active models.
+    /// Clears the current selection and resets visuals and extras.
     /// </summary>
     public void ClearCurrentSelection()
     {
         if (_currentlySelectedFeature == null) return;
 
-        // --- Deactivate the model view first ---
-        // Find the ModelActivator on the object we are clearing and tell it to deactivate.
-        // The ModelActivator script will handle the timing and state changes.
-        _currentlySelectedFeature.GetComponent<ModelActivator>()?.Deactivate();
+        // Disable extras for the object we are clearing.
+        if (_currentExtras != null)
+        {
+            _currentExtras.DisableExtras();
+            _currentExtras = null;
+        }
 
-        // Stop the highlight effect.
+        // Stop highlight effect for the previously selected feature.
         visualController?.StopHighlight(_currentlySelectedFeature);
 
-        // This line is commented out to allow GlobeGridController to show default text.
-        // If you want the panel to hide completely, you can uncomment it.
+        // Optionally hide or reset UI. Your current flow keeps panel visible with default text.
+        // If you prefer to hide it completely, uncomment the next line and adjust your UIManager.
         // uiManager?.HideInformation();
 
-        // Finally, forget the selection.
+        // Forget the selection.
         _currentlySelectedFeature = null;
+    }
+
+    /// <summary>
+    /// Clears selection and shows default UI text.
+    /// </summary>
+    public void ResetToDefaultUI()
+    {
+        // Properly clear and clean up any currently selected feature.
+        ClearCurrentSelection();
+
+        // Then show your default title/body on the panel.
+        if (uiManager != null)
+        {
+            uiManager.DisplayDefaultText(uiManager.defaultTitle, uiManager.defaultBody);
+        }
     }
 }
