@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a124b28431a8114a80e6cf8ef801acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallbackScene: K7_Monsoon
 --- !u!4 &1781950145
 Transform:
   m_ObjectHideFlags: 0

@@ -13,16 +13,17 @@ public class GlobeRotator : MonoBehaviour
     [SerializeField] private float zoomSpeed = 5f;
     [SerializeField] private float minZoomDistance = 5f;
     [SerializeField] private float maxZoomDistance = 50f;
+    [Tooltip("Enable or disable zooming at runtime.")]
+    [SerializeField] private bool zoomEnabled = true;  // <-- NEW
 
     [Header("Camera & Reset")]
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float resetDuration = 0.5f;
     [SerializeField] private LeanTweenType resetEaseType = LeanTweenType.easeOutExpo;
 
-    // --- NEW: Vertical clamp settings
     [Header("Vertical Limits")]
-    [SerializeField] private float minVerticalAngle = -85f; // Antarctica limit
-    [SerializeField] private float maxVerticalAngle = 85f; // Arctic limit
+    [SerializeField] private float minVerticalAngle = -85f;
+    [SerializeField] private float maxVerticalAngle = 85f;
 
     private SSGeo input;
     private bool isDragging;
@@ -33,8 +34,6 @@ public class GlobeRotator : MonoBehaviour
 
     private enum AxisLock { None, Horizontal, Vertical }
     private AxisLock lockedAxis = AxisLock.None;
-
-    // --- NEW: Track current vertical tilt (around world X)
     private float currentVerticalAngle = 0f;
 
     void OnEnable()
@@ -66,7 +65,6 @@ public class GlobeRotator : MonoBehaviour
         yield return new WaitForEndOfFrame();
         initialRotation = transform.rotation;
         initialCamPos = mainCamera.transform.position;
-        // --- NEW: Initialize vertical angle from current rotation
         currentVerticalAngle = NormalizeAngle(transform.rotation.eulerAngles.x);
         inited = true;
     }
@@ -75,10 +73,9 @@ public class GlobeRotator : MonoBehaviour
     {
         if (!inited) return;
 
-        // ---- Press / Release (works for mouse + touch via Press [Pointer])
+        // Drag start/end logic...
         if (input.Gameplay.Click.triggered)
         {
-            // toggle begin-drag on press; end-drag happens when press is released (below)
             isDragging = true;
             lockedAxis = AxisLock.None;
             prevPointerPos = input.Gameplay.Point.ReadValue<Vector2>();
@@ -86,14 +83,13 @@ public class GlobeRotator : MonoBehaviour
             LeanTween.cancel(mainCamera.gameObject);
         }
 
-        // If the button is up, stop dragging. (ReadValue = 0 when not pressed)
         if (input.Gameplay.Click.ReadValue<float>() <= 0.0f && isDragging)
         {
             isDragging = false;
             lockedAxis = AxisLock.None;
         }
 
-        // ---- Drag rotate
+        // Rotate
         if (isDragging)
         {
             var cur = input.Gameplay.Point.ReadValue<Vector2>();
@@ -108,7 +104,6 @@ public class GlobeRotator : MonoBehaviour
             }
             else if (lockedAxis == AxisLock.Vertical)
             {
-                // --- NEW: Clamp vertical rotation
                 float deltaAngle = delta.y * rotationSpeed * Time.deltaTime;
                 float newAngle = Mathf.Clamp(currentVerticalAngle + deltaAngle, minVerticalAngle, maxVerticalAngle);
                 float appliedDelta = newAngle - currentVerticalAngle;
@@ -120,12 +115,14 @@ public class GlobeRotator : MonoBehaviour
             prevPointerPos = cur;
         }
 
-        // ---- Mouse wheel zoom (desktop)
+        if (!zoomEnabled) return;  // <-- NEW: completely skip zoom if disabled
+
+        // Mouse wheel zoom
         float scrollY = input.Gameplay.Scroll.ReadValue<Vector2>().y;
         if (Mathf.Abs(scrollY) > Mathf.Epsilon)
             ZoomBy(-scrollY * zoomSpeed * Time.deltaTime);
 
-        // ---- Pinch zoom (mobile/touch)
+        // Pinch zoom
         var ts = Touchscreen.current;
         if (ts != null && ts.touches.Count >= 2)
         {
@@ -137,19 +134,17 @@ public class GlobeRotator : MonoBehaviour
                 Vector2 p1 = t1.position.ReadValue();
                 float curDist = Vector2.Distance(p0, p1);
 
-                // store previous distance in prevPointerPos.x (lightweight state)
-                if (!isDragging) { prevPointerPos.x = curDist; isDragging = true; } // reuse flag to init once
+                if (!isDragging) { prevPointerPos.x = curDist; isDragging = true; }
                 else
                 {
                     float delta = curDist - prevPointerPos.x;
-                    ZoomBy(-delta * (zoomSpeed / 200f)); // scale pinch sensitivity
+                    ZoomBy(-delta * (zoomSpeed / 200f));
                     prevPointerPos.x = curDist;
                 }
             }
         }
         else if (isDragging && input.Gameplay.Click.ReadValue<float>() <= 0f)
         {
-            // clear the pinch init helper if neither drag nor two touches are active
             isDragging = false;
         }
     }
@@ -167,14 +162,14 @@ public class GlobeRotator : MonoBehaviour
         if (!inited) return;
         isDragging = false;
         lockedAxis = AxisLock.None;
-        // --- UPDATED: Keep currentVerticalAngle in sync during tween
+
         LeanTween.rotate(gameObject, initialRotation.eulerAngles, resetDuration)
             .setEase(resetEaseType)
             .setOnUpdate((Vector3 val) =>
             {
-                // transform rotation is already handled by LT; we just mirror angle
                 currentVerticalAngle = NormalizeAngle(val.x);
             });
+
         LeanTween.move(mainCamera.gameObject, initialCamPos, resetDuration).setEase(resetEaseType);
     }
 
@@ -185,7 +180,6 @@ public class GlobeRotator : MonoBehaviour
         LeanTween.cancel(gameObject);
         LeanTween.cancel(mainCamera.gameObject);
 
-        // --- UPDATED: also update currentVerticalAngle while tweening
         LeanTween.value(gameObject, transform.rotation.eulerAngles, eulerRotation, duration)
                  .setEase(ease)
                  .setOnUpdate((Vector3 val) =>
@@ -199,7 +193,6 @@ public class GlobeRotator : MonoBehaviour
         LeanTween.move(mainCamera.gameObject, targetPos, duration).setEase(ease);
     }
 
-    // --- NEW: angle normalizer to [-180, 180]
     private float NormalizeAngle(float degrees)
     {
         degrees %= 360f;
@@ -207,4 +200,9 @@ public class GlobeRotator : MonoBehaviour
         if (degrees < -180f) degrees += 360f;
         return degrees;
     }
+
+    // --- NEW: Public methods to control zoom
+    public void EnableZoom() => zoomEnabled = true;
+    public void DisableZoom() => zoomEnabled = false;
+    public void ToggleZoom(bool enable) => zoomEnabled = enable;
 }
