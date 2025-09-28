@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -631,11 +631,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1457,7 +1457,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6041,7 +6041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6498,11 +6498,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -6760,11 +6760,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -7304,7 +7304,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -12005,7 +12005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12272,11 +12272,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -12725,7 +12725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13165,7 +13165,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -17979,7 +17979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18332,11 +18332,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -18732,7 +18732,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -23316,11 +23316,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -23375,7 +23375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23815,7 +23815,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -28728,7 +28728,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -33295,11 +33295,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain
@@ -33695,7 +33695,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -39029,7 +39029,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -43628,7 +43628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43719,7 +43719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.60706455, g: 1, b: 0.084905505, a: 1}
+  m_Color: {r: 0.9559748, g: 0.93631625, b: 0.08116753, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43793,11 +43793,11 @@ MonoBehaviour:
   bobHz: 0.25
   rotationAmplitude: 10
   baseColor: {r: 1, g: 1, b: 1, a: 1}
-  hueJitter: 0.023
-  satJitter: 0.152
-  valJitter: 0.166
-  minAlpha: 0.6
-  maxAlpha: 0.95
+  hueJitter: 0
+  satJitter: 0
+  valJitter: 0
+  minAlpha: 0.9
+  maxAlpha: 1
   includeSpriteRenderers: 1
   includeUIImages: 0
   nameContainsToSkip: Rain

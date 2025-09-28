@@ -70,14 +70,30 @@ public class EarthSimulationController : MonoBehaviour
 
         if (traveling)
         {
-            orbitAngleAbs += Mathf.Max(1f, travelSpeed) * dt;
-            if (orbitAngleAbs >= targetAngleAbs - 0.01f)
-            {
-                orbitAngleAbs = targetAngleAbs;
-                traveling = false;
-                paused = true;
+            // 1. Use the absolute travel speed multiplied by the direction
+            float direction = Mathf.Sign(targetAngleAbs - orbitAngleAbs);
+            orbitAngleAbs += Mathf.Abs(travelSpeed) * dt * direction; // FIX 1: Removed Mathf.Max and added directional logic
 
-                SetSeasonVisuals(targetSeason);
+            // 2. Check if the current angle has passed the target angle
+            if (direction > 0) // Moving forward
+            {
+                if (orbitAngleAbs >= targetAngleAbs - 0.01f) // FIX 2: Check for forward stop
+                {
+                    orbitAngleAbs = targetAngleAbs;
+                    traveling = false;
+                    paused = true;
+                    SetSeasonVisuals(targetSeason);
+                }
+            }
+            else // Moving backward (direction < 0)
+            {
+                if (orbitAngleAbs <= targetAngleAbs + 0.01f) // FIX 3: Check for backward stop
+                {
+                    orbitAngleAbs = targetAngleAbs;
+                    traveling = false;
+                    paused = true;
+                    SetSeasonVisuals(targetSeason);
+                }
             }
         }
         else if (!paused)
@@ -115,6 +131,11 @@ public class EarthSimulationController : MonoBehaviour
         }
     }
 
+    // ORIGINAL (only calculates forward delta):
+    // float deltaForward = Mathf.Repeat(targetWrapped - currentWrapped, 360f);
+
+    // NEW LOGIC: Calculate both forward and backward path, and choose the shortest.
+    // You must also determine the direction (forward or backward)
     public void SwitchSeason(EarthSeason season)
     {
         float targetWrapped = 0f;
@@ -129,9 +150,28 @@ public class EarthSimulationController : MonoBehaviour
         }
 
         float currentWrapped = Mathf.Repeat(orbitAngleAbs, 360f);
+
+        // 1. Calculate the forward path (always positive)
         float deltaForward = Mathf.Repeat(targetWrapped - currentWrapped, 360f);
 
-        if (deltaForward < 0.01f)
+        // 2. Calculate the backward path (always positive distance)
+        float deltaBackward = Mathf.Repeat(currentWrapped - targetWrapped, 360f);
+
+        float travelDelta;
+
+        // Choose the shortest path
+        if (deltaForward <= deltaBackward)
+        {
+            travelDelta = deltaForward; // Go forward (positive rotation)
+        }
+        else
+        {
+            // Go backward (negative rotation). travelDelta becomes negative.
+            travelDelta = -deltaBackward;
+        }
+
+
+        if (Mathf.Abs(travelDelta) < 0.01f)
         {
             traveling = false;
             paused = true;
@@ -139,7 +179,8 @@ public class EarthSimulationController : MonoBehaviour
             return;
         }
 
-        targetAngleAbs = orbitAngleAbs + deltaForward;
+        // travelDelta is now positive OR negative
+        targetAngleAbs = orbitAngleAbs + travelDelta;
         traveling = true;
         paused = false;
     }
