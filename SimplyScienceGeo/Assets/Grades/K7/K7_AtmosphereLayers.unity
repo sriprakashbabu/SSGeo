@@ -2118,7 +2118,7 @@ MonoBehaviour:
   titleText: {fileID: 1108987476}
   bodyText: {fileID: 1028272389}
   defaultTitle: Atmospheric Layers
-  defaultBody: Double click on any layer to see its info about it.
+  defaultBody: Double click on any layer to see its informationt.
   textFadeDuration: 0.2
   textPopScale: 1.05
   textPopDuration: 0.1
