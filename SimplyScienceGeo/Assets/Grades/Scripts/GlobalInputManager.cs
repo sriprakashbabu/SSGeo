@@ -121,6 +121,7 @@ public class GlobalInputManager : MonoBehaviour
         lastClickPos = Vector2.zero;
     }
 
+    // --- THIS IS THE MODIFIED FUNCTION ---
     void TryWorldInteraction(Vector2 screenPos)
     {
         if (mainCamera == null) return;
@@ -130,6 +131,15 @@ public class GlobalInputManager : MonoBehaviour
         // 3D colliders
         if (Physics.Raycast(ray, out var hit3D))
         {
+            // Priority 1: Check for a ModelActivator to activate
+            var modelActivator = hit3D.collider.GetComponent<ModelActivator>();
+            if (modelActivator != null)
+            {
+                modelActivator.Activate();
+                return; // Stop here, we activated the model
+            }
+
+            // Priority 2: If no activator, check for an InteractableFeature to select
             var feature3D = hit3D.collider.GetComponent<InteractableFeature>();
             if (feature3D != null && interactionManager != null)
             {
@@ -142,6 +152,15 @@ public class GlobalInputManager : MonoBehaviour
         RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
         if (hit2D.collider != null)
         {
+            // Priority 1: Check for a ModelActivator
+            var modelActivator2D = hit2D.collider.GetComponent<ModelActivator>();
+            if (modelActivator2D != null)
+            {
+                modelActivator2D.Activate();
+                return;
+            }
+
+            // Priority 2: If no activator, check for an InteractableFeature
             var feature2D = hit2D.collider.GetComponent<InteractableFeature>();
             if (feature2D != null && interactionManager != null)
             {

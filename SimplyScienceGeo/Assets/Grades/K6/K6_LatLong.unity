@@ -2298,6 +2298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 396989366}
+  interactionManager: {fileID: 186617693}
   uiManager: {fileID: 186617691}
   globeRotator: {fileID: 1299700800}
   optionGroups:
@@ -9879,6 +9880,7 @@ MonoBehaviour:
   zoomSpeed: 25
   minZoomDistance: 18
   maxZoomDistance: 50
+  zoomEnabled: 1
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4

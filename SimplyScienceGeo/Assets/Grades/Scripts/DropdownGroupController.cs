@@ -13,6 +13,10 @@ public class DropdownGroupController : MonoBehaviour
     [Tooltip("Assign the TextMeshPro Dropdown from your scene here.")]
     public TMP_Dropdown dropdown;
 
+    // --- 1. ADD THIS LINE ---
+    [Tooltip("Assign the InteractionManager from your scene.")]
+    public InteractionManager interactionManager;
+
     [Tooltip("Assign the UIManager from your scene.")]
     public UIManager uiManager;
 
@@ -39,7 +43,6 @@ public class DropdownGroupController : MonoBehaviour
         [Tooltip("GameObjects to deactivate when this option is selected.")]
         public List<GameObject> objectsToDeactivate;
 
-        // --- CHANGE: Added a field for the optional default toggle ---
         [Header("Default Selection")]
         [Tooltip("The toggle to be automatically selected when this group is activated. Leave null for none.")]
         public Toggle defaultToggle;
@@ -68,6 +71,11 @@ public class DropdownGroupController : MonoBehaviour
             return;
         }
 
+        if (interactionManager == null)
+        {
+            Debug.LogWarning("DropdownGroupController: InteractionManager not assigned. Highlights may not clear.", this);
+        }
+
         if (uiManager == null)
         {
             Debug.LogWarning("DropdownGroupController: UIManager not assigned.");
@@ -87,6 +95,11 @@ public class DropdownGroupController : MonoBehaviour
 
     private void HandleDropdownValueChanged(int selectedIndex)
     {
+        // --- 2. ADD THIS LINE ---
+        // This tells the InteractionManager to stop highlighting anything.
+        interactionManager?.ClearCurrentSelection();
+        // --- End of Fix ---
+
         if (globeRotator != null)
         {
             globeRotator.enabled = true;
@@ -106,24 +119,19 @@ public class DropdownGroupController : MonoBehaviour
                     SelectableToggleButton[] togglesToReset = group.toggleGroupParent.GetComponentsInChildren<SelectableToggleButton>(true);
                     foreach (var toggleButton in togglesToReset)
                     {
-                        toggleButton.ForceResetHighlight();
+                        toggleButton.ForceResetState();
                     }
                 }
-                // --- ADD THIS BLOCK TO FIX THE PROBLEM ---
-                // Force all toggles in the deactivated group to OFF without triggering their events.
-                // This ensures they are ready for the next time the group is activated.
+
                 var toggles = group.toggleGroupParent.GetComponentsInChildren<Toggle>(true);
                 foreach (var t in toggles)
                 {
                     t.SetIsOnWithoutNotify(false);
                 }
-                // --- END OF FIX ---
             }
             if (isSelected)
             {
-                // --- CHANGE: Replaced the old toggle clearing method with the new one ---
                 SetDefaultToggleState(group.toggleGroupParent, group.defaultToggle);
-
                 StartCoroutine(DelayedFallbackDisplay(group));
             }
 
@@ -162,7 +170,6 @@ public class DropdownGroupController : MonoBehaviour
         }
     }
 
-    // --- CHANGE: These two new methods handle setting the default toggle ---
     private void SetDefaultToggleState(GameObject groupParent, Toggle defaultToggle)
     {
         if (groupParent == null) return;
@@ -173,26 +180,19 @@ public class DropdownGroupController : MonoBehaviour
     {
         yield return null; // Wait 1 frame to ensure all objects are active.
 
-        // Scenario 1: A default toggle IS assigned.
         if (defaultToggle != null)
         {
-            // Activating one toggle in a group automatically deactivates the others.
-            // This is the cleanest way to set the default.
             defaultToggle.isOn = true;
         }
-        // Scenario 2: NO default toggle is assigned.
         else
         {
             var toggleGroup = groupParent.GetComponentInChildren<ToggleGroup>();
             if (toggleGroup != null)
             {
-                // Use the official method to clear the selection.
-                // This correctly respects the "Allow Switch Off" setting in the ToggleGroup's inspector.
                 toggleGroup.SetAllTogglesOff();
             }
             else
             {
-                // Fallback for toggles not in a group: turn them all off manually.
                 Toggle[] toggles = groupParent.GetComponentsInChildren<Toggle>(true);
                 foreach (var toggle in toggles)
                 {

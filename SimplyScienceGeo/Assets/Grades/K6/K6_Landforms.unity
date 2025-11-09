@@ -1907,9 +1907,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 433e018614923734fa68796384828af3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2040428402}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 433e018614923734fa68796384828af3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2040428405}
   m_SourcePrefab: {fileID: 100100000, guid: 433e018614923734fa68796384828af3, type: 3}
 --- !u!114 &322834040
 MonoBehaviour:
@@ -3102,25 +3099,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5290f665faa434c977b31c27702d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
-  mainCamera: {fileID: 0}
   xAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
   yAxis:
     enable: 1
+    useLimits: 0
     minAngle: -180
     maxAngle: 180
+    speed: 80
     current: 0
   zAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
+  zUseHorizontalDrag: 1
+  holdToRotate: 1
   resetDuration: 0.5
   resetEase: 18
+  requireFullyActive: 0
 --- !u!4 &519949186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2ac998df6ffe9b438fcc40371645a82, type: 3}
@@ -5860,25 +5864,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5290f665faa434c977b31c27702d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
-  mainCamera: {fileID: 0}
   xAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
   yAxis:
     enable: 1
+    useLimits: 0
     minAngle: -180
     maxAngle: 180
+    speed: 80
     current: 0
   zAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
+  zUseHorizontalDrag: 1
+  holdToRotate: 1
   resetDuration: 0.5
   resetEase: 18
+  requireFullyActive: 0
 --- !u!1 &1268875255
 GameObject:
   m_ObjectHideFlags: 0
@@ -7724,43 +7735,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5290f665faa434c977b31c27702d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 20
-  mainCamera: {fileID: 0}
   xAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
   yAxis:
     enable: 1
+    useLimits: 0
     minAngle: -180
     maxAngle: 180
+    speed: 80
     current: 0
   zAxis:
     enable: 0
+    useLimits: 0
     minAngle: -30
     maxAngle: 30
+    speed: 80
     current: 0
+  zUseHorizontalDrag: 1
+  holdToRotate: 1
   resetDuration: 0.5
   resetEase: 18
---- !u!114 &2040428405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115739666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: Plain
-  informationText: A large, flat or gently sloping stretch of land with green fields,
-    rivers, and settlements
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 0
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
+  requireFullyActive: 0
 --- !u!1 &2047389002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7931,7 +7931,6 @@ GameObject:
   - component: {fileID: 3469287838586962737}
   - component: {fileID: 1711813854526175227}
   - component: {fileID: 1252525189}
-  - component: {fileID: 3469287838586962738}
   m_Layer: 0
   m_Name: mountains_V02(1)
   m_TagString: Untagged
@@ -8009,24 +8008,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148117558830}
   m_Mesh: {fileID: -1333936719701724551, guid: 56db4d026863380439d291d11503c9f8, type: 3}
---- !u!114 &3469287838586962738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148117558830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: Mountain
-  informationText: A tall, elevated landform with steep slopes and a pointed or rounded
-    peak.
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 0
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &4592769209374820429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8044,6 +8025,7 @@ MonoBehaviour:
   zoomSpeed: 25
   minZoomDistance: 18
   maxZoomDistance: 50
+  zoomEnabled: 1
   mainCamera: {fileID: 258175389}
   resetDuration: 1
   resetEaseType: 4

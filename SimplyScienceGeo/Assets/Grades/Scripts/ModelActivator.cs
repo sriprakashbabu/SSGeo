@@ -66,7 +66,9 @@ public class ModelActivator : MonoBehaviour
         detailedModel.transform.localScale = Vector3.zero;
         detailedModel.SetActive(false);
         backButton.gameObject.SetActive(false);
-        backButton.onClick.AddListener(Deactivate);
+
+        // --- CHANGE #1: Do NOT add the listener here anymore ---
+        // backButton.onClick.AddListener(Deactivate); 
     }
 
     void OnEnable() => _allActivators.Add(this);
@@ -86,11 +88,14 @@ public class ModelActivator : MonoBehaviour
         UpdateSkybox(true);
         backButton.gameObject.SetActive(true);
 
+        // --- CHANGE #2: Add the listener only when we activate THIS model ---
+        backButton.onClick.AddListener(Deactivate);
+
         // Show associated image
         if (canvasImageTarget != null && displaySprite != null)
         {
             canvasImageTarget.sprite = displaySprite;
-            canvasImageTarget.gameObject.SetActive(true);  // <- Use this instead of enabled = true
+            canvasImageTarget.gameObject.SetActive(true);
         }
 
         LeanTween.scale(rootModelToScaleDown, Vector3.zero, transitionDuration).setEase(easeType);
@@ -102,14 +107,15 @@ public class ModelActivator : MonoBehaviour
 
     public void Deactivate()
     {
-        if (_state != ModelState.Active) return;
+        // This check is now extra safe, as only the active model should be listening
+        if (_state != ModelState.Active || _currentActiveModel != this) return;
 
         _state = ModelState.Deactivating;
         backButton.interactable = false;
         UpdateSkybox(false);
 
         if (canvasImageTarget != null)
-            canvasImageTarget.gameObject.SetActive(false); // <- Use this instead of enabled = false
+            canvasImageTarget.gameObject.SetActive(false);
 
         LeanTween.scale(detailedModel, Vector3.zero, transitionDuration)
             .setEase(easeType)
@@ -126,6 +132,9 @@ public class ModelActivator : MonoBehaviour
         ToggleUI(true);
         backButton.gameObject.SetActive(false);
         backButton.interactable = true;
+
+        // --- CHANGE #3: Remove the listener so it doesn't fire when inactive ---
+        backButton.onClick.RemoveListener(Deactivate);
 
         if (globalInputManager != null) globalInputManager.enabled = true;
         ToggleAllActivatorColliders(true);
@@ -172,6 +181,8 @@ public class ModelActivator : MonoBehaviour
         LeanTween.cancel(gameObject, true);
         if (_currentActiveModel == this)
         {
+            // --- CHANGE #4: Clean up listener on destroy, just in case ---
+            if (backButton != null) backButton.onClick.RemoveListener(Deactivate);
             _currentActiveModel = null;
             _state = ModelState.Inactive;
         }

@@ -131,11 +131,15 @@ public class SelectableToggleButton : MonoBehaviour
         }
     }
 
-    public void ForceResetHighlight()
+    /// <summary>
+    /// Forcibly resets all highlights AND associated objects to their default state.
+    /// Called by DropdownGroupController when hiding this toggle's group.
+    /// </summary>
+    public void ForceResetState() // <-- Renamed from ForceResetHighlight
     {
-        EnsureColorsInitialized(); // This will now safely initialize colors if needed
+        EnsureColorsInitialized();
 
-        // Reset mesh colors
+        // 1. Reset mesh colors (This is your original code)
         for (int i = 0; i < extraMeshes.Length; i++)
         {
             if (extraMeshes[i] != null && extraMeshes[i].sharedMaterial.HasProperty("_BaseColor"))
@@ -143,5 +147,18 @@ public class SelectableToggleButton : MonoBehaviour
                 extraMeshes[i].material.SetColor("_BaseColor", originalColors[i]);
             }
         }
+
+        // --- ADD THIS NEW LOGIC ---
+        // 2. Reset associated GameObjects
+        foreach (var obj in objectsToDisable)
+            if (obj) obj.SetActive(true); // Set back to default (enabled)
+
+        foreach (var obj in objectsToEnable)
+            if (obj) obj.SetActive(false); // Set back to default (disabled)
+
+        // 3. Reset globe rotation
+        if (globeRotator != null)
+            globeRotator.enabled = true;
+        // --- END OF ADDITION ---
     }
 }
