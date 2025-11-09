@@ -1246,13 +1246,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8530789549762709849, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7865206302342155769, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6906856453654833477, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5214379273897574405, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4295435146213460030, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2528168732173654149, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_Name
@@ -1260,6 +1276,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342160824177582928, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359032865921207494, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734835439505181717, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887530601189556398, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7506693518204400413, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1639,7 +1675,7 @@ MonoBehaviour:
   informationText: This is where AMS (Acute Mountain Sickness) begins to be seen
     in some individuals. It generally begins with headaches and an altered night
     vision.
-  highlightColor: {r: 0.99866563, g: 1, b: 0.33647794, a: 1}
+  highlightColor: {r: 0.41823888, g: 1, b: 0.98668563, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &311377424
@@ -1658,7 +1694,7 @@ MonoBehaviour:
   informationText: The oxygen concentration at this altitude is so low, your cells
     do not have enough oxygen to build new tissue. Your body will continually wither
     away until death.
-  highlightColor: {r: 0.99866563, g: 1, b: 0.33647794, a: 1}
+  highlightColor: {r: 0.9496855, g: 0.3374668, b: 0.33953482, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &325319458
@@ -1876,9 +1912,10 @@ MonoBehaviour:
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: Altitude
-    bodyText: "Key Effect: Temperature decreases with increase in height. There is
-      a fall in\r\ntemperature by 6.5\xB0C per kilometer of altitude gain.\r\nExamples:
-      Quito cooler than coastal Guayaquil, Leh colder than Delhi."
+    bodyText: "<b>Key Effect:</b> Temperature decreases with increase in height.
+      There is a fall in temperature by 6.5\xB0C per kilometer of altitude gain.\r\n<b>Examples:</b>
+      Quito cooler than coastal Guayaquil, Leh colder than Delhi.\n<b>(Click on Himalayas
+      for the 3D model about altitude)"
     targetRotation: {x: 3.8, y: -103.2, z: 32}
     targetZoom: 16
   - groupName: Proximity to Sea
@@ -1903,14 +1940,21 @@ MonoBehaviour:
     targetZoom: 15
   - groupName: Topography
     toggleGroupParent: {fileID: 764231867}
-    additionalObjectsToActivate: []
+    additionalObjectsToActivate:
+    - {fileID: 994048047}
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
-    titleText: Time Zones of Cities
-    bodyText: Different cities have different time zones based on where on earth
-      they are located.
-    targetRotation: {x: 0, y: 145, z: 0}
-    targetZoom: 26.82
+    titleText: Topography
+    bodyText: '<b>Key Effect:</b> Landforms like mountains block winds and create
+      rain-shadow zones.
+
+      <b>Examples:</b> Western Ghats (heavy rainfall on
+      coastal side, dry Deccan Plateau), Himalayas block cold winds from Central
+      Asia.
+
+      <b>(Click on Western Ghats for the 3D model)'
+    targetRotation: {x: 8, y: -106.8, z: 20.4}
+    targetZoom: 13
 --- !u!1 &419430907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2411,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetColor: {r: 0.029567624, g: 0.408805, b: 0.12170767, a: 1}
+--- !u!114 &490845287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.32415643, g: 0.6472173, b: 0.69182384, a: 1}
 --- !u!1 &494791528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,7 +2665,7 @@ MonoBehaviour:
   featureName: "3000 m \u2013 Very High Altitude (3000\u20135000 m)"
   informationText: Tingling sensations, headache, fatigue, and other indications
     of altitude sickness will usually begin to occur from about 2500 m onward.
-  highlightColor: {r: 0.99866563, g: 1, b: 0.33647794, a: 1}
+  highlightColor: {r: 0.7924528, g: 0.7831213, b: 0.51584184, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &502791907 stripped
@@ -3839,6 +3896,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697675328}
   m_CullTransparentMesh: 1
+--- !u!114 &722510942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.32415643, g: 0.6472173, b: 0.69182384, a: 1}
 --- !u!1 &725235362 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5638838915283354148, guid: a6b016ccba8326142af2e9b965e99811, type: 3}
@@ -3910,13 +3980,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8530789549762709849, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7865206302342155769, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6906856453654833477, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5214379273897574405, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4295435146213460030, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2528168732173654149, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_Name
@@ -3924,6 +4010,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342160824177582928, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359032865921207494, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734835439505181717, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887530601189556398, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7506693518204400413, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4233,7 +4339,7 @@ MonoBehaviour:
   informationText: Many will experience unconsciousness at this altitude if not properly
     acclimatized. There are only a few mountain ranges in the world that reach this
     altitude.
-  highlightColor: {r: 0.99866563, g: 1, b: 0.33647794, a: 1}
+  highlightColor: {r: 1, g: 0.6799152, b: 0.11635202, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &891801250
@@ -4448,6 +4554,281 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946604749}
   m_CullTransparentMesh: 1
+--- !u!1001 &994048037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1010850164}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8530789549762709849, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7865206302342155769, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6906856453654833477, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5214379273897574405, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4295435146213460030, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2528168732173654149, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_Name
+      value: indiaTopo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342160824177582928, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359032865921207494, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734835439505181717, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887530601189556398, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7506693518204400413, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3994166791722353653, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994048051}
+    - targetCorrespondingSourceObject: {fileID: 118651288608198584, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994048050}
+    - targetCorrespondingSourceObject: {fileID: 6369288688867569343, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994048049}
+    - targetCorrespondingSourceObject: {fileID: -4031811230724884400, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994048048}
+    - targetCorrespondingSourceObject: {fileID: 6831417109013394911, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 490845287}
+    - targetCorrespondingSourceObject: {fileID: -8750171028907214397, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1509659053}
+    - targetCorrespondingSourceObject: {fileID: -5888795597931733181, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722510942}
+    - targetCorrespondingSourceObject: {fileID: -3665582943610389753, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1001624743}
+    - targetCorrespondingSourceObject: {fileID: -3665582943610389753, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1001624747}
+  m_SourcePrefab: {fileID: 100100000, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+--- !u!4 &994048038 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3665582943610389753, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5888795597931733181, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8750171028907214397, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6831417109013394911, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4031811230724884400, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6369288688867569343, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118651288608198584, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3994166791722353653, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994048047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8eb8fbdfdaafb2b4f80e2753c602ad9b, type: 3}
+  m_PrefabInstance: {fileID: 994048037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &994048048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.32415643, g: 0.6472173, b: 0.69182384, a: 1}
+--- !u!114 &994048049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.45462987, g: 0.6805195, b: 0.7987421, a: 1}
+--- !u!114 &994048050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.45462987, g: 0.6805195, b: 0.7987421, a: 1}
+--- !u!114 &994048051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.45462987, g: 0.6805195, b: 0.7987421, a: 1}
+--- !u!114 &1001624743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.029567624, g: 0.408805, b: 0.12170767, a: 1}
+--- !u!114 &1001624747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f74545b045346643b751b9645879341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detailedModel: {fileID: 0}
+  rootModelToScaleDown: {fileID: 0}
+  backButton: {fileID: 0}
+  transitionDuration: 0.5
+  easeType: 18
+  customTargetScale: {x: 0, y: 0, z: 0}
+  cameraDefaultRotation: {x: 0, y: 0, z: 0}
+  cameraDefaultZoom: 25
+  globalInputManager: {fileID: 0}
+  dropdownGroupController: {fileID: 0}
+  globeRotator: {fileID: 0}
+  uiElementsToHide: []
+  objectsToEnableOnActive: []
+  detailSkybox: {fileID: 0}
+  canvasImageTarget: {fileID: 0}
+  displaySprite: {fileID: 0}
 --- !u!1 &1004598500
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,6 +7635,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetColor: {r: 0.19188315, g: 0.5944849, b: 0.7924528, a: 1}
+--- !u!114 &1509659053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994048041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cdebcba3ff3fa409f77d532445eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.32415643, g: 0.6472173, b: 0.69182384, a: 1}
 --- !u!1 &1541299911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2958751090746266512, guid: 6a3f0ca578d95c54f8658a0ef00dd8bf, type: 3}
@@ -8608,9 +9002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Altitude
-  informationText: "Key Effect: Temperature decreases with increase in height. There
-    is a fall in\r\ntemperature by 6.5\xB0C per kilometer of altitude gain.\r\nExamples:
-    Quito cooler than coastal Guayaquil, Leh colder than Delhi."
+  informationText: "<b>Key Effect:</b> Temperature decreases with increase in height.
+    There is a fall in temperature by 6.5\xB0C per kilometer of altitude gain.\r\n<b>Examples:</b>
+    Quito cooler than coastal Guayaquil, Leh colder than Delhi.\n<b>(Click on Himalayas
+    for the 3D model about altitude)"
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8769,7 +9164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 81a51d568b9e9eb4d8bc2a2cf1bfc3ee, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3540298889704901316, guid: 81a51d568b9e9eb4d8bc2a2cf1bfc3ee, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -8803,6 +9198,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81a51d568b9e9eb4d8bc2a2cf1bfc3ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 752753932}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81a51d568b9e9eb4d8bc2a2cf1bfc3ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994048038}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81a51d568b9e9eb4d8bc2a2cf1bfc3ee, type: 3}
       insertIndex: -1
@@ -10251,6 +10649,7 @@ MonoBehaviour:
   cameraDefaultRotation: {x: 0, y: 0, z: 0}
   cameraDefaultZoom: 25
   globalInputManager: {fileID: 186617690}
+  dropdownGroupController: {fileID: 396989369}
   globeRotator: {fileID: 1810026276}
   uiElementsToHide:
   - {fileID: 1234614476}

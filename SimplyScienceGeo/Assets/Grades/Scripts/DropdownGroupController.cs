@@ -226,4 +226,15 @@ public class DropdownGroupController : MonoBehaviour
             globeRotator?.MoveToTarget(group.targetRotation, group.targetZoom, 1.2f, LeanTweenType.easeInOutSine);
         }
     }
+    /// <summary>
+    /// Public function that allows other scripts (like ModelActivator)
+    /// to force the dropdown to re-run its logic for the current value.
+    /// </summary>
+    public void ResetToCurrentDropdownValue()
+    {
+        if (dropdown == null) return;
+
+        // This runs the exact same function as changing the dropdown.
+        HandleDropdownValueChanged(dropdown.value);
+    }
 }

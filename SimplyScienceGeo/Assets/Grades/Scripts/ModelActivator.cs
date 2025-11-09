@@ -29,7 +29,8 @@ public class ModelActivator : MonoBehaviour
 
     [Header("Manager References")]
     [SerializeField] private GlobalInputManager globalInputManager;
-
+    // --- 1. ADD THIS REFERENCE ---
+    [SerializeField] private DropdownGroupController dropdownGroupController;
     [Header("Components to Disable on Detail")]
     [SerializeField] private GlobeRotator globeRotator;
 
@@ -155,7 +156,7 @@ public class ModelActivator : MonoBehaviour
     private void OnDeactivationComplete()
     {
         ToggleOtherComponents(true);
-        ToggleUI(true);
+        ToggleUI(true); // <-- The UI is now active
         backButton.gameObject.SetActive(false);
         backButton.interactable = true;
 
@@ -166,7 +167,27 @@ public class ModelActivator : MonoBehaviour
 
         _currentActiveModel = null;
         _state = ModelState.Inactive;
+
+        // --- 2. ADD THIS BLOCK ---
+        // This calls the reset *after* the UI is active,
+        // and safely waits one frame to avoid the coroutine error.
+        if (dropdownGroupController != null)
+        {
+            StartCoroutine(DelayedResetDropdown());
+        }
+        // --- END OF ADDITION ---
     }
+
+    // --- 3. ADD THIS NEW FUNCTION ---
+    private System.Collections.IEnumerator DelayedResetDropdown()
+    {
+        // Wait one frame for the DropdownGroupController's GameObject
+        // to be fully awake and ready to start its own coroutines.
+        yield return null;
+
+        dropdownGroupController.ResetToCurrentDropdownValue();
+    }
+    // --- END OF ADDITION ---
 
     private static void ToggleAllActivatorColliders(bool enable)
     {
