@@ -80,7 +80,13 @@ public class SequentialLabelAnimator : MonoBehaviour
         // This method is called whenever the parent GameObject (and thus this script) is activated.
         ShowLabel();
     }
-
+    // ADD THIS METHOD
+    void OnDisable()
+    {
+        // When the object is disabled, instantly hide the elements
+        // so they are ready to animate again when OnEnable is called.
+        HideLabelInstant();
+    }
     /// <summary>
     /// Starts the sequential animation of the line and then the text.
     /// </summary>
