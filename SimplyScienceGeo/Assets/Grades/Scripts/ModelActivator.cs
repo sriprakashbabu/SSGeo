@@ -21,6 +21,12 @@ public class ModelActivator : MonoBehaviour
     [SerializeField] private LeanTweenType easeType = LeanTweenType.easeOutExpo;
     [SerializeField] private Vector3 customTargetScale = Vector3.zero;
 
+    [Header("Camera Reset")]
+    [Tooltip("The default rotation the camera should reset to.")]
+    [SerializeField] private Vector3 cameraDefaultRotation = Vector3.zero;
+    [Tooltip("The default zoom (distance) the camera should reset to.")]
+    [SerializeField] private float cameraDefaultZoom = 25f;
+
     [Header("Manager References")]
     [SerializeField] private GlobalInputManager globalInputManager;
 
@@ -29,6 +35,7 @@ public class ModelActivator : MonoBehaviour
 
     [Header("UI & Environment")]
     [SerializeField] private GameObject[] uiElementsToHide;
+    [SerializeField] private GameObject[] objectsToEnableOnActive; // <-- New field
     [SerializeField] private Material detailSkybox;
 
     [Header("Image Display")]
@@ -66,9 +73,6 @@ public class ModelActivator : MonoBehaviour
         detailedModel.transform.localScale = Vector3.zero;
         detailedModel.SetActive(false);
         backButton.gameObject.SetActive(false);
-
-        // --- CHANGE #1: Do NOT add the listener here anymore ---
-        // backButton.onClick.AddListener(Deactivate); 
     }
 
     void OnEnable() => _allActivators.Add(this);
@@ -83,12 +87,29 @@ public class ModelActivator : MonoBehaviour
 
         if (globalInputManager != null) globalInputManager.enabled = false;
         ToggleAllActivatorColliders(false);
+
+        // Tell the camera to move back to its default position
+        if (globeRotator != null)
+        {
+            globeRotator.MoveToTarget(
+                cameraDefaultRotation,
+                cameraDefaultZoom,
+                transitionDuration,
+                easeType
+            );
+        }
+
         ToggleOtherComponents(false);
         ToggleUI(false);
+
+        // Activate new objects
+        foreach (var obj in objectsToEnableOnActive)
+        {
+            if (obj != null) obj.SetActive(true);
+        }
+
         UpdateSkybox(true);
         backButton.gameObject.SetActive(true);
-
-        // --- CHANGE #2: Add the listener only when we activate THIS model ---
         backButton.onClick.AddListener(Deactivate);
 
         // Show associated image
@@ -107,12 +128,17 @@ public class ModelActivator : MonoBehaviour
 
     public void Deactivate()
     {
-        // This check is now extra safe, as only the active model should be listening
         if (_state != ModelState.Active || _currentActiveModel != this) return;
 
         _state = ModelState.Deactivating;
         backButton.interactable = false;
         UpdateSkybox(false);
+
+        // Deactivate new objects
+        foreach (var obj in objectsToEnableOnActive)
+        {
+            if (obj != null) obj.SetActive(false);
+        }
 
         if (canvasImageTarget != null)
             canvasImageTarget.gameObject.SetActive(false);
@@ -133,7 +159,6 @@ public class ModelActivator : MonoBehaviour
         backButton.gameObject.SetActive(false);
         backButton.interactable = true;
 
-        // --- CHANGE #3: Remove the listener so it doesn't fire when inactive ---
         backButton.onClick.RemoveListener(Deactivate);
 
         if (globalInputManager != null) globalInputManager.enabled = true;
@@ -181,7 +206,6 @@ public class ModelActivator : MonoBehaviour
         LeanTween.cancel(gameObject, true);
         if (_currentActiveModel == this)
         {
-            // --- CHANGE #4: Clean up listener on destroy, just in case ---
             if (backButton != null) backButton.onClick.RemoveListener(Deactivate);
             _currentActiveModel = null;
             _state = ModelState.Inactive;
