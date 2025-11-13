@@ -1676,9 +1676,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: "1500 m \u2013 High Altitude (1500\u20133000 m)"
-  informationText: This is where AMS (Acute Mountain Sickness) begins to be seen
-    in some individuals. It generally begins with headaches and an altered night
-    vision.
+  informationText: <align=left>This is where AMS (Acute Mountain Sickness) begins
+    to be seen in some individuals. It generally begins with headaches and an altered
+    night vision.
   highlightColor: {r: 0.41823888, g: 1, b: 0.98668563, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1695,9 +1695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: "8000 m \u2013 Death Zone"
-  informationText: The oxygen concentration at this altitude is so low, your cells
-    do not have enough oxygen to build new tissue. Your body will continually wither
-    away until death.
+  informationText: <align=left>The oxygen concentration at this altitude is so low,
+    your cells do not have enough oxygen to build new tissue. Your body will continually
+    wither away until death.
   highlightColor: {r: 0.9496855, g: 0.3374668, b: 0.33953482, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1916,10 +1916,10 @@ MonoBehaviour:
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: Altitude
-    bodyText: "<b>Key Effect:</b> Temperature decreases with increase in height.
-      There is a fall in temperature by 6.5\xB0C per kilometer of altitude gain.\r\n<b>Examples:</b>
-      Quito cooler than coastal Guayaquil, Leh colder than Delhi.\n<b>(Click on Himalayas
-      for the 3D model about altitude)"
+    bodyText: "<align=left><b>Key Effect:</b> Temperature decreases with increase
+      in height. There is a fall in temperature by 6.5\xB0C per kilometer of altitude
+      gain.\r\n<b>Examples:</b> Quito cooler than coastal Guayaquil, Leh colder than
+      Delhi.\n<b>(Click on Himalayas for the 3D model about altitude)"
     targetRotation: {x: 3.8, y: -103.2, z: 32}
     targetZoom: 16
   - groupName: Proximity to Sea
@@ -1928,8 +1928,9 @@ MonoBehaviour:
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: Proximity to sea.
-    bodyText: Choose whether the wind blows from land to sea or sea to land to explore
-      how coastal areas stay cooler or warmer through the day and night.
+    bodyText: <align=left>Choose whether the wind blows from land to sea or sea to
+      land to explore how coastal areas stay cooler or warmer through the day and
+      night.
     targetRotation: {x: 9, y: -113, z: 24}
     targetZoom: 13
   - groupName: Winds
@@ -1938,8 +1939,8 @@ MonoBehaviour:
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: Winds
-    bodyText: Select a wind type to see how it changes the temperature and weather
-      conditions.
+    bodyText: <align=left>Select a wind type to see how it changes the temperature
+      and weather conditions.
     targetRotation: {x: 11, y: -110, z: 30}
     targetZoom: 15
   - groupName: Topography
@@ -1949,12 +1950,12 @@ MonoBehaviour:
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: Topography
-    bodyText: '<b>Key Effect:</b> Landforms like mountains block winds and create
-      rain-shadow zones.
+    bodyText: '<align=left><b>Key Effect:</b> Landforms like mountains block winds
+      and create rain-shadow zones.
 
-      <b>Examples:</b> Western Ghats (heavy rainfall on
-      coastal side, dry Deccan Plateau), Himalayas block cold winds from Central
-      Asia.
+      <b>Examples:</b> Western Ghats (heavy
+      rainfall on coastal side, dry Deccan Plateau), Himalayas block cold winds from
+      Central Asia.
 
       <b>(Click on Western Ghats for the 3D model)'
     targetRotation: {x: 8, y: -106.8, z: 20.4}
@@ -2667,8 +2668,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: "3000 m \u2013 Very High Altitude (3000\u20135000 m)"
-  informationText: Tingling sensations, headache, fatigue, and other indications
-    of altitude sickness will usually begin to occur from about 2500 m onward.
+  informationText: <align=left>Tingling sensations, headache, fatigue, and other
+    indications of altitude sickness will usually begin to occur from about 2500
+    m onward.
   highlightColor: {r: 0.7924528, g: 0.7831213, b: 0.51584184, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4344,9 +4346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: "5000 m \u2013 Extreme Altitude (Over 5000 m)"
-  informationText: Many will experience unconsciousness at this altitude if not properly
-    acclimatized. There are only a few mountain ranges in the world that reach this
-    altitude.
+  informationText: <align=left>Many will experience unconsciousness at this altitude
+    if not properly acclimatized. There are only a few mountain ranges in the world
+    that reach this altitude.
   highlightColor: {r: 1, g: 0.6799152, b: 0.11635202, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6005,6 +6007,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8348335611794784474, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1469.167
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348335611794784474, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 178.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348335611794784474, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348335611794784474, guid: e739b1505d2ccce4d80471bdb76f433c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26.87
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6064,17 +6082,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Summer Winds
-  informationText: '<b>Key Effect:</b> Winds carry moisture and temperature, affecting
-    rainfall and weather.
+  informationText: '<align=left><b>Key Effect:</b> Winds carry moisture and temperature,
+    affecting rainfall and weather.
 
-    <b>Examples:</b> States like Punjab, Haryana, Rajasthan
-    and Madhya Pradesh often
+    <b>Examples:</b> States like Punjab, Haryana,
+    Rajasthan and Madhya Pradesh often
 
-    receive winds blowing over the deserts of Arabia
-    to Afghanistan, they bring dry
+    receive winds blowing over the deserts
+    of Arabia to Afghanistan, they bring dry
 
-    and hot air that causes severe heat waves
-    in summer.'
+    and hot air that causes severe
+    heat waves in summer.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7230,9 +7248,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Mumbai
-  informationText: "Mumbai, being located near the sea, experiences cooler summers
-    with temperatures around 32\xB0C and milder winters with temperatures around
-    18\xB0C.\r\n"
+  informationText: "<align=left>Mumbai, being located near the sea, experiences cooler
+    summers with temperatures around 32\xB0C and milder winters with temperatures
+    around 18\xB0C.\r\n"
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8546,9 +8564,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Mumbai
-  informationText: "Mumbai, being located near the sea, experiences cooler summers
-    with temperatures around 32\xB0C and milder winters with temperatures around
-    18\xB0C.\r\n"
+  informationText: "<align=left>Mumbai, being located near the sea, experiences cooler
+    summers with temperatures around 32\xB0C and milder winters with temperatures
+    around 18\xB0C.\r\n"
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8964,7 +8982,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1774931774}
   - component: {fileID: 1774931775}
-  - component: {fileID: 1774931776}
   m_Layer: 0
   m_Name: Altitude
   m_TagString: Untagged
@@ -9017,26 +9034,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1774931776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774931771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecae9b93724bbb34da7a93263d8c22e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureName: Altitude
-  informationText: "<b>Key Effect:</b> Temperature decreases with increase in height.
-    There is a fall in temperature by 6.5\xB0C per kilometer of altitude gain.\r\n<b>Examples:</b>
-    Quito cooler than coastal Guayaquil, Leh colder than Delhi.\n<b>(Click on Himalayas
-    for the 3D model about altitude)"
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overrideInitialColor: 0
-  initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1787779846
 GameObject:
   m_ObjectHideFlags: 0
@@ -9307,9 +9304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Tropical Zone
-  informationText: "<b>Location:</b> Located between 0\xB0 and 23.5\xB0 latitude\n<b>Average
-    temperature:</b> Lies between 25\xB0C to 35\xB0C\n<b>Example:</b> Brazil, Congo,
-    Indonesia, India (Kerala)"
+  informationText: "<align=left><b>Location:</b> Located between 0\xB0 and 23.5\xB0
+    latitude\n<b>Average temperature:</b> Lies between 25\xB0C to 35\xB0C\n<b>Example:</b>
+    Brazil, Congo, Indonesia, India (Kerala)"
   highlightColor: {r: 0.89019614, g: 0.49411768, b: 0.5254902, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9326,9 +9323,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Temperate Zone
-  informationText: "<b>Location:</b> Located between 40\xB0 and 60\xB0 latitude\n<b>Average
-    temperature:</b> Lies between -3\xB0C to 10\xB0C\n<b>Example:</b> France, USA,
-    China, Australia"
+  informationText: "<align=left><b>Location:</b> Located between 40\xB0 and 60\xB0
+    latitude\n<b>Average temperature:</b> Lies between -3\xB0C to 10\xB0C\n<b>Example:</b>
+    France, USA, China, Australia"
   highlightColor: {r: 0.54901963, g: 0.8000001, b: 0.6039216, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9345,9 +9342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Subtropical Zone
-  informationText: "<b>Location:</b> Located between 23.5\xB0 and 40\xB0 latitude\n<b>Average
-    temperature:</b> Lies between 10\xB0C to 25\xB0C\n<b>Example:</b> India (Rajasthan,Gujarat),
-    USA (Florida), Mexico, Italy"
+  informationText: "<align=left><b>Location:</b> Located between 23.5\xB0 and 40\xB0
+    latitude\n<b>Average temperature:</b> Lies between 10\xB0C to 25\xB0C\n<b>Example:</b>
+    India (Rajasthan,Gujarat), USA (Florida), Mexico, Italy"
   highlightColor: {r: 0.9176471, g: 0.73333335, b: 0.5294118, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9364,9 +9361,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Polar Zone
-  informationText: "<b>Location:</b> Located between 60\xB0 and 90\xB0 latitude\n<b>Average
-    temperature:</b> Lies between -3\xB0C \n<b>Example:</b>Antarctica, Greenland,
-    Canada, Russia\r\n(Siberia)"
+  informationText: "<align=left><b>Location:</b> Located between 60\xB0 and 90\xB0
+    latitude\n<b>Average temperature:</b> Lies between -3\xB0C \n<b>Example:</b>Antarctica,
+    Greenland, Canada, Russia\r\n(Siberia)"
   highlightColor: {r: 0.5411765, g: 0.7254902, b: 0.89019614, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
@@ -9995,13 +9992,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureName: Winter Winds
-  informationText: '<b>Key Effect:</b> Winds carry moisture and temperature, affecting
-    rainfall and weather.
+  informationText: '<align=left><b>Key Effect:</b> Winds carry moisture and temperature,
+    affecting rainfall and weather.
 
-    <b>Examples:</b> In winter cold winds from across
-    the Himalayas creep into the
+    <b>Examples:</b> In winter cold winds from
+    across the Himalayas creep into the
 
-    Himalayan foothills, resulting in cold waves.'
+    Himalayan foothills, resulting in cold
+    waves.'
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   overrideInitialColor: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}

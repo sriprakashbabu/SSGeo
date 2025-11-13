@@ -1359,10 +1359,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Hill Range\n\u2022 Importance: Oldest mountain system, mineral
-    resources, forests.\n\u2022 States/Regions: Rajasthan, Haryana, Gujarat.\n\u2022
-    Features: Dry deciduous forests, old fold mountains, natural barrier, preventing
-    the Thar\n\u2022 Desert from expanding further eastward"
+  m_text: '<b>Type: </b>Hill Range
+
+    <b>Importance: </b>Oldest mountain system,
+    mineral resources, forests.
+
+    <b>States/Regions:</b> Rajasthan, Haryana, Gujarat.
+
+    <b>Features:</b>
+    Dry deciduous forests, old fold mountains, natural barrier, preventing the Thar
+
+    Desert
+    from expanding further eastward'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1427,7 +1435,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 12.171417}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2470,7 +2478,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7326,9 +7334,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Coastal Region\n\u2022 Importance: Ports, trade, fishing,
-    tourism.\n\u2022 States/Regions: Kerala, Tamil Nadu, Odisha, Maharashtra, Gujarat.\n\u2022
-    Features: East Coast and West Coast, cliffs, ports, fishing villages."
+  m_text: '<b>Type:</b> Coastal Region
+
+    <b>Importance: </b>Ports, trade, fishing,
+    tourism.
+
+    <b>States/Regions: </b>Kerala, Tamil Nadu, Odisha, Maharashtra,
+    Gujarat.
+
+    <b>Features:</b> East Coast and West Coast, cliffs, ports, fishing
+    villages.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7393,7 +7408,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 13.796883}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7600,9 +7615,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Hot Desert\n\u2022 Importance: Pastoral life, handicrafts,
-    solar and wind energy.\n\u2022 States/Regions: Rajasthan, Gujarat.\n\u2022 Features:
-    Sand dunes, patchy vegetation, scrub vegetation, khejri trees."
+  m_text: '<b>Type: </b>Hot Desert
+
+    <b>Importance:</b> Pastoral life, handicrafts,
+    solar and wind energy.
+
+    <b>States/Regions: </b>Rajasthan, Gujarat.
+
+    <b>Features:
+    </b>Sand dunes, patchy vegetation, scrub vegetation, khejri trees.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7667,7 +7688,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 11.360016}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8288,10 +8309,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Plateau\r\n\u2022 Importance: Mineral wealth, rivers, agriculture,
-    heritage.\r\n\u2022 States/Regions: Maharashtra, Karnataka, Telangana, Andhra
-    Pradesh.\r\r\n\u2022 Features: Black soil, surrounded by water on all three sides,
-    bordered by two mountainranges, the Western Ghats and Eastern Ghats."
+  m_text: "<b>Type: </b>Plateau\r\n<b>Importance: </b>Mineral wealth, rivers, agriculture,
+    heritage.\r\n<b>States/Regions:</b> Maharashtra, Karnataka, Telangana, Andhra
+    Pradesh.\r\r\n<b>Features:</b> Black soil, surrounded by water on all three sides,
+    bordered by two mountain ranges, the Western Ghats and Eastern Ghats."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8356,7 +8377,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 13.794289}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8775,10 +8796,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: River Plain\n\u2022 Importance: Fertile soil, agriculture,
-    dense population and industries.\n\u2022 States/Regions: Uttar Pradesh, Bihar,
-    West Bengal.\n\u2022 Features: Fertile alluvial soil, river network, crop fields,
-    settlements."
+  m_text: '<b>Type: </b>River Plain
+
+    <b>Importance: </b>Fertile soil, agriculture,
+    dense population and industries.
+
+    <b>States/Regions: </b>Uttar Pradesh, Bihar,
+    West Bengal.
+
+    <b>Features:</b> Fertile alluvial soil, river network, crop
+    fields, settlements.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8843,7 +8870,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 10.548584}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9654,10 +9681,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Mountain Range\r\n\u2022 Importance: Source of rivers, natural
-    barrier, climate regulator, tourism hub.\r\n\u2022 States/Regions: Jammu & Kashmir,
-    Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh.\r\r\n\u2022 Features:
-    Snow-capped peaks, glaciers, river sources, alpine forests."
+  m_text: "<b>Type: </b>Mountain Range\r\n<b>Importance: </b>Source of rivers, natural
+    barrier, climate regulator, tourism hub.\r\n<b>States/Regions:</b> Jammu & Kashmir,
+    Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh.\r\r\n<b>Features: </b>Snow-capped
+    peaks, glaciers, river sources, alpine forests."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9722,7 +9749,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 11.4973755}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10464,6 +10491,10 @@ MonoBehaviour:
   zoomInActionReference: {fileID: 6240969308177333660, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   zoomOutActionReference: {fileID: 6240969308177333660, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   enablePanning: 1
+  presets: []
+  presetToggleGroup: {fileID: 0}
+  presetToggles: []
+  resetWhenNoPresetSelected: 1
 --- !u!225 &1541714226
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10621,9 +10652,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Delta\n\u2022 Importance: Mangrove ecosystem, tiger reserve,
-    fertile soil.\n\u2022 States/Regions: West Bengal (Ganga-Brahmaputra Delta).\n\u2022
-    Features: Mangrove forests, tidal creeks, mudflats, swampy wetlands."
+  m_text: '<b>Type: </b>Delta
+
+    <b>Importance:</b> Mangrove ecosystem, tiger reserve,
+    fertile soil.
+
+    <b>States/Regions: </b>West Bengal (Ganga-Brahmaputra Delta).
+
+    <b>Features:</b>
+    Mangrove forests, tidal creeks, mudflats, swampy wetlands.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10688,7 +10725,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 12.171455}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10895,10 +10932,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Cold Desert\r\n\u2022 Importance: Unique biodiversity, tourism,
-    cultural heritage.\r\n\u2022 States/Regions: Ladakh, Spiti Valley (HP).\r\n\u2022
-    Features: Sparse and Drought-Resistant vegetation, low precipitation, rocky terrain
-    and valleys"
+  m_text: '<b>Type:</b> Cold Desert
+
+    <b>Importance: </b>Unique biodiversity,
+    tourism, cultural heritage.
+
+    <b>States/Regions: </b>Ladakh, Spiti Valley
+    (HP).
+
+    <b>Features: </b>Sparse and Drought-Resistant vegetation, low precipitation,
+    rocky terrain and valleys.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10963,7 +11006,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 12.17144}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11302,10 +11345,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Hills\n\u2022 Importance: Rich biodiversity, shifting cultivation
-    (jhum), tourism.\n\u2022 States/Regions: Meghalaya, Nagaland, Mizoram, Manipur,
-    Tripura.\n\u2022 Features: Bamboo forests, dissected plateau terrain, valleys,
-    waterfalls."
+  m_text: '<b>Type:</b> Hills
+
+    <b>Importance:</b> Rich biodiversity, shifting
+    cultivation (jhum), tourism.
+
+    <b>States/Regions:</b> Meghalaya, Nagaland,
+    Mizoram, Manipur, Tripura.
+
+    <b>Features:</b> Bamboo forests, dissected plateau
+    terrain, valleys, waterfalls.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11370,7 +11419,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 11.360016}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13748,9 +13797,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2022 Type: Islands\r\n\u2022 Importance: Tourism, biodiversity, coral
-    reefs, strategic importance.\r\n\u2022 States/Regions: Andaman & Nicobar (Bay
-    of Bengal)."
+  m_text: '<b>Type:</b> Islands
+
+    <b>Importance: </b>Tourism, biodiversity, coral
+    reefs, strategic importance.
+
+    <b>States/Regions:</b> Andaman & Nicobar (Bay
+    of Bengal).'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13815,7 +13868,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 12.171455}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
