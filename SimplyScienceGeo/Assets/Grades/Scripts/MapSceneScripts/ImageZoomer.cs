@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -18,11 +19,9 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public Vector3 defaultViewScale = Vector3.one;
     public Vector2 defaultViewPosition = Vector2.zero;
 
-    // ADDED: New settings for the reset animation
     [Header("Reset Tween Settings")]
     public float resetTweenDuration = 0.4f;
     public LeanTweenType resetEaseType = LeanTweenType.easeOutCubic;
-
 
     [Header("Input Actions")]
     public InputActionReference scrollActionReference;
@@ -32,7 +31,42 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     [Header("Panning Settings")]
     public bool enablePanning = true;
 
+    // ---------- PRESETS ----------
+    [System.Serializable]
+    public struct ImageViewPreset
+    {
+        [Tooltip("Index of this preset in the array (auto-filled).")]
+        public int index;
+
+        [Tooltip("Friendly name so you remember what this view is for.")]
+        public string name;
+
+        [Tooltip("Target zoom level.")]
+        public float zoom;
+
+        [Tooltip("Target pan X.")]
+        public float panX;
+
+        [Tooltip("Target pan Y.")]
+        public float panY;
+    }
+
+    [Header("Presets")]
+    public ImageViewPreset[] presets;
+
+    [Header("Preset UI")]
+    [Tooltip("Optional: ToggleGroup that these preset toggles belong to (set Allow Switch Off on it).")]
+    public ToggleGroup presetToggleGroup;
+
+    [Tooltip("Toggles that correspond to each preset (index must match).")]
+    public Toggle[] presetToggles;
+
+    [Tooltip("If true, when no toggle is selected it will reset to default view.")]
+    public bool resetWhenNoPresetSelected = true;
+    // -----------------------------
+
     private Vector2 lastPointerPosition;
+    private int currentPresetIndex = -1;   // -1 means no preset active
 
     void Awake()
     {
@@ -70,61 +104,116 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         zoomOutActionReference?.action.Disable();
     }
 
+    // Auto-sync preset indices in inspector
+    void OnValidate()
+    {
+        if (presets != null)
+        {
+            for (int i = 0; i < presets.Length; i++)
+            {
+                presets[i].index = i;
+            }
+        }
+    }
+
     void Update()
     {
         if (imageRectTransform == null) return;
 
-        // --- ADDED: Prevent user input while reset tween is active ---
-        if (LeanTween.isTweening(imageRectTransform.gameObject)) return;
-
-        // ... (rest of Update method is the same)
-        float previousZoom = imageRectTransform.localScale.x;
-        float currentZoom = previousZoom;
-
-        if (scrollActionReference != null && scrollActionReference.action.enabled)
+        // Handle zoom input (mouse, keyboard, pinch)
+        if (!LeanTween.isTweening(imageRectTransform.gameObject))
         {
-            float scrollInput = scrollActionReference.action.ReadValue<Vector2>().y;
-            if (scrollInput != 0)
+            float previousZoom = imageRectTransform.localScale.x;
+            float currentZoom = previousZoom;
+
+            if (scrollActionReference != null && scrollActionReference.action.enabled)
             {
-                if (Mathf.Abs(scrollInput) > 1.0f) scrollInput = Mathf.Sign(scrollInput);
-                currentZoom += scrollInput * zoomSpeed;
+                float scrollInput = scrollActionReference.action.ReadValue<Vector2>().y;
+                if (scrollInput != 0)
+                {
+                    if (Mathf.Abs(scrollInput) > 1.0f) scrollInput = Mathf.Sign(scrollInput);
+                    currentZoom += scrollInput * zoomSpeed;
+                }
+            }
+
+            if (zoomInActionReference != null && zoomInActionReference.action.enabled && zoomInActionReference.action.IsPressed())
+            {
+                currentZoom += keyboardZoomSensitivity * zoomSpeed * Time.deltaTime;
+            }
+
+            if (zoomOutActionReference != null && zoomOutActionReference.action.enabled && zoomOutActionReference.action.IsPressed())
+            {
+                currentZoom -= keyboardZoomSensitivity * zoomSpeed * Time.deltaTime;
+            }
+
+            if (Input.touchCount == 2)
+            {
+                Touch touchZero = Input.GetTouch(0);
+                Touch touchOne = Input.GetTouch(1);
+                Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+                Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+                float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+                float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
+                float difference = currentMagnitude - prevMagnitude;
+                currentZoom += difference * zoomSpeed * 0.05f;
+            }
+
+            currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
+
+            if (!Mathf.Approximately(currentZoom, previousZoom))
+            {
+                imageRectTransform.localScale = new Vector3(currentZoom, currentZoom, imageRectTransform.localScale.z);
+                ApplyConstraints();
             }
         }
 
-        if (zoomInActionReference != null && zoomInActionReference.action.enabled && zoomInActionReference.action.IsPressed())
+        // 🔍 Handle preset selection via toggles
+        UpdatePresetSelectionFromToggles();
+    }
+
+    // Check toggles and apply / reset as needed
+    private void UpdatePresetSelectionFromToggles()
+    {
+        if (presetToggles == null || presetToggles.Length == 0)
+            return;
+
+        int newIndex = -1;
+
+        // Find first toggle that is on
+        for (int i = 0; i < presetToggles.Length; i++)
         {
-            currentZoom += keyboardZoomSensitivity * zoomSpeed * Time.deltaTime;
-        }
-        if (zoomOutActionReference != null && zoomOutActionReference.action.enabled && zoomOutActionReference.action.IsPressed())
-        {
-            currentZoom -= keyboardZoomSensitivity * zoomSpeed * Time.deltaTime;
+            if (presetToggles[i] != null && presetToggles[i].isOn)
+            {
+                newIndex = i;
+                break;
+            }
         }
 
-        if (Input.touchCount == 2)
+        // If nothing changed, do nothing
+        if (newIndex == currentPresetIndex)
+            return;
+
+        // Selection changed
+        currentPresetIndex = newIndex;
+
+        if (currentPresetIndex >= 0)
         {
-            Touch touchZero = Input.GetTouch(0);
-            Touch touchOne = Input.GetTouch(1);
-            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
-            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
-            float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
-            float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
-            float difference = currentMagnitude - prevMagnitude;
-            currentZoom += difference * zoomSpeed * 0.05f;
+            // A preset is now selected → go to that view
+            ApplyPreset(currentPresetIndex);
         }
-
-        currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
-
-        if (!Mathf.Approximately(currentZoom, previousZoom))
+        else
         {
-            imageRectTransform.localScale = new Vector3(currentZoom, currentZoom, imageRectTransform.localScale.z);
-            ApplyConstraints();
+            // No preset selected → reset view (if enabled)
+            if (resetWhenNoPresetSelected)
+            {
+                ResetView();
+            }
         }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (!enablePanning || imageRectTransform == null || viewportRectTransform == null) return;
-        // ADDED: Prevent drag while tweening
         if (LeanTween.isTweening(imageRectTransform.gameObject)) return;
         if (!CanPan()) return;
 
@@ -138,7 +227,6 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public void OnDrag(PointerEventData eventData)
     {
         if (!enablePanning || imageRectTransform == null || viewportRectTransform == null) return;
-        // ADDED: Prevent drag while tweening
         if (LeanTween.isTweening(imageRectTransform.gameObject)) return;
         if (!CanPan()) return;
 
@@ -158,20 +246,65 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData) { }
 
+    // Apply current-scale panning constraints
     void ApplyConstraints()
     {
         if (imageRectTransform == null || viewportRectTransform == null) return;
-        imageRectTransform.anchoredPosition = GetConstrainedPosition(imageRectTransform.anchoredPosition);
+        imageRectTransform.anchoredPosition = GetPanningConstrainedPosition(imageRectTransform.anchoredPosition);
     }
 
-    Vector2 GetConstrainedPosition(Vector2 targetPosition)
+    Vector2 GetPanningConstrainedPosition(Vector2 targetPosition)
     {
         if (imageRectTransform == null || viewportRectTransform == null) return targetPosition;
+
         float currentScale = imageRectTransform.localScale.x;
-        Vector2 contentScaledSize = new Vector2(imageRectTransform.rect.width * currentScale, imageRectTransform.rect.height * currentScale);
+        return GetPanningConstrainedPositionForZoom(targetPosition, currentScale);
+    }
+
+    // Constraints for an arbitrary zoom (used by presets)
+    Vector2 GetPanningConstrainedPositionForZoom(Vector2 targetPosition, float zoomScale)
+    {
+        if (imageRectTransform == null || viewportRectTransform == null) return targetPosition;
+
+        Vector2 contentScaledSize = new Vector2(
+            imageRectTransform.rect.width * zoomScale,
+            imageRectTransform.rect.height * zoomScale
+        );
         Vector2 viewportSize = viewportRectTransform.rect.size;
+
+        float maxPanX, maxPanY;
+
+        if (contentScaledSize.x < viewportSize.x)
+            maxPanX = 0;
+        else
+            maxPanX = contentScaledSize.x / 2f;
+
+        if (contentScaledSize.y < viewportSize.y)
+            maxPanY = 0;
+        else
+            maxPanY = contentScaledSize.y / 2f;
+
+        return new Vector2(
+            Mathf.Clamp(targetPosition.x, -maxPanX, maxPanX),
+            Mathf.Clamp(targetPosition.y, -maxPanY, maxPanY)
+        );
+    }
+
+    // Reset constraints (using default scale)
+    Vector2 GetResetConstrainedPosition(Vector2 targetPosition)
+    {
+        if (imageRectTransform == null || viewportRectTransform == null) return targetPosition;
+
+        float currentScale = defaultViewScale.x;
+        Vector2 contentScaledSize = new Vector2(
+            imageRectTransform.rect.width * currentScale,
+            imageRectTransform.rect.height * currentScale
+        );
+        Vector2 viewportSize = viewportRectTransform.rect.size;
+
         float maxPanX = Mathf.Max(0, (contentScaledSize.x - viewportSize.x) / 2f);
         float maxPanY = Mathf.Max(0, (contentScaledSize.y - viewportSize.y) / 2f);
+
         return new Vector2(
             Mathf.Clamp(targetPosition.x, -maxPanX, maxPanX),
             Mathf.Clamp(targetPosition.y, -maxPanY, maxPanY)
@@ -202,23 +335,55 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
     }
 
-    // CHANGED: This method now tweens the position and scale.
     public void ResetView()
     {
         if (imageRectTransform == null) return;
 
-        // Cancel any existing tweens on this object to prevent conflicts
         LeanTween.cancel(imageRectTransform.gameObject);
 
-        // Tween the scale back to its default value
         LeanTween.scale(imageRectTransform, defaultViewScale, resetTweenDuration)
             .setEase(resetEaseType);
 
-        // Tween the anchoredPosition back to its default
-        // and apply constraints once the tween is complete.
         LeanTween.move(imageRectTransform, defaultViewPosition, resetTweenDuration)
             .setEase(resetEaseType)
-            .setOnComplete(ApplyConstraints);
+            .setOnComplete(OnResetViewComplete);
+    }
+
+    void OnResetViewComplete()
+    {
+        imageRectTransform.anchoredPosition = GetResetConstrainedPosition(defaultViewPosition);
+    }
+
+    // Smoothly go to a preset (by index)
+    public void ApplyPreset(int index)
+    {
+        if (imageRectTransform == null) return;
+        if (presets == null || presets.Length == 0)
+        {
+            Debug.LogWarning("ImageZoomer: No presets defined.");
+            return;
+        }
+        if (index < 0 || index >= presets.Length)
+        {
+            Debug.LogWarning($"ImageZoomer: Preset index {index} is out of range.");
+            return;
+        }
+
+        ImageViewPreset p = presets[index];
+
+        float targetZoom = Mathf.Clamp(p.zoom, minZoom, maxZoom);
+        Vector3 endScale = new Vector3(targetZoom, targetZoom, imageRectTransform.localScale.z);
+
+        Vector2 rawTargetPos = new Vector2(p.panX, p.panY);
+        Vector2 endPos = GetPanningConstrainedPositionForZoom(rawTargetPos, targetZoom);
+
+        LeanTween.cancel(imageRectTransform.gameObject);
+
+        LeanTween.scale(imageRectTransform, endScale, resetTweenDuration)
+            .setEase(resetEaseType);
+
+        LeanTween.move(imageRectTransform, endPos, resetTweenDuration)
+            .setEase(resetEaseType);
     }
 
     private Camera GetCanvasCamera(PointerEventData eventData = null)

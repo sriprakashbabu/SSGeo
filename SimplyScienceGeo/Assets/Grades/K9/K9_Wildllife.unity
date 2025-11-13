@@ -1724,7 +1724,7 @@ GameObject:
   - component: {fileID: 387411511}
   - component: {fileID: 387411510}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: ArabianSeaText (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3911,7 +3911,7 @@ GameObject:
   - component: {fileID: 869240206}
   - component: {fileID: 869240205}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Bay of BengalText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
