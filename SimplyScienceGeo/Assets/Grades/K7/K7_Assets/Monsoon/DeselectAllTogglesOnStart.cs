@@ -10,23 +10,31 @@ public class DeselectAllTogglesOnStart : MonoBehaviour
 
     void Awake()
     {
-        // 1) Allow none selected if using ToggleGroup
-        if (toggleGroup != null) toggleGroup.allowSwitchOff = true;
-
-        // 2) Turn every toggle OFF without sending events (prevents highlight/callbacks)
-        foreach (var t in toggles)
-            if (t != null) t.SetIsOnWithoutNotify(false);
-
-        // 3) Clear any UI “selected” state so nothing looks highlighted
-        EventSystem.current?.SetSelectedGameObject(null);
+        // Make sure group allows zero selected
+        if (toggleGroup != null)
+            toggleGroup.allowSwitchOff = true;
     }
 
-    // Optional: call this anytime you want to force "none selected"
+    void OnEnable()
+    {
+        // Every time this object is enabled, clear selections
+        ClearSelection();
+    }
+
     public void ClearSelection()
     {
-        if (toggleGroup != null) toggleGroup.allowSwitchOff = true;
+        // Ensure toggle group permits switching everything off
+        if (toggleGroup != null)
+            toggleGroup.allowSwitchOff = true;
+
+        // TRUE deselection – triggers OnValueChanged(false)
         foreach (var t in toggles)
-            if (t != null) t.SetIsOnWithoutNotify(false);
+        {
+            if (t != null && t.isOn)
+                t.isOn = false; // triggers deselect event
+        }
+
+        // Remove UI highlight from last selected toggle
         EventSystem.current?.SetSelectedGameObject(null);
     }
 }
