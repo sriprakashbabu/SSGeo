@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: daef0527a9f5a014c966402712470bf0
+guid: 4a87e437b725e6d4babcaaeaca18a48c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LPUP
-    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: jackfruit_leaf
-    second: {fileID: 2100000, guid: 9857eac349f76a34a80b92f381a54fa0, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

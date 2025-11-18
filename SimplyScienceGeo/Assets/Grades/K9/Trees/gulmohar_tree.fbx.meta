@@ -3,7 +3,17 @@ guid: 486ffd78c2fff5949a346368f4e943c3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LPUP
+    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gulmohar_branch
+    second: {fileID: 2100000, guid: 2092f10b4fd1ed2448c97aada8f49a39, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

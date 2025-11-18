@@ -3,7 +3,12 @@ guid: e2f45b66e8a0eb44ea608fd0c50d5932
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LOWPOLY-COLORS
+    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

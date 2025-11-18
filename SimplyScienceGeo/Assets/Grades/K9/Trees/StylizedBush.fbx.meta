@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: daef0527a9f5a014c966402712470bf0
+guid: 678bc5df2d9934749bc85580262961e5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LPUP
-    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: jackfruit_leaf
-    second: {fileID: 2100000, guid: 9857eac349f76a34a80b92f381a54fa0, type: 2}
+      name: Material_Mat
+    second: {fileID: 2100000, guid: 8939d1d704dcbeb4b83592936c2161d8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

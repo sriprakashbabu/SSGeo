@@ -3,7 +3,17 @@ guid: d781bdba9abef5a41a4499743e30003b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LPUP
+    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jamun_leaf_group
+    second: {fileID: 2100000, guid: 0ef0f8fff9c913449bfff2c861b0c51e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
