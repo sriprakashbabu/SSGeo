@@ -1,5 +1,6 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic; // Required for Lists
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -16,13 +17,32 @@ public class ForestGenerator : MonoBehaviour
         TropicalEvergreen
     }
 
+    [Header("Forest Settings")]
     public ForestType forestType;
     public Vector2 areaSize = new Vector2(100, 100);
 
+    [Header("Counts")]
     public int treeCount = 300;
     public int stoneCount = 100;
     public int bushCount = 150;
 
+    [Header("Spacing (Overlap Prevention)")]
+    [Tooltip("Minimum distance between trees")]
+    public float treeSpacing = 4.0f;
+    [Tooltip("Minimum distance between stones")]
+    public float stoneSpacing = 2.0f;
+    [Tooltip("Minimum distance between bushes")]
+    public float bushSpacing = 1.5f;
+    [Tooltip("How many times to try finding a spot before giving up (prevents crashing)")]
+    public int maxSpawnAttempts = 10;
+
+    [Header("Randomization")]
+    public float minScale = 0.8f;
+    public float maxScale = 1.2f;
+    [Tooltip("How much the object can tilt on the X/Z axis")]
+    public float maxTiltAngle = 5f;
+
+    [Header("Presets")]
     public ForestPreset mangrovePreset;
     public ForestPreset montanePreset;
     public ForestPreset thornPreset;
@@ -30,8 +50,10 @@ public class ForestGenerator : MonoBehaviour
     public ForestPreset evergreenPreset;
 
     [HideInInspector] public ForestPreset activePreset;
+    public Transform container;
 
-    public Transform container;  // All generated objects go here
+    // A list to keep track of where we have placed objects
+    private List<Vector3> occupiedPositions = new List<Vector3>();
 
     public void SelectPreset()
     {
@@ -49,9 +71,12 @@ public class ForestGenerator : MonoBehaviour
     {
         if (container != null)
         {
+            // Clean up children safely
             while (container.childCount > 0)
                 DestroyImmediate(container.GetChild(0).gameObject);
         }
+        // Clear our memory of positions
+        occupiedPositions.Clear();
     }
 
     public void GenerateForest()
@@ -72,34 +97,79 @@ public class ForestGenerator : MonoBehaviour
 
         ClearForest();
 
-        // Trees
-        for (int i = 0; i < treeCount; i++)
-            SpawnRandom(activePreset.treePrefabs);
+        // 1. Spawn Trees (Usually largest, spawn first)
+        SpawnGroup(activePreset.treePrefabs, treeCount, treeSpacing);
 
-        // Stones
-        for (int i = 0; i < stoneCount; i++)
-            SpawnRandom(activePreset.stonePrefabs);
+        // 2. Spawn Stones
+        SpawnGroup(activePreset.stonePrefabs, stoneCount, stoneSpacing);
 
-        // Bushes
-        for (int i = 0; i < bushCount; i++)
-            SpawnRandom(activePreset.bushPrefabs);
+        // 3. Spawn Bushes
+        SpawnGroup(activePreset.bushPrefabs, bushCount, bushSpacing);
     }
 
-    void SpawnRandom(GameObject[] list)
+    // Generic function to spawn a group of objects
+    void SpawnGroup(GameObject[] prefabs, int count, float spacing)
     {
-        if (list == null || list.Length == 0) return;
+        if (prefabs == null || prefabs.Length == 0) return;
 
-        Vector3 pos = new Vector3(
+        for (int i = 0; i < count; i++)
+        {
+            Vector3 pos = Vector3.zero;
+            bool validPositionFound = false;
+
+            // Try to find a position that doesn't overlap
+            for (int attempt = 0; attempt < maxSpawnAttempts; attempt++)
+            {
+                pos = GetRandomPosition();
+
+                // Check this position against all previously spawned objects
+                if (IsPositionValid(pos, spacing))
+                {
+                    validPositionFound = true;
+                    break;
+                }
+            }
+
+            // Only spawn if we found a valid spot
+            if (validPositionFound)
+            {
+                SpawnObject(prefabs, pos);
+                occupiedPositions.Add(pos);
+            }
+            else
+            {
+                Debug.LogWarning($"Could not find a spot for object {i} after {maxSpawnAttempts} attempts. Area might be too crowded.");
+            }
+        }
+    }
+
+    Vector3 GetRandomPosition()
+    {
+        return new Vector3(
             transform.position.x + Random.Range(-areaSize.x / 2, areaSize.x / 2),
             transform.position.y,
             transform.position.z + Random.Range(-areaSize.y / 2, areaSize.y / 2)
         );
+    }
 
+    // Returns true if the position is far enough away from other objects
+    bool IsPositionValid(Vector3 candidatePos, float minDistance)
+    {
+        foreach (Vector3 occupied in occupiedPositions)
+        {
+            if (Vector3.Distance(candidatePos, occupied) < minDistance)
+            {
+                return false; // Too close!
+            }
+        }
+        return true;
+    }
+
+    void SpawnObject(GameObject[] list, Vector3 pos)
+    {
         GameObject prefab = list[Random.Range(0, list.Length)];
-
         GameObject obj;
 
-        // Use PrefabUtility only in EDITOR mode
 #if UNITY_EDITOR
         obj = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
 #else
@@ -108,22 +178,29 @@ public class ForestGenerator : MonoBehaviour
 
         obj.transform.position = pos;
 
-        // Rotation variation
+        // Enhanced Random Rotation
         float yRot = Random.Range(0f, 360f);
-        float tiltX = Random.Range(-5f, 5f);
-        float tiltZ = Random.Range(-5f, 5f);
+        // Random slight tilt on X and Z for realism
+        float tiltX = Random.Range(-maxTiltAngle, maxTiltAngle);
+        float tiltZ = Random.Range(-maxTiltAngle, maxTiltAngle);
+
         obj.transform.rotation = Quaternion.Euler(tiltX, yRot, tiltZ);
 
-        // Scale variation
-        float baseScale = Random.Range(0.85f, 1.25f);
-        float scaleX = baseScale * Random.Range(0.95f, 1.05f);
-        float scaleZ = baseScale * Random.Range(0.95f, 1.05f);
+        // Enhanced Random Scale
+        float uniformScale = Random.Range(minScale, maxScale);
 
-        obj.transform.localScale = new Vector3(scaleX, baseScale, scaleZ);
+        // Add a tiny bit of non-uniformity (squashing/stretching)
+        float scaleVarX = Random.Range(0.95f, 1.05f);
+        float scaleVarZ = Random.Range(0.95f, 1.05f);
+
+        obj.transform.localScale = new Vector3(
+            uniformScale * scaleVarX,
+            uniformScale,
+            uniformScale * scaleVarZ
+        );
 
         obj.transform.SetParent(container);
     }
-
 }
 
 [System.Serializable]

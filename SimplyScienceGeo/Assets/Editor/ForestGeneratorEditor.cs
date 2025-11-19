@@ -1,34 +1,93 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEditor;
 
 [CustomEditor(typeof(ForestGenerator))]
 public class ForestGeneratorEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        // Required for editable arrays
-        serializedObject.Update();
+        // 1. Get reference to the script
+        ForestGenerator generator = (ForestGenerator)target;
 
-        DrawDefaultInspector();
+        // 2. Draw the Default "Script" field and other basic settings
+        // We manually draw specific fields to keep it clean
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Main Settings", EditorStyles.boldLabel);
 
-        EditorGUILayout.Space(10);
-        EditorGUILayout.LabelField("Forest Tools", EditorStyles.boldLabel);
+        // Draw the Enum dropdown for Forest Type
+        generator.forestType = (ForestGenerator.ForestType)EditorGUILayout.EnumPopup("Forest Type", generator.forestType);
 
-        ForestGenerator gen = (ForestGenerator)target;
+        // Draw Area Size
+        generator.areaSize = EditorGUILayout.Vector2Field("Area Size", generator.areaSize);
 
-        if (GUILayout.Button("Generate Forest"))
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Object Counts", EditorStyles.boldLabel);
+        generator.treeCount = EditorGUILayout.IntField("Tree Count", generator.treeCount);
+        generator.stoneCount = EditorGUILayout.IntField("Stone Count", generator.stoneCount);
+        generator.bushCount = EditorGUILayout.IntField("Bush Count", generator.bushCount);
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Fine Tuning", EditorStyles.boldLabel);
+        generator.treeSpacing = EditorGUILayout.FloatField("Tree Spacing", generator.treeSpacing);
+        generator.stoneSpacing = EditorGUILayout.FloatField("Stone Spacing", generator.stoneSpacing);
+        generator.bushSpacing = EditorGUILayout.FloatField("Bush Spacing", generator.bushSpacing);
+
+        // Draw Randomization settings
+        SerializedProperty minScale = serializedObject.FindProperty("minScale");
+        SerializedProperty maxScale = serializedObject.FindProperty("maxScale");
+        SerializedProperty maxTilt = serializedObject.FindProperty("maxTiltAngle");
+        EditorGUILayout.PropertyField(minScale);
+        EditorGUILayout.PropertyField(maxScale);
+        EditorGUILayout.PropertyField(maxTilt);
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Active Preset Configuration", EditorStyles.boldLabel);
+
+        // 3. ONLY draw the preset that is currently selected
+        SerializedProperty activeList = null;
+
+        switch (generator.forestType)
         {
-            Undo.RegisterCompleteObjectUndo(gen.gameObject, "Generate Forest");
-            gen.GenerateForest();
+            case ForestGenerator.ForestType.Mangrove:
+                activeList = serializedObject.FindProperty("mangrovePreset");
+                break;
+            case ForestGenerator.ForestType.Montane:
+                activeList = serializedObject.FindProperty("montanePreset");
+                break;
+            case ForestGenerator.ForestType.TropicalThorn:
+                activeList = serializedObject.FindProperty("thornPreset");
+                break;
+            case ForestGenerator.ForestType.TropicalDeciduous:
+                activeList = serializedObject.FindProperty("deciduousPreset");
+                break;
+            case ForestGenerator.ForestType.TropicalEvergreen:
+                activeList = serializedObject.FindProperty("evergreenPreset");
+                break;
         }
 
+        // Show the relevant list (e.g., Mangrove Preset)
+        if (activeList != null)
+        {
+            EditorGUILayout.PropertyField(activeList, true);
+        }
+
+        EditorGUILayout.Space(20);
+
+        // 4. The Big Button
+        GUI.backgroundColor = Color.green;
+        if (GUILayout.Button("Generate Forest", GUILayout.Height(40)))
+        {
+            generator.GenerateForest();
+        }
+
+        GUI.backgroundColor = Color.red;
         if (GUILayout.Button("Clear Forest"))
         {
-            Undo.RegisterCompleteObjectUndo(gen.gameObject, "Clear Forest");
-            gen.ClearForest();
+            generator.ClearForest();
         }
+        GUI.backgroundColor = Color.white;
 
-        // REQUIRED for saving array changes
+        // Apply changes to the serialized object
         serializedObject.ApplyModifiedProperties();
     }
 }

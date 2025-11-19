@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 594bbec05f2b799439de532e164f7422
+guid: e1a8751f03d9e574bb7b7990e9e88ee3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+      name: Tree_0Mat.001
+    second: {fileID: 2100000, guid: 8bfc9845d8d45c54f94ea46951a8e068, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree_1Mat.001
+    second: {fileID: 2100000, guid: 97800b2dee6e2984f87ea2926e0660b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree_2Mat.001
+    second: {fileID: 2100000, guid: 8bfc9845d8d45c54f94ea46951a8e068, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree_3Mat.001
+    second: {fileID: 2100000, guid: 97800b2dee6e2984f87ea2926e0660b7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +53,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -93,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 3
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

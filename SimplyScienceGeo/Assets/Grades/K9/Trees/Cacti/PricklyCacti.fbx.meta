@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 594bbec05f2b799439de532e164f7422
+guid: f2d48a06d6bce374b83006c60ad9c891
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: b3b4f0fc2bdd1584fb9db070980db64d, type: 2}
+      name: prickly pear blend_3Mat.001
+    second: {fileID: 2100000, guid: 25bcf7e6853113543a92431d247e6771, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prickly pear_4Mat.001
+    second: {fileID: 2100000, guid: 25bcf7e6853113543a92431d247e6771, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spines 02_8Mat.001
+    second: {fileID: 2100000, guid: efe6c377e5f7d9d498f2c2b2b763f317, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +48,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -93,7 +103,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.049999997
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
