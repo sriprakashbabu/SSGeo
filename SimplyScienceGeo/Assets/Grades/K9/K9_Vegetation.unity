@@ -26394,7 +26394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340173596}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.48699746, z: -0, w: -0.8734034}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27336,7 +27336,7 @@ Transform:
   - {fileID: 372718133}
   - {fileID: 1251656975}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 301.713, z: 0}
 --- !u!114 &340173598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85440,7 +85440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059793412}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -85670,9 +85670,6 @@ GameObject:
   - component: {fileID: 1061925366}
   - component: {fileID: 1061925370}
   - component: {fileID: 1061925369}
-  - component: {fileID: 1061925365}
-  - component: {fileID: 1061925367}
-  - component: {fileID: 1061925373}
   m_Layer: 5
   m_Name: Evergreen
   m_TagString: Untagged
@@ -85680,35 +85677,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1061925365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061925364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ef191390a26d3429614e5807a26f0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapRoot: {fileID: 1209183009}
-  backButton: {fileID: 1075069564}
-  sceneModel: {fileID: 1106867440}
-  modelPrefab: {fileID: 0}
-  hideWhenModelShown:
-  - {fileID: 135074408}
-  - {fileID: 555293588}
-  - {fileID: 642731176}
-  showWhenModelShown:
-  - {fileID: 0}
-  - {fileID: 0}
-  targetScale: {x: 35, y: 35, z: 35}
-  tweenInDuration: 0.35
-  tweenOutDuration: 0.25
-  easeIn: 27
-  easeOut: 3
-  animateOutOnBack: 1
 --- !u!224 &1061925366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -85728,62 +85696,6 @@ RectTransform:
   m_AnchoredPosition: {x: 76.719, y: -136.496}
   m_SizeDelta: {x: 700.851, y: 512.824}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1061925367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061925364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1061925369}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1061925365}
-        m_TargetAssemblyTypeName: MapToModelSwitcher, Assembly-CSharp
-        m_MethodName: ShowModel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1061925369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85822,83 +85734,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061925364}
   m_CullTransparentMesh: 1
---- !u!60 &1061925373
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061925364}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 85.70848, y: 145.00288}
-      - {x: 74.18295, y: 123.52548}
-      - {x: 73.27649, y: 115.4019}
-      - {x: 69.179474, y: 110.64705}
-      - {x: 54.58892, y: 101.33011}
-      - {x: 43.976685, y: 86.66856}
-      - {x: 9.952153, y: 37.410496}
-      - {x: 20.65252, y: 39.63231}
-      - {x: 29.511568, y: 42.39805}
-      - {x: 37.240982, y: 43.12629}
-      - {x: 57.088524, y: 64.56944}
-      - {x: 52.835186, y: 76.5004}
-      - {x: 57.17768, y: 84.16078}
-      - {x: 75.9496, y: 88.797585}
-      - {x: 86.69445, y: 96.89853}
-      - {x: 87.784294, y: 104.99127}
-      - {x: 95.551155, y: 110.024025}
-      - {x: 105.07512, y: 113.70982}
-      - {x: 112.67579, y: 112.000786}
-      - {x: 113.20739, y: 116.09491}
-      - {x: 113.77102, y: 121.21178}
-      - {x: 111.41762, y: 125.687294}
-      - {x: 113.129234, y: 131.3345}
-      - {x: 107.20482, y: 133.60683}
-      - {x: 108.02076, y: 137.54018}
-      - {x: 103.02347, y: 142.15544}
-      - {x: 102.52813, y: 147.44826}
-      - {x: 107.589874, y: 150.89009}
-      - {x: 107.11318, y: 159.54915}
-      - {x: 96.28854, y: 163.60956}
-  m_UseDelaunayMesh: 0
 --- !u!1001 &1061996242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151552,7 +151387,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Geographical Diversity of India
+  m_text: 'Types of Vegetation in India
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -160376,7 +160213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057583009}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
