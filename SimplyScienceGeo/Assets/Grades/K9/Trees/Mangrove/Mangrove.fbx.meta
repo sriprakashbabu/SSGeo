@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 177911c0fa604ac41889dff38af17e62
+guid: 83bd2cbd8b82a3c41b2535703e89c3bf
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: acacia branch_1Mat
-    second: {fileID: 2100000, guid: 6eef3f883337567448d14f6f61d49d9d, type: 2}
+      name: MUD
+    second: {fileID: 2100000, guid: 485dda7360375654e9725542e913949b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: bark05_0Mat
-    second: {fileID: 2100000, guid: 9952639b5ebf3c647aa2aaea4bf77cc8, type: 2}
+      name: T_Mangrove_Bark
+    second: {fileID: 2100000, guid: 7e12f7a7125be6744b1c56fb6b1858dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Mangrove_Leaves
+    second: {fileID: 2100000, guid: daf67f8cefca18c41abb970ace3f7582, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +48,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 4
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +103,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.04
+    globalScale: 0.02
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -3328,6 +3328,172 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391235943}
   m_CullTransparentMesh: 1
+--- !u!1 &398468405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398468406}
+  - component: {fileID: 398468410}
+  - component: {fileID: 398468409}
+  m_Layer: 5
+  m_Name: Meghalaya
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &398468406
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398468405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5397258, y: 2.1019, z: 2.1019}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2077020127}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 255.42586, y: 61.917572}
+  m_SizeDelta: {x: 33.0679, y: 8.9107}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &398468409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398468405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.33333334, g: 0.7921569, b: 0.33333334, a: 0.64705884}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43f75f09bbb72c340a7da2b3fdca127e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &398468410
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398468405}
+  m_CullTransparentMesh: 1
+--- !u!1 &406367506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406367507}
+  - component: {fileID: 406367511}
+  - component: {fileID: 406367510}
+  - component: {fileID: 406367508}
+  m_Layer: 5
+  m_Name: Meghalaya
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &406367507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406367506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5397258, y: 2.1019, z: 2.1019}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1836386073}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 256.63626, y: 63.1535}
+  m_SizeDelta: {x: 33.3087, y: 7.2226}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &406367508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406367506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6c9d414a8b69e41b2d5a174efac35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAlpha: 0.2
+  maxAlpha: 0.8
+  speed: 2
+--- !u!114 &406367510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406367506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.21783382, g: 0.5345911, b: 0.10254725, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43f75f09bbb72c340a7da2b3fdca127e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &406367511
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406367506}
+  m_CullTransparentMesh: 1
 --- !u!1 &407407942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,7 +4275,6 @@ GameObject:
   - component: {fileID: 548854746}
   - component: {fileID: 548854750}
   - component: {fileID: 548854749}
-  - component: {fileID: 548854748}
   - component: {fileID: 548854747}
   m_Layer: 5
   m_Name: HR
@@ -4152,19 +4317,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &548854748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 548854745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &548854749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4290,7 +4442,6 @@ GameObject:
   - component: {fileID: 561690562}
   - component: {fileID: 561690566}
   - component: {fileID: 561690565}
-  - component: {fileID: 561690564}
   - component: {fileID: 561690563}
   m_Layer: 5
   m_Name: Punjab
@@ -4333,19 +4484,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &561690564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561690561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &561690565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4531,7 +4669,6 @@ GameObject:
   - component: {fileID: 594282151}
   - component: {fileID: 594282155}
   - component: {fileID: 594282154}
-  - component: {fileID: 594282153}
   - component: {fileID: 594282152}
   m_Layer: 5
   m_Name: Bihar
@@ -4574,19 +4711,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &594282153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594282150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &594282154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5057,6 +5181,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1988783061}
   - {fileID: 529310328}
   - {fileID: 1742699979}
   m_Father: {fileID: 1836386073}
@@ -5623,6 +5748,7 @@ MonoBehaviour:
   objectsToEnable:
   - {fileID: 250527940}
   - {fileID: 344970464}
+  - {fileID: 867431437}
   interactionManager: {fileID: 796496450}
   cameraFocusController: {fileID: 0}
   globeRotator: {fileID: 0}
@@ -5782,6 +5908,7 @@ MonoBehaviour:
     - {fileID: 1799340137}
     - {fileID: 1837121127}
     - {fileID: 859964029}
+    - {fileID: 406367506}
     objectsToDeactivate: []
     defaultToggle: {fileID: 0}
     titleText: 
@@ -6832,6 +6959,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860238086}
   m_CullTransparentMesh: 1
+--- !u!1 &867431437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867431438}
+  - component: {fileID: 867431441}
+  - component: {fileID: 867431440}
+  - component: {fileID: 867431439}
+  m_Layer: 5
+  m_Name: MeghalayaAlpha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &867431438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867431437}
+  m_LocalRotation: {x: -0, y: -0, z: 0.038807537, w: 0.9992467}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.1112385, y: 5.8853197, z: 2.1018972}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1836386073}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.448}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 255.09764, y: 67.5}
+  m_SizeDelta: {x: 11.4749, y: 4.4745}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &867431439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867431437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6c9d414a8b69e41b2d5a174efac35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAlpha: 0.422
+  maxAlpha: 1
+  speed: 4
+--- !u!114 &867431440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867431437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.972549, b: 0.30980393, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43f75f09bbb72c340a7da2b3fdca127e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &867431441
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867431437}
+  m_CullTransparentMesh: 1
 --- !u!1 &884862680
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,7 +7197,6 @@ GameObject:
   - component: {fileID: 910537872}
   - component: {fileID: 910537876}
   - component: {fileID: 910537875}
-  - component: {fileID: 910537874}
   - component: {fileID: 910537873}
   m_Layer: 5
   m_Name: Assam
@@ -7022,19 +7239,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &910537874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910537871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &910537875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8273,7 +8477,6 @@ GameObject:
   - component: {fileID: 1101138053}
   - component: {fileID: 1101138057}
   - component: {fileID: 1101138056}
-  - component: {fileID: 1101138055}
   - component: {fileID: 1101138054}
   m_Layer: 5
   m_Name: JH
@@ -8298,8 +8501,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93.887, y: 6.772}
-  m_SizeDelta: {x: 52.916, y: 43.516}
+  m_AnchoredPosition: {x: 93.887, y: 26.253}
+  m_SizeDelta: {x: 52.916, y: 24.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101138054
 MonoBehaviour:
@@ -8316,19 +8519,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &1101138055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101138052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &1101138056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9726,7 +9916,6 @@ GameObject:
   - component: {fileID: 1474066870}
   - component: {fileID: 1474066874}
   - component: {fileID: 1474066873}
-  - component: {fileID: 1474066872}
   - component: {fileID: 1474066871}
   m_Layer: 5
   m_Name: WB
@@ -9769,19 +9958,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &1474066872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474066869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &1474066873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11598,7 +11774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bramhaputra Plains
+  m_text: Brahmaputra Plains
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12072,7 +12248,6 @@ GameObject:
   - component: {fileID: 1799340142}
   - component: {fileID: 1799340141}
   - component: {fileID: 1799340140}
-  - component: {fileID: 1799340139}
   - component: {fileID: 1799340138}
   m_Layer: 5
   m_Name: UP
@@ -12096,19 +12271,6 @@ MonoBehaviour:
   minAlpha: 0.2
   maxAlpha: 0.8
   speed: 2
---- !u!114 &1799340139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799340137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e6184a888bba144a81f061e2af3cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alphaThreshold: 0.1
 --- !u!114 &1799340140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12264,8 +12426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93.887, y: 6.772}
-  m_SizeDelta: {x: 52.916, y: 43.516}
+  m_AnchoredPosition: {x: 93.1192, y: 25.834}
+  m_SizeDelta: {x: 52.856, y: 24.582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821499647
 MonoBehaviour:
@@ -12356,10 +12518,12 @@ RectTransform:
   - {fileID: 132474580}
   - {fileID: 1907449941}
   - {fileID: 620297906}
+  - {fileID: 867431438}
   - {fileID: 344970469}
   - {fileID: 1415903803}
   - {fileID: 2098255528}
   - {fileID: 1101138053}
+  - {fileID: 406367507}
   - {fileID: 1474066870}
   - {fileID: 594282151}
   - {fileID: 910537872}
@@ -13729,6 +13893,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976983657}
   m_CullTransparentMesh: 1
+--- !u!1 &1988783060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988783061}
+  - component: {fileID: 1988783063}
+  - component: {fileID: 1988783062}
+  m_Layer: 5
+  m_Name: Meghalaya
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1988783061
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988783060}
+  m_LocalRotation: {x: -0, y: -0, z: 0.038807537, w: 0.9992467}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.1112385, y: 5.8853188, z: 2.101897}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 620297906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.448}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 255.09764, y: 67.5}
+  m_SizeDelta: {x: 11.4749, y: 4.4745}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1988783062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988783060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5529412, g: 0.3882353, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43f75f09bbb72c340a7da2b3fdca127e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1988783063
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988783060}
+  m_CullTransparentMesh: 1
 --- !u!1 &1989555147
 GameObject:
   m_ObjectHideFlags: 0
@@ -14673,6 +14912,7 @@ RectTransform:
   - {fileID: 2043559423}
   - {fileID: 1035717025}
   - {fileID: 1821499646}
+  - {fileID: 398468406}
   m_Father: {fileID: 1836386073}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

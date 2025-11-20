@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.91194963, g: 0.91194963, b: 0.91194963, a: 1}
+  m_Color: {r: 0.22352941, g: 0.22352941, b: 0.22352941, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -837,9 +837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6c9d414a8b69e41b2d5a174efac35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAlpha: 0.6
-  maxAlpha: 1
-  speed: 3
+  minAlpha: 0.112
+  maxAlpha: 0.557
+  speed: 5
 --- !u!114 &140573220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 26.000006}
+  m_AnchoredPosition: {x: -140, y: 67.00002}
   m_SizeDelta: {x: 1199, y: 653.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &271537181
@@ -1686,7 +1686,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: <b>The Thar Desert</b>, also known as the Great Indian Desert, lies to
-    the west of the Aravali Hills. It is a sandy plain with widespread sand dunes
+    the west of the Aravalli Hills. It is a sandy plain with widespread sand dunes
     (barchans) shaped by strong desert winds. The region receives less than 150 mm
     rainfall annually, has an arid climate, and sparse thorny vegetation. The soil
     is sandy, saline, and poor in fertility, yet supports hardy crops like millets
@@ -2127,12 +2127,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>The Aravali Hills</b> form one of the oldest fold mountain ranges in
-    the world, stretching northeast\u2013southwest across Rajasthan. They act as
-    a natural barrier, preventing the desert from expanding eastward. Composed mainly
-    of ancient rocks, the Aravalis are low in height but rich in minerals and biodiversity.
-    Mount Abu, the highest peak, also has evergreen forest patches that contrast
-    sharply with the nearby desert."
+  m_text: "<b>The Aravalli Hills</b> form one of the oldest fold mountain ranges
+    in the world, stretching northeast\u2013southwest across Rajasthan. They act
+    as a natural barrier, preventing the desert from expanding eastward. Composed
+    mainly of ancient rocks, the Aravalis are low in height but rich in minerals
+    and biodiversity. Mount Abu, the highest peak, also has evergreen forest patches
+    that contrast sharply with the nearby desert."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2670,7 +2670,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: <b>The Luni River </b>is the only major river flowing through the Thar
-    Desert. Originating in the Aravali Hills near Pushkar, it flows southwest and
+    Desert. Originating in the Aravalli Hills near Pushkar, it flows southwest and
     disappears into the Rann of Kutch due to high evaporation. Its water is saline,
     especially in the lower reaches, making it unsuitable for drinking, but useful
     for irrigation near its upper course. The Luni symbolizes the temporary and fragile
@@ -4528,7 +4528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 26.000006}
+  m_AnchoredPosition: {x: -140, y: 67.00002}
   m_SizeDelta: {x: 1199, y: 653.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861719183
@@ -5011,7 +5011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 26.000006}
+  m_AnchoredPosition: {x: -140, y: 67.00002}
   m_SizeDelta: {x: 1199, y: 653.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &930610346
@@ -7680,6 +7680,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 998726668}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 997009849}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 353394348}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 38931026}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1859793689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7827,7 +7875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 26}
+  m_AnchoredPosition: {x: -140, y: 67}
   m_SizeDelta: {x: 1199, y: 653.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1900551137

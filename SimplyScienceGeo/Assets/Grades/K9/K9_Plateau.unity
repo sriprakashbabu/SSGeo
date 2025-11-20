@@ -400,10 +400,10 @@ RectTransform:
   - {fileID: 1985469484}
   m_Father: {fileID: 625995908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1.5440674, y: 151.08002}
-  m_SizeDelta: {x: -72.912, y: 302.17}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 151.085}
+  m_SizeDelta: {x: 1750, y: 302.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83744958
 MonoBehaviour:
@@ -819,8 +819,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: -9.858032}
-  m_SizeDelta: {x: 1750, y: 120}
+  m_AnchoredPosition: {x: 0.000022147316, y: 0}
+  m_SizeDelta: {x: 1600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230159126
 MonoBehaviour:
@@ -842,8 +842,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Aravali Hills, among the world's oldest fold mountains, stretch from
-    Gujarat to Delhi and create a natural divide that affects the expansion of the\_Thar\_Desert."
+  m_text: "<b>The Aravalli Hills</b>, among the world's oldest fold mountains, stretch
+    from Gujarat to Delhi and create a natural divide that affects the expansion
+    of the\_Thar\_Desert."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1181,7 +1182,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1750, y: 100}
+  m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265663394
 MonoBehaviour:
@@ -1815,7 +1816,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1750, y: 100}
+  m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368873097
 MonoBehaviour:
@@ -1837,8 +1838,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Satpura Range marks the northern edge of the Deccan Plateau and functions
-    as a major watershed.
+  m_text: '<b>The Satpura Range</b> marks the northern edge of the Deccan Plateau
+    and functions as a major watershed.
 
 '
   m_isRightToLeft: 0
@@ -2178,7 +2179,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1846, y: 302.168}
+  m_SizeDelta: {x: 1750, y: 302.168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373887244
 MonoBehaviour:
@@ -3187,8 +3188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1.5440674, y: 151.08002}
-  m_SizeDelta: {x: -72.912, y: 302.17}
+  m_AnchoredPosition: {x: 0, y: 151.08002}
+  m_SizeDelta: {x: 0.00002670288, y: 302.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470337610
 MonoBehaviour:
@@ -3244,9 +3245,9 @@ RectTransform:
   - {fileID: 1485364453}
   m_Father: {fileID: 625995908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 742.3083, y: -70}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -219, y: -74}
   m_SizeDelta: {x: 348.45996, y: 175.024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472157830
@@ -4082,8 +4083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 2.9459229}
-  m_SizeDelta: {x: 1850, y: 200}
+  m_AnchoredPosition: {x: 0.000022147316, y: 0}
+  m_SizeDelta: {x: 1750, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542289983
 MonoBehaviour:
@@ -5531,10 +5532,10 @@ RectTransform:
   - {fileID: 2027517424}
   m_Father: {fileID: 625995908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 742.3083, y: 223}
-  m_SizeDelta: {x: 348.45996, y: 175.024}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -217, y: 228}
+  m_SizeDelta: {x: 348.45996, y: 175.02399}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717303641
 MonoBehaviour:
@@ -6353,7 +6354,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1850, y: 200}
+  m_SizeDelta: {x: 1750, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847833480
 MonoBehaviour:
@@ -6428,7 +6429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -261}
+  m_AnchoredPosition: {x: -644, y: -255}
   m_SizeDelta: {x: 1499.612, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858632492
@@ -6618,7 +6619,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1850, y: 200}
+  m_SizeDelta: {x: 1750, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926711887
 MonoBehaviour:
@@ -7623,10 +7624,10 @@ RectTransform:
   - {fileID: 1178973877}
   m_Father: {fileID: 717303640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -576.54}
-  m_SizeDelta: {x: 1499.612, y: 205.9}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -821.80005, y: -669.00006}
+  m_SizeDelta: {x: 1920.3579, y: 205.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108184055
 MonoBehaviour:
@@ -7946,7 +7947,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: -9.856018}
-  m_SizeDelta: {x: 1750, y: 120}
+  m_SizeDelta: {x: 1600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178973878
 MonoBehaviour:
@@ -7968,8 +7969,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Vindhyan Range forms the central ridge separating the northern highlands
-    from the Satpura Range to the south.
+  m_text: '<b>The Vindhyan Range</b> forms the central ridge separating the northern
+    highlands from the Satpura Range to the south.
 
 '
   m_isRightToLeft: 0
@@ -8085,7 +8086,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1750, y: 100}
+  m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185971329
 MonoBehaviour:
@@ -8575,10 +8576,10 @@ RectTransform:
   - {fileID: 230159125}
   m_Father: {fileID: 717303640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -576.54}
-  m_SizeDelta: {x: 1499.612, y: 205.9}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -821.8, y: -669}
+  m_SizeDelta: {x: 1920.3579, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251392334
 MonoBehaviour:
@@ -9082,7 +9083,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1846, y: 302.168}
+  m_SizeDelta: {x: 1750, y: 302.168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321971514
 MonoBehaviour:
@@ -10037,7 +10038,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1850, y: 250}
+  m_SizeDelta: {x: 1750, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455349120
 MonoBehaviour:
@@ -10548,7 +10549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -231.41}
+  m_AnchoredPosition: {x: -644.00006, y: -250}
   m_SizeDelta: {x: 1499.612, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480713329
@@ -10738,7 +10739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -254}
+  m_AnchoredPosition: {x: -644.00006, y: -255}
   m_SizeDelta: {x: 1499.612, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485364454
@@ -10984,7 +10985,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: -21.999998}
-  m_SizeDelta: {x: 1750, y: 100}
+  m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516135268
 MonoBehaviour:
@@ -11793,7 +11794,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1745.275, y: 202.004}
+  m_SizeDelta: {x: 1600, y: 202.004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625468090
 MonoBehaviour:
@@ -13779,7 +13780,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: 0.0020141602}
-  m_SizeDelta: {x: 1850, y: 250}
+  m_SizeDelta: {x: 1750, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868321466
 MonoBehaviour:
@@ -14596,7 +14597,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1745.275, y: 202.004}
+  m_SizeDelta: {x: 1600, y: 202.004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985469485
 MonoBehaviour:
@@ -14871,7 +14872,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: -22}
-  m_SizeDelta: {x: 1850, y: 250}
+  m_SizeDelta: {x: 1750, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016711484
 MonoBehaviour:
@@ -15019,10 +15020,10 @@ RectTransform:
   - {fileID: 368873096}
   m_Father: {fileID: 717303640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -743.8524, y: -576.54}
-  m_SizeDelta: {x: 1499.612, y: 205.9}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -821.80005, y: -669.00006}
+  m_SizeDelta: {x: 1920.3579, y: 205.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027517425
 MonoBehaviour:
