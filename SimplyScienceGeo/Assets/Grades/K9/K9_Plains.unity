@@ -1556,7 +1556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Northern Plains
+  m_text: -------------------
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2067,10 +2067,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Northern Plains lie to the south of the Himalayas, extending from
-    Punjab in the west to Assam in the east. Formed by the Indus, Ganga, and Brahmaputra
-    river systems, these plains cover about 7 lakh sq. km and are one of the most
-    densely populated and agriculturally productive regions of the world.\t"
+  m_text: "<b>The Northern Plains </b>lie to the south of the Himalayas, extending
+    from Punjab in the west to Assam in the east. Formed by the Indus, Ganga, and
+    Brahmaputra river systems, these plains cover about 7 lakh sq. km and are one
+    of the most densely populated and agriculturally productive regions of the world.\t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6027,6 +6027,15 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   globeRotator: {fileID: 0}
   optionGroups:
+  - groupName: -------------------
+    toggleGroupParent: {fileID: 0}
+    additionalObjectsToActivate: []
+    objectsToDeactivate: []
+    defaultToggle: {fileID: 0}
+    titleText: 
+    bodyText: 
+    targetRotation: {x: 0, y: 0, z: 0}
+    targetZoom: 0
   - groupName: Northern Plains
     toggleGroupParent: {fileID: 0}
     additionalObjectsToActivate:
@@ -6134,6 +6143,9 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
+    - m_Text: -------------------
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: Northern Plains
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
