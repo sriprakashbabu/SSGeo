@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab59fad18ceb7084390a8e62d5cece38
+guid: ffcd29a04d489e147a4a4212cbe46a2b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,108 +108,20 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 10
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Laterite_Black
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 544
-        width: 65
-        height: 124
-      alignment: 9
-      pivot: {x: 0.47005546, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10806bad6dd7824b87ff0a18dc57acb
-      internalID: -1824083375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laterite_Arid
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 589
-        width: 45
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 168dffb457319c446b53f36e0b800f28
-      internalID: -1001192570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laterite_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 770
-        height: 353
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60fb59585fe4f264b84ff5312901b72c
-      internalID: -272778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laterite_1
-      rect:
-        serializedVersion: 2
-        x: 311
-        y: 354
-        width: 459
-        height: 314
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd2b77345557dec418a17919e5154259
-      internalID: 1231363129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -223,11 +135,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Laterite_0: -272778
-      Laterite_1: 1231363129
-      Laterite_Arid: -1001192570
-      Laterite_Black: -1824083375
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

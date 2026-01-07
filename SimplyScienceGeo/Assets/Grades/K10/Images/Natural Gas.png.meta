@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab59fad18ceb7084390a8e62d5cece38
+guid: a2d226bdf2d251d4f9d48b3ca4ebe286
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -123,35 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Laterite_Black
+      name: Natural Gas_Rj
       rect:
         serializedVersion: 2
-        x: 57
-        y: 544
-        width: 65
-        height: 124
-      alignment: 9
-      pivot: {x: 0.47005546, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10806bad6dd7824b87ff0a18dc57acb
-      internalID: -1824083375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laterite_Arid
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 589
-        width: 45
-        height: 55
+        x: 60
+        y: 3298
+        width: 176
+        height: 216
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,52 +138,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 168dffb457319c446b53f36e0b800f28
-      internalID: -1001192570
+      spriteID: 8cf8aebdf469eda40979206c521caa85
+      internalID: 123654794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laterite_0
+      name: Natural Gas_Guj
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2216
+        width: 143
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83bc8eb30d7dec42931ac1566824805
+      internalID: -1695157343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Natural Gas_mumbai
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 770
-        height: 353
+        y: 1592
+        width: 118
+        height: 369
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60fb59585fe4f264b84ff5312901b72c
-      internalID: -272778
+      spriteID: 5a00984a1acd4ff45a00edbc5cd07061
+      internalID: -1970992924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laterite_1
+      name: Natural Gas_NE
       rect:
         serializedVersion: 2
-        x: 311
-        y: 354
-        width: 459
-        height: 314
+        x: 3681
+        y: 2533
+        width: 122
+        height: 154
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2b77345557dec418a17919e5154259
-      internalID: 1231363129
+      spriteID: 8a15c0f38485cd64b92141e7a4ce5b06
+      internalID: 1885721941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Natural Gas_South
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 0
+        width: 155
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa57fd6d3d908154fa907e6367be44ff
+      internalID: 1008199708
       vertices: []
       indices: 
       edges: []
@@ -214,7 +236,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f230624a4d9ba2941b3119df3d12e2b5
     internalID: 0
     vertices: []
     indices: 
@@ -222,12 +244,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Laterite_0: -272778
-      Laterite_1: 1231363129
-      Laterite_Arid: -1001192570
-      Laterite_Black: -1824083375
+      Natural Gas_Guj: -1695157343
+      Natural Gas_NE: 1885721941
+      Natural Gas_Rj: 123654794
+      Natural Gas_South: 1008199708
+      Natural Gas_mumbai: -1970992924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

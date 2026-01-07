@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab59fad18ceb7084390a8e62d5cece38
+guid: da96739474b1be54c9a53a021364a002
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -123,35 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Laterite_Black
+      name: IronOre_3
       rect:
         serializedVersion: 2
-        x: 57
-        y: 544
-        width: 65
-        height: 124
-      alignment: 9
-      pivot: {x: 0.47005546, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10806bad6dd7824b87ff0a18dc57acb
-      internalID: -1824083375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laterite_Arid
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 589
-        width: 45
-        height: 55
+        x: 2014
+        y: 2213
+        width: 1124
+        height: 1306
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,52 +138,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 168dffb457319c446b53f36e0b800f28
-      internalID: -1001192570
+      spriteID: 764317fe0c2309149a701e2e70d22b52
+      internalID: -1678195943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laterite_0
+      name: IronOre_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 770
-        height: 353
+        y: 622
+        width: 496
+        height: 1119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60fb59585fe4f264b84ff5312901b72c
-      internalID: -272778
+      spriteID: bab017f860354ff458c20451ac1aa11f
+      internalID: -687279334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laterite_1
+      name: IronOre_2
       rect:
         serializedVersion: 2
-        x: 311
-        y: 354
-        width: 459
-        height: 314
+        x: 500
+        y: 3
+        width: 1119
+        height: 1142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2b77345557dec418a17919e5154259
-      internalID: 1231363129
+      spriteID: aa418c06a48544e4f901f7f1039bb0f0
+      internalID: 361268699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IronOre_4
+      rect:
+        serializedVersion: 2
+        x: 3954
+        y: 3266
+        width: 1029
+        height: 761
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950cbdc59f581ee4a8449f41630df223
+      internalID: 1912243640
       vertices: []
       indices: 
       edges: []
@@ -222,12 +222,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Laterite_0: -272778
-      Laterite_1: 1231363129
-      Laterite_Arid: -1001192570
-      Laterite_Black: -1824083375
+      IronOre_1: -687279334
+      IronOre_2: 361268699
+      IronOre_3: -1678195943
+      IronOre_4: 1912243640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
