@@ -6742,7 +6742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Plant used by Used by both Punjab and Haryana located on Satluj.
+  m_text: 'Plant used by both Punjab and Haryana located on Satluj.
 
 '
   m_isRightToLeft: 0
@@ -9708,9 +9708,9 @@ RectTransform:
   - {fileID: 1057423654}
   - {fileID: 599169521}
   - {fileID: 1939947556}
-  - {fileID: 2117444446}
   - {fileID: 788699232}
   - {fileID: 1371661798}
+  - {fileID: 2117444446}
   - {fileID: 824709817}
   - {fileID: 230341345}
   - {fileID: 1895307427}
