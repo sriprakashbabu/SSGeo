@@ -127,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1496
-        y: 1579
-        width: 169
-        height: 185
+        y: 1665
+        width: 85
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,6 +210,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Above400_3
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1626
+        width: 171
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f9b3f91a30a834a980a5a39869ffcc
+      internalID: -930779688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -231,6 +253,7 @@ TextureImporter:
       200-400_4: 277804785
       Above400_1: 662274549
       Above400_2: -1587991061
+      Above400_3: -930779688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

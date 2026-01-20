@@ -91,17 +91,36 @@ public class ImageZoomer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     void OnEnable()
     {
+        // 1. Enable inputs
         scrollActionReference?.action.Enable();
         zoomInActionReference?.action.Enable();
         zoomOutActionReference?.action.Enable();
+
+        // 2. STOP any running tweens to unlock Dragging immediately
+        if (imageRectTransform != null)
+            LeanTween.cancel(imageRectTransform.gameObject);
+
         ApplyConstraints();
     }
 
     void OnDisable()
     {
-        scrollActionReference?.action.Disable();
-        zoomInActionReference?.action.Disable();
-        zoomOutActionReference?.action.Disable();
+        // --- CRITICAL FIX START ---
+
+        // DO NOT disable the actions here. 
+        // If you disable them, you kill the input for the OTHER ImageZoomer too!
+        // Since this script's Update() loop stops running when disabled, 
+        // polling stops automatically.
+
+        // scrollActionReference?.action.Disable();  <-- REMOVE OR COMMENT OUT
+        // zoomInActionReference?.action.Disable();  <-- REMOVE OR COMMENT OUT
+        // zoomOutActionReference?.action.Disable(); <-- REMOVE OR COMMENT OUT
+
+        // Stop tweens so the "isTweening" flag doesn't get stuck true
+        if (imageRectTransform != null)
+            LeanTween.cancel(imageRectTransform.gameObject);
+
+        // --- CRITICAL FIX END ---
     }
 
     // Auto-sync preset indices in inspector
